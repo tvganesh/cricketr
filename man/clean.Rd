@@ -1,0 +1,53 @@
+\name{clean}
+\alias{clean}
+\title{
+Create a batsman data frame given the batsman's CSV file
+}
+\description{
+The function removes rows from the batsman dataframe where the batsman did not bat (DNB) or the team did not bat (TDNB). COnverts not outs '*' (97*, 128*) to 97,128 by stripping the '*' character. It picks all the complete cases and returns the data frame
+}
+\usage{
+clean(file)
+}
+%- maybe also 'usage' for other objects documented here.
+\arguments{
+  \item{file}{
+CSV file with the batsman data obtained with getPlayerData
+}
+}
+\details{
+
+}
+\value{
+Returns the cleaned batsman dataframe
+}
+\references{
+http://www.espncricinfo.com/ci/content/stats/index.html
+https://gigadom.wordpress.com/
+}
+\author{
+Tinniam V Ganesh
+}
+\note{
+Maintainer: Tinniam V Ganesh <tvganesh.85@gmail.com>
+}
+
+%% ~Make other sections like Warning with \section{Warning }{....} ~
+
+\seealso{
+\code{\link{cleanBowlerData}}
+\code{\link{getPlayerData}}
+\code{\link{batsman4s}}
+\code{\link{batsmanMovingAverage}}
+}
+\examples{
+# Get or use the <batsman>.csv obtained with getPlayerData()
+#  <- getPlayerData(35320,file="tendulkar.csv",type="batting", homeOrAway=c(1,2),result=c(1,2,4))
+
+# clean the dataframe
+srt <- clean("tendulkar.csv")
+}
+% Add one or more standard keywords, see file 'KEYWORDS' in the
+% R documentation directory.
+\keyword{ ~kwd1 }
+\keyword{ ~kwd2 }% __ONLY ONE__ keyword per line
