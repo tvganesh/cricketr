@@ -46,20 +46,8 @@ batsmanPerfBoxHist <- function(file, name="A Hitter") {
     md <- paste("Median runs over career:", round(median(df$Runs),2))
     text(200,50,mn,col="brown")
     text(200,45,md,col="brown")
+
     
-    # Compute the summary of the runs
-    perf <- summary(batsman$Runs)
-    
-    # Compute the length of data set, skew, kurtosis, 1st and 3rd percentile
-    r <- length(batsman$Runs)
-    s <- skewness(batsman$Runs)
-    s <- format(s,digits=3,nsmall=2)
-    t <- kurtosis(batsman$Runs)
-    t <- format(t,digits=3,nsmall=2)
-    
-    
-    # Create a vector with all the values
-    row <- c(name, r,as.vector(perf),s,t,"\n")
     mtext("Data source-Courtesy:ESPN Cricinfo", side=3, line=4, adj=1.0, cex=0.8, col="blue")
     # reset the layout
     par(mfrow=c(1,1))

@@ -8,7 +8,7 @@ Get the player data given the profile of the batsman. The allowed inputs are hom
 returns a data frame of the player
 }
 \usage{
-getPlayerData(profile,dir="./data",file="player001.csv",type="batting",                         homeOrAway=c(1,2),result=c(1,2,4))
+getPlayerData(profile,dir="./data",file="player001.csv",type="batting",homeOrAway=c(1,2),result=c(1,2,4))
 }
 \arguments{
   \item{profile}{

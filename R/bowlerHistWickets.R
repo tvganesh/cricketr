@@ -6,7 +6,7 @@
 #
 ###########################################################################################
 bowlerHistWickets <- function(file,name="A Googly") {
-    bowler <- cleanBowlerDF(file);
+    bowler <- cleanBowlerData(file);
     
     # Create a table of wickets
     wktsTable <- table(bowler$Wkts)
