@@ -22,11 +22,11 @@ batsmanRunsFreqPerf <- function(file, name="A Hookshot") {
     df1 <- data.frame(Runs,RunFrequency)
     
     
-    # Create a ggplot
+    # Create a plot
     atitle <- paste(name,"'s", " batting performance")
-    g <- qplot(df1$Runs,df1$RunFrequency, data=df1,geom=c("point","smooth"),method="loess",
-               xlab="Runs",ylab="Run Frequency")
-    p <-g + ggtitle(atitle)
-    print(p)
+    plot(df1$Runs,df1$RunFrequency,pch=16,xlab="Runs",ylab="Runs Frequency", main=atitle)
+    lines(df1$Runs,predict(loess(df1$RunFrequency~df1$Runs)),col="blue",lwd=3)
+    mtext("Data source-Courtesy:ESPN Cricinfo", side=1, line=2, adj=1.0, cex=0.8, col="blue")
+    
     
 }
