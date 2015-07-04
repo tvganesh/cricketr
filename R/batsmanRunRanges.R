@@ -30,6 +30,6 @@ batsmanRunsRanges <- function(file, name= "A Hookshot") {
             ylab="% times runs scored in range (%)",ylim=c(0,100),col="blue")
     axis(side=2, at=seq(0, 100, by=5))
     
-    mtext("Data source-Courtesy:ESPN Cricinfo", side=1, line=2, adj=1.0, cex=1, col="blue")  
+    mtext("Data source-Courtesy:ESPN Cricinfo", side=1, line=2, adj=1.0, cex=0.8, col="blue")  
     
 }
