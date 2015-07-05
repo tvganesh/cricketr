@@ -6,9 +6,7 @@ library(devtools)
 install_github("tvganesh/cricketr")
 library(cricketr)
 
-Details of this package has been hosted as a gh-page in 
-
-[Introducing cricketr: A R package for analyzing performances of cricketer](http://tvganesh.github.io/cricketer/cricketer.html)
+Details of this package has been hosted as a gh-page in [Introducing cricketr: A R package for analyzing performances of cricketer](http://tvganesh.github.io/cricketer/cricketer.html)
 
 Also see my other posts in R
 
