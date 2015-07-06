@@ -23,7 +23,7 @@ batsmanRunsRanges <- function(file, name= "A Hookshot") {
     runfreq <- c(name, round(percentRuns,1), "\n")
     
     # Add a title
-    atitle <- paste(name,"Percentage times (%) vs Run ranges")
+    atitle <- paste(name,"Runs %  vs Run ranges")
     
     # Plot the batting perormance 
     barplot(percentRuns, main = atitle ,xlab="Runs scored",

@@ -19,7 +19,7 @@ batsmanContributionWonLost <- function(profileNo,name="A Hitter") {
     won$status="won"
     lost$status="lost"
     wonLost <- rbind(won,lost)
-    atitle <- paste(name,"- Run contribution in games won and lost/drawn")
+    atitle <- paste(name,"- Runs in games won/lost-drawn")
     
     # Create boxplots
     boxplot(Runs~status,data=wonLost,col=c("red","green"),xlab="Status of game",

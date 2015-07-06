@@ -11,7 +11,7 @@ battingPerf3d <- function(file, name="A Hookshot") {
     # Clean the batsman file and create a complete data frame
     batsman <- clean(file)
     # Make a 3 D plot and fit a regression plane
-    atitle <- paste(name, "- Runs scored vs Balls Faced and Minutes in crease")
+    atitle <- paste(name, "- Runs  vs BF & Mins")
     s <-with(data=batsman,scatterplot3d(BF,Mins,Runs, color=rgb(0,0,255,50,maxColorValue=255),
                                 xlab="Balls Faced",ylab="Minutes in crease",
                                 zlab="Runs scored", main=atitle,pch=16))

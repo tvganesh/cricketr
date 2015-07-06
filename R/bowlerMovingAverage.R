@@ -18,7 +18,7 @@ bowlerMovingAverage <- function(file,name="A Doosra") {
     timeframe <- data.frame(wickets,date)
     
     
-    atitle <- paste(name,"'s moving average (wickets) over career")
+    atitle <- paste(name,"'s Moving Average (wickets)")
     plot(timeframe$date,timeframe$wickets,type="o",col="grey", xlab ="Year", 
              ylab = "Wickets", main=atitle)
     

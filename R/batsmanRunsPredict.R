@@ -21,5 +21,5 @@ batsmanRunsPredict <- function(file, name="A Coverdrive", newdataframe) {
         "in the given minutes at crease and balls faced is \n\n")
     #print(str)
     print(newdataframe,digits=2)
-    
+    newdataframe
 }

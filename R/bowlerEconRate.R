@@ -23,8 +23,8 @@ bowlerEconRate <- function(file, name="A Bowler") {
     
     
     wkts <- c(0:max(as.numeric(as.character(bowler$Wkts))))
-    atitle <- paste(name,"'s", " - Mean economy rate (%) vs wickets")
-    plot(wkts,econRate,type="o",pch=13,col="red",lwd=3,xlab="Wickets",ylab="Economy rate",main=atitle)
+    atitle <- paste(name,"'s", " - Mean economy rate (%) vs Wkts")
+    plot(wkts,econRate,type="o",pch=13,col="red",lwd=3,xlab="Wickets",ylab="Mean Economy rate",main=atitle)
     
     mtext("Data source-Courtesy:ESPN Cricinfo", side=1, line=4, adj=1.0, cex=0.8, col="blue")
 }

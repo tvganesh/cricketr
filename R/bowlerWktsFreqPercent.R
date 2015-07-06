@@ -27,11 +27,11 @@ bowlerWktsFreqPercent <- function(file, name="A Bowler") {
     wktsDF <- wktsDF[order(as.numeric(as.character(wktsDF$Wickets))),]
     
     
-    atitle <- paste(name,"'s", "Wickets frequency (%) vs wickets")
+    atitle <- paste(name,"'s", "Wkts freq (%) vs Wkts")
     # Set margin
     par(mar=c(5.1,4.1,4.1,2.1))
     plot(as.numeric(as.character(wktsDF$Wickets)), wktsDF$freqPercent, type="o",
-         xlab="Wickets", ylab = "Wicket percentages (%)",
+         xlab="Wickets", ylab = "Wicket Freq Percentages (%)",
          main = atitle, ylim=c(0,50),pch=15, col="blue",lwd="3")
     
     mtext("Data source-Courtesy:ESPN Cricinfo", side=1, line=4, adj=1.0, cex=0.8, col="blue")

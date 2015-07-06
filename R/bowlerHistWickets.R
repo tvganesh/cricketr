@@ -26,7 +26,7 @@ bowlerHistWickets <- function(file,name="A Googly") {
     # Ensure ascending order of wickets
     wktsDF <- wktsDF[order(as.numeric(as.character(wktsDF$Wickets))),]
     #wktsDF
-    atitle <- paste(name,"'s", " - Wicket percentage (%) vs wickets")
+    atitle <- paste(name,"'s", " - Wkts percentage (%) vs Wkts")
     plot(as.numeric(as.character(wktsDF$Wickets)), wktsDF$freqPercent, type="o", xlab="Wickets", ylab = "Wicket percentages (%)",
          main = atitle, ylim=c(0,50),pch=15, col="blue",lwd="2")
     

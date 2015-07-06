@@ -16,7 +16,7 @@ batsmanDismissals <- function(file, name="A Squarecut") {
   pct <- round(slices/sum(slices)*100)
   lbls <- paste(lbls, pct) # add percents to labels 
   lbls <- paste(lbls,"%",sep="") # ad % to labels 
-  atitle <- paste("Pie chart of dismissals for ", name)
+  atitle <- paste(name, "-Pie chart of dismissals")
   
   # Important note: Ensure the number of labels & slices match
   pie3D(slices, labels=lbls,explode=0.1, main= atitle,pty="s")

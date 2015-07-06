@@ -20,7 +20,7 @@ batsman6s <- function(file, name="A Hookshot") {
     p1 <-colorRampPalette(c("red","blue"))
     palette <- p1(max(x6s))    
     
-    atitle = paste(name,"-","No of 6s vs Runs scored" )
+    atitle = paste(name,"-","Runs scored vs No of 6s" )
     
     # Create box plot of number of 6s and the runs range
     boxplot(runs~x6s,main=atitle,xlab="Number of 6s",ylab="Runs scored", col=as.vector(palette))

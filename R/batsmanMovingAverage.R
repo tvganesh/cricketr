@@ -17,7 +17,7 @@ batsmanMovingAverage <- function(file,name="A Squarecut") {
     timeframe <- data.frame(runs,date)
     
     
-    atitle <- paste(name,"'s moving average (runs) over career")
+    atitle <- paste(name,"'s Moving average (Runs)")
     plot(timeframe$date,timeframe$runs,type="o",col="grey", xlab ="Year", ylab = "Runs", main=atitle)
     
     # Use loess regression to fit the moving average

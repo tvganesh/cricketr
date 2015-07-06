@@ -23,7 +23,7 @@ relativeRunsFreqPerf <- function(frames, names) {
         #Plot for the entire list
         if(i==1) {
             plot(g,a$Freq, cex=0.8, xlab="Runs", ylab = "Run frequency Percentages (%)", type="l",
-                 lty=1, main = "Relative run frequency percentages vs Runs", ylim=c(0,50))
+                 lty=1, main = "Relative runs freq (%) vs Runs", ylim=c(0,50))
         }
         lines(g,a$Freq,col=col1[i], lwd=2.5,lty=1,type="l")
     }

@@ -23,7 +23,7 @@ batsmanRunsFreqPerf <- function(file, name="A Hookshot") {
     
     
     # Create a plot
-    atitle <- paste(name,"'s", " batting performance")
+    atitle <- paste(name,"'s", " Runs frequency vs Runs")
     plot(df1$Runs,df1$RunFrequency,pch=16,xlab="Runs",ylab="Runs Frequency", main=atitle)
     lines(df1$Runs,predict(loess(df1$RunFrequency~df1$Runs)),col="blue",lwd=3)
     mtext("Data source-Courtesy:ESPN Cricinfo", side=1, line=2, adj=1.0, cex=0.8, col="blue")

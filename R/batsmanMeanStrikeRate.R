@@ -36,7 +36,7 @@ batsmanMeanStrikeRate <- function(file, name="A Hitter"){
 
   
   par(mar=c(4,4,2,2))
-  atitle <- paste(name,"'s Mean Strike Rate versus Runs")
+  atitle <- paste(name,"'s Mean Strike Rate vs Runs")
   plot(c,SR,pch=16,xlab="Runs",ylab="Mean Strike Rate",ylim=c(0,90), main=atitle)
   lines(c,predict(loess(SR~c)),col="blue",lwd=3)
   mtext("Data source-Courtesy:ESPN Cricinfo", side=1, line=2, adj=1.0, cex=0.8, col="blue")

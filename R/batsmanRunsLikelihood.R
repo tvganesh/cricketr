@@ -12,7 +12,7 @@ batsmanRunsLikelihood <- function(file, name="A Squarecut") {
 
    # Use K Means with 3 clusters
    fit <- kmeans(data, 3)
-   str <- paste(name,"'s Highest tendency-Runs versus balls faced + minutes at crease")
+   str <- paste(name,"'s Runs likelihood vs BF, Mins")
    # Create a 3D scatterplot
    s <-scatterplot3d(data$BF,data$Mins,data$Runs,color="lightblue",main=str,pch=20,
                      xlab="Balls Faced",ylab="Minutes at crease",zlab="Runs scored")
