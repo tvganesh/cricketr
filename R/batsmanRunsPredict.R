@@ -19,7 +19,5 @@ batsmanRunsPredict <- function(file, name="A Coverdrive", newdataframe) {
     names(newdataframe) <- c("Balls Faced","Minutes",'Runs')
     cat("The predicted runs that will be scored by ", name,"\n",
         "in the given minutes at crease and balls faced is \n\n")
-    #print(str)
-    print(newdataframe,digits=2)
     newdataframe
 }

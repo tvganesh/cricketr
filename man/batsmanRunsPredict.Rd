@@ -26,11 +26,7 @@ This is a data frame with 2 columns BF(Balls Faced) and Mins(Minutes)
 %%  ~~ If necessary, more details than the description above ~~
 }
 \value{
-%%  ~Describe the value returned
-%%  If it is a LIST, use
-%%  \item{comp1 }{Description of 'comp1'}
-%%  \item{comp2 }{Description of 'comp2'}
-%% ...
+Returns a data frame with the predicted runs for the Balls Faced and Minutes at crease
 }
 \references{
 http://www.espncricinfo.com/ci/content/stats/index.html\cr
@@ -64,7 +60,9 @@ or give a data frame
 BF <- seq(20,200, length=15)
 Mins <- seq(30,220,length=15)
 
-batsmanRunsPredict("<path>/tendulkar.csv","Sachin Tendulkar",newdataframe=data.frame(BF,Runs)
+values <- batsmanRunsPredict("<path>/tendulkar.csv","Sachin Tendulkar",
+    newdataframe=data.frame(BF,Runs)
+print(values)
 }
 
 \keyword{ ~kwd1 }
