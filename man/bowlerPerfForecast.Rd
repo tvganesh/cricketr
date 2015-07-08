@@ -1,21 +1,22 @@
-\name{batsmanContributionWonLost}
-\alias{batsmanContributionWonLost}
+\name{bowlerPerfForecast}
+\alias{bowlerPerfForecast}
 \title{
-Disply the batsman's contribution in matches that were won and those that were lost
+Forecast the bowler performance based on past performances using Holt-Winters forecasting
 }
 \description{
-Plot the comparitive contribution of the batsman in matches that were won and lost as box plots
+This function forecasts the performance of the bowler based on past performances using HoltWinters
+forecasting model
 }
 \usage{
-batsmanContributionWonLost(profileNo, name = "A Hitter")
+bowlerPerfForecast(file, name = "A Googly")
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
-  \item{profileNo}{
-Profile number of batsman from ESPN Cricinfo (for e.g. Tendulkar's profile no:35320)
+  \item{file}{
+This is the <bowler>.csv file obtained with an initial getPlayerData()
 }
   \item{name}{
-Name of the batsman
+Name of the bowler
 }
 }
 \details{
@@ -42,13 +43,15 @@ Maintainer: Tinniam V Ganesh <tvganesh.85@gmail.com>
 %% ~Make other sections like Warning with \section{Warning }{....} ~
 
 \seealso{
-\code{\link{batsmanMovingAverage}}
-\code{\link{batsmanRunsPredict}}
-\code{\link{batsmanPerfBoxHist}}
+\code{\link{bowlerEconRate}}, 
+\code{\link{bowlerMovingAverage}}, 
+\code{\link{bowlerContributionWonLost}}
 }
 \examples{
+# Get or use the <bowler>.csv obtained with getPlayerData()
+# a <- getPlayerData(30176,file="kumble.csv",type="batting", homeOrAway=c(1,2),result=c(1,2,4))
 
-batsmanContributionWonLost(35320,"Sachin Tendulkar")
+bowlerPerfForecast("<path>/kumble.csv","Anil Kumble")
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.

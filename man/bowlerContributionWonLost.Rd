@@ -1,21 +1,21 @@
-\name{batsmanContributionWonLost}
-\alias{batsmanContributionWonLost}
+\name{bowlerContributionWonLost}
+\alias{bowlerContributionWonLost}
 \title{
-Disply the batsman's contribution in matches that were won and those that were lost
+Disply the bowler's contribution in matches that were won and those that were lost
 }
 \description{
-Plot the comparitive contribution of the batsman in matches that were won and lost as box plots
+Plot the comparitive contribution of the bowler in matches that were won and lost as box plots
 }
 \usage{
-batsmanContributionWonLost(profileNo, name = "A Hitter")
+bowlerContributionWonLost(profileNo, name = "A Doosra")
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
   \item{profileNo}{
-Profile number of batsman from ESPN Cricinfo (for e.g. Tendulkar's profile no:35320)
+Profile number of the bowler from ESPN Cricinfo (for e.g. Kumble's profile no:30176)
 }
   \item{name}{
-Name of the batsman
+Name of the bowler
 }
 }
 \details{
@@ -42,13 +42,12 @@ Maintainer: Tinniam V Ganesh <tvganesh.85@gmail.com>
 %% ~Make other sections like Warning with \section{Warning }{....} ~
 
 \seealso{
-\code{\link{batsmanMovingAverage}}
-\code{\link{batsmanRunsPredict}}
-\code{\link{batsmanPerfBoxHist}}
+\code{\link{bowlerMovingAverage}}
+\code{\link{bowlerPerfForecast}}
+\code{\link{checkBowlerInForm}}
 }
 \examples{
-
-batsmanContributionWonLost(35320,"Sachin Tendulkar")
+bowlerContributionWonLost(30176,"Anil Kumble")
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.

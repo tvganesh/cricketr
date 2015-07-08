@@ -21,7 +21,7 @@ This is the <batsman>.csv file obtained with an initial getPlayerData()
 Name of the batsman
 }
   \item{alpha}{
-%%     ~~Describe \code{alpha} here~~
+Significance value
 }
 }
 \details{
