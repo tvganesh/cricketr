@@ -29,11 +29,12 @@ batsmanPerfBoxHist <- function(file, name="A Hitter") {
     maxi <- (max(df$Runs/10) + 1) *10
     v <- seq(0,maxi,by=10)
     
+      
     # Draw a histogram
     hist(df$Runs,breaks=v,xlab="Runs",ylab="Runs frequency", 
          main = atitle,labels=TRUE,col="grey")
     
-    # Draw the meadian, mean, 1st and 3rd quantiles
+    # Draw the median, mean, 1st and 3rd quantiles
     abline(v=median(df$Runs),col="blue",lwd=3.0)
     abline(v=mean(df$Runs),col="red",lwd=3.0)
     abline(v=quantile(df$Runs,.25),col="black",lwd=3.0,lty=2)
@@ -44,8 +45,13 @@ batsmanPerfBoxHist <- function(file, name="A Hitter") {
     
     mn <- paste("Mean runs over career:",round(mean(df$Runs),2))
     md <- paste("Median runs over career:", round(median(df$Runs),2))
-    text(200,50,mn,col="brown")
-    text(200,45,md,col="brown")
+    
+    # Get the value of count to determine the height of graph
+    a <- hist(df$Runs, breaks=v,plot=FALSE)
+    ht <- max(a$counts)
+
+    text(200,ht-15,mn,col="brown")
+    text(200,ht-20,md,col="brown")
 
     
     mtext("Data source-Courtesy:ESPN Cricinfo", side=3, line=4, adj=1.0, cex=0.8, col="blue")
@@ -53,3 +59,4 @@ batsmanPerfBoxHist <- function(file, name="A Hitter") {
     par(mfrow=c(1,1))
     
 }
+
