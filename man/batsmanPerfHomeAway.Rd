@@ -1,21 +1,21 @@
-\name{bowlerContributionWonLost}
-\alias{bowlerContributionWonLost}
+\name{batsmanPerfHomeAway}
+\alias{batsmanPerfHomeAway}
 \title{
-Display the bowler's contribution in matches that were won and those that were lost
+This function analyses the performance of the batsman at home and overseas
 }
 \description{
-Plot the comparitive contribution of the bowler in matches that were won and lost as box plots
+This function plots the runs scored by the batsman at home and overseas
 }
 \usage{
-bowlerContributionWonLost(profileNo, name = "A Doosra")
+batsmanPerfHomeAway(profileNo, name = "A Hitter")
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
   \item{profileNo}{
-Profile number of the bowler from ESPN Cricinfo (for e.g. Kumble's profile no:30176)
+Profile number of batsman from ESPN Cricinfo (for e.g. Tendulkar's profile no:35320)
 }
   \item{name}{
-Name of the bowler
+Name of the batsman
 }
 }
 \details{
@@ -36,18 +36,19 @@ https://gigadom.wordpress.com/
 Tinniam V Ganesh
 }
 \note{
-Maintainer: Tinniam V Ganesh <tvganesh.85@gmail.com>
+%%  ~~further notes~~
 }
 
 %% ~Make other sections like Warning with \section{Warning }{....} ~
 
 \seealso{
-\code{\link{bowlerMovingAverage}}
-\code{\link{bowlerPerfForecast}}
-\code{\link{checkBowlerInForm}}
+\code{\link{batsmanMovingAverage}}
+\code{\link{batsmanRunsPredict}}
+\code{\link{batsmanPerfBoxHist}}
+\code{\link{bowlerContributionWonLost}}
 }
 \examples{
-bowlerContributionWonLost(30176,"Anil Kumble")
+batsmanPerfHomeAway(35320,"Sachin Tendulkar")
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.

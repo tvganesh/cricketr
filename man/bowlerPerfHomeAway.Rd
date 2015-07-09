@@ -1,13 +1,13 @@
-\name{bowlerContributionWonLost}
-\alias{bowlerContributionWonLost}
+\name{bowlerPerfHomeAway}
+\alias{bowlerPerfHomeAway}
 \title{
-Display the bowler's contribution in matches that were won and those that were lost
+This function analyses the performance of the bowler at home and overseas
 }
 \description{
-Plot the comparitive contribution of the bowler in matches that were won and lost as box plots
+This function plots the Wickets taken by the batsman at home and overseas
 }
 \usage{
-bowlerContributionWonLost(profileNo, name = "A Doosra")
+bowlerPerfHomeAway(profileNo, name = "A Googly")
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
@@ -15,7 +15,7 @@ bowlerContributionWonLost(profileNo, name = "A Doosra")
 Profile number of the bowler from ESPN Cricinfo (for e.g. Kumble's profile no:30176)
 }
   \item{name}{
-Name of the bowler
+Name of bowler
 }
 }
 \details{
@@ -45,9 +45,10 @@ Maintainer: Tinniam V Ganesh <tvganesh.85@gmail.com>
 \code{\link{bowlerMovingAverage}}
 \code{\link{bowlerPerfForecast}}
 \code{\link{checkBowlerInForm}}
+\code{\link{bowlerContributionWonLost}}
 }
 \examples{
-bowlerContributionWonLost(30176,"Anil Kumble")
+bowlerPerfHomeAway(30176,"Anil Kumble")
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.
