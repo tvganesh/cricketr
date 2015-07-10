@@ -1,13 +1,13 @@
-\name{batsmanAvgRunsGround}
-\alias{batsmanAvgRunsGround}
+\name{batsmanAvgRunsOpposition}
+\alias{batsmanAvgRunsOpposition}
 \title{
-This function computes and plots the Average runs scored in the different grounds played by batsman
+This function computes and plots the Average runs against different opposition played by batsman
 }
 \description{
-This function computed the Average Runs scored on different pitches and also indicates the number of innings played at these venues
+This function computes the mean runs scored by batsman against different opposition
 }
 \usage{
-batsmanAvgRunsGround(file, name = "A Latecut")
+batsmanAvgRunsOpposition(file, name = "A Latecut")
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
@@ -45,12 +45,13 @@ Maintainer: Tinniam V Ganesh <tvganesh.85@gmail.com>
 \code{\link{batsmanDismissals}},  
 \code{\link{batsmanMovingAverage}}, 
 \code{\link{batsmanPerfBoxHist}}
+\code{\link{batsmanAvgRunsGround}}
 }
 \examples{
 # Get or use the <batsman>.csv obtained with getPlayerData()
 #  <- getPlayerData(35320,file="tendulkar.csv",type="batting", homeOrAway=c(1,2),result=c(1,2,4))
 
-batsmanAvgRunsGround("<path>/tendulkar.csv","Sachin Tendulkar")
+batsmanAvgRunsOpposition("<path>/tendulkar.csv","Sachin Tendulkar")
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.

@@ -30,7 +30,7 @@ batsmanPerfHomeAway <- function(profileNo,name="A Hitter") {
     b <- dim(away)
     
     
-   
+    par(mar=c(9,7,2,2))
     val1 <- paste(a[1],"Home venue")
     val2 <- paste(b[1], "Overseas")
     vals <- list(val1,val2)

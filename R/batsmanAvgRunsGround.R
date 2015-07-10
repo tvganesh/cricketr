@@ -11,8 +11,12 @@ batsmanAvgRunsGround <- function(file, name="A Latecut"){
     
     
     batsman <- clean(file)
+    
+    # use dplyr's summarise function to group by Ground and calculate mean & count
     meanRuns <- batsman %>% group_by(Ground) %>% summarise(m= mean(Runs))
     countInnings <- batsman %>% group_by(Ground) %>% summarise(len=length(Runs))
+    
+    # Set the margins
     par(mar=c(9,4,3,2))
     ground <- as.vector(meanRuns$Ground)
     values <- paste(ground,"-",countInnings$len)

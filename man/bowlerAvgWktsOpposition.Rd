@@ -1,21 +1,21 @@
-\name{batsmanAvgRunsGround}
-\alias{batsmanAvgRunsGround}
+\name{bowlerAvgWktsOpposition}
+\alias{bowlerAvgWktsOpposition}
 \title{
-This function computes and plots the Average runs scored in the different grounds played by batsman
+This function computes and plot the average wickets against different oppositon
 }
 \description{
-This function computed the Average Runs scored on different pitches and also indicates the number of innings played at these venues
+This function computes the average wickets taken against different opposition by the bowler. It also shows the number innings against each opposition
 }
 \usage{
-batsmanAvgRunsGround(file, name = "A Latecut")
+bowlerAvgWktsOpposition(file, name = "A Chinaman")
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
   \item{file}{
-This is the <batsman>.csv file obtained with an initial getPlayerData()
+This is the <bowler>.csv file obtained with an initial getPlayerData()
 }
   \item{name}{
-Name of the batsman
+Name of the bowler
 }
 }
 \details{
@@ -42,15 +42,16 @@ Maintainer: Tinniam V Ganesh <tvganesh.85@gmail.com>
 %% ~Make other sections like Warning with \section{Warning }{....} ~
 
 \seealso{
-\code{\link{batsmanDismissals}},  
-\code{\link{batsmanMovingAverage}}, 
-\code{\link{batsmanPerfBoxHist}}
+\code{\link{bowlerWktsFreqPercent}}
+\code{\link{relativeBowlingER}}
+\code{\link{relativeBowlingPerf}
+\code{\link{bowlerAvgWktsGround}
 }
 \examples{
-# Get or use the <batsman>.csv obtained with getPlayerData()
-#  <- getPlayerData(35320,file="tendulkar.csv",type="batting", homeOrAway=c(1,2),result=c(1,2,4))
+# Get or use the <bowler>.csv obtained with getPlayerData()
+# a <- getPlayerData(30176,file="kumble.csv",type="batting", homeOrAway=c(1,2),result=c(1,2,4))
 
-batsmanAvgRunsGround("<path>/tendulkar.csv","Sachin Tendulkar")
+bowlerAvgWktsOpposition("<path>/kumble.csv","Anil Kumble")
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.

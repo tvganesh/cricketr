@@ -1,11 +1,10 @@
 \name{bowlerAvgWktsGround}
 \alias{bowlerAvgWktsGround}
 \title{
-This function computes and plot the average wickets taken at venues bowled
+This function computes and plot the average wickets in different ground
 }
 \description{
-This function computes teh average wickets taken at different venues by the bowler. It also shows the
-number innings at each venue
+This function computes the average wickets taken against different grounds by the bowler. It also shows the number innings at each venue
 }
 \usage{
 bowlerAvgWktsGround(file, name = "A Chinaman")
