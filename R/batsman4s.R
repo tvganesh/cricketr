@@ -14,6 +14,9 @@ batsman4s <- function(file, name="A Hookshot") {
     x4s <- as.numeric(as.vector(df$X4s))
     runs <- as.numeric(df$Runs) 
     
+    # Set margins
+    par(mar=c(4,4,2,2))
+    
     atitle = paste(name,"-","Runs scored vs No of 4s" )
     
     # Plot no of 4s and a 2nd order curve fit   

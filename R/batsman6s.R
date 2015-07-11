@@ -16,6 +16,9 @@ batsman6s <- function(file, name="A Hookshot") {
     x6s <- as.numeric((b$X6s))
     runs <- as.numeric(b$Runs)
    
+    # Set margins
+    par(mar=c(4,4,2,2))
+    
     # Create a color palette
     p1 <-colorRampPalette(c("red","blue"))
     palette <- p1(max(x6s))    

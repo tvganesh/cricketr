@@ -1,5 +1,6 @@
 # Plot the dismissals of the batsman as a pie chart
 batsmanDismissals <- function(file, name="A Squarecut") {
+
   
   batsman <- clean(file)
   
@@ -9,7 +10,7 @@ batsmanDismissals <- function(file, name="A Squarecut") {
   
   # Convert to data frame
   dismissal <- data.frame(table(d))
-  
+  par(mar=c(0,0,2,2))
   # Create a 3D pie chart
   lbls <- dismissal$d
   slices <- dismissal$Freq
@@ -19,8 +20,9 @@ batsmanDismissals <- function(file, name="A Squarecut") {
   atitle <- paste(name, "-Pie chart of dismissals")
   
   # Important note: Ensure the number of labels & slices match
-  pie3D(slices, labels=lbls,explode=0.1, main= atitle,pty="s")
+  pie3D(slices, labels=lbls,explode=0.1, main= atitle,pty="s",labelcex=0.8)
   
-  mtext("Data source-Courtesy:ESPN Cricinfo", side=1, line=4, adj=1.0, cex=1, col="blue") 
+  mtext("Data source-Courtesy:ESPN Cricinfo", side=1, line=4, adj=1.0, cex=0.8, col="blue") 
   
 }
+
