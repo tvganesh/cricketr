@@ -23,6 +23,8 @@ batsmanAvgRunsOpposition <- function(file, name="A Latecut"){
     atitle <- paste(name,"'s Average Runs versus Opposition")
     barplot(meanRuns$m,names=values,las=2,ylab="Average Runs", 
             col=rainbow(length(meanRuns$m)),main=atitle)
+    abline(h=50,lty=2,lwd=2)
+    
     
     mtext("Opposition - No of innings", side=1, line=7.5, adj=1.0, cex=1.0, col="black")
     mtext("Data source-Courtesy:ESPN Cricinfo", side=3, line=0, adj=1.0, cex=0.8, col="blue")

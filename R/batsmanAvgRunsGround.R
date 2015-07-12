@@ -23,6 +23,9 @@ batsmanAvgRunsGround <- function(file, name="A Latecut"){
     atitle <- paste(name,"'s Average Runs at Ground")
     barplot(meanRuns$m,names=values,las=2,ylab="Average Runs", 
             col=rainbow(length(meanRuns$m)),main=atitle,cex.names=0.8)
+    abline(h=50,lty=3,lwd=2)
+    abline(h=100,lty=3,lwd=2,col="blue")
+    
     
     mtext("Ground - No of innings", side=1, line=7.5, adj=1.0, cex=1.0, col="black")
     mtext("Data source-Courtesy:ESPN Cricinfo", side=3, line=0, adj=1.0, cex=0.8, col="blue")

@@ -23,6 +23,7 @@ bowlerAvgWktsOpposition <- function(file, name="A Chinaman"){
     atitle <- paste(name,"'s Average Wickets versus Opposition")
     barplot(meanWkts$m,names=values,las=2,ylab="Average Wickets", 
             col=rainbow(length(meanWkts$m)),main=atitle)
+    abline(h=3,lty=3,lwd=2)
     
     mtext("Opposition - No of innings", side=1, line=7.5, adj=1.0, cex=1.0, col="black")
     mtext("Data source-Courtesy:ESPN Cricinfo", side=3, line=0, adj=1.0, cex=0.8, col="blue")
