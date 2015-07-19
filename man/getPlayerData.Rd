@@ -51,7 +51,7 @@ Maintainer: Tinniam V Ganesh <tvganesh.85@gmail.com>
 %% ~Make other sections like Warning with \section{Warning }{....} ~
 
 \seealso{
-
+\code{\link{getPlayerDataSp}}
 }
 \examples{
 # Both home and away. Result = won,lost and drawn
