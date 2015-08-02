@@ -1,21 +1,21 @@
-\name{relativeBowlingER}
-\alias{relativeBowlingER}
+\name{relativeBatsmanSROD}
+\alias{relativeBatsmanSROD}
 \title{
-Compute and plot the relative mean Economy Rate(ER) of the bowlers
+Calculate and plot the relative Mean Strike Rate (SR) for each batsman
 }
 \description{
-This function computes and plots the relative Economy Rate of the bowlers
+Calculate and plot the relative MEan Strike Rate (SR) for each batsman
 }
 \usage{
-relativeBowlingER(frames, names)
+relativeBatsmanSROD(frames, names)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
   \item{frames}{
-This is a list of <bowler>.csv files obtained with an initial getPlayerData()
+This is a list of <batsman>.csv files obtained with an initial getPlayerDataOD()
 }
   \item{names}{
-A list of bowlers names who need to be compared
+A list of batsmen names who need to be compared
 }
 }
 \details{
@@ -42,18 +42,19 @@ Maintainer: Tinniam V Ganesh <tvganesh.85@gmail.com>
 %% ~Make other sections like Warning with \section{Warning }{....} ~
 
 \seealso{
-\code{\link{bowlerWktsFreqPercent}}
-\code{\link{relativeBowlingPerf}}
-\code{\link{bowlerHistWickets}}
+\code{\link{batsmanScoringRateOD}} 
+\code{\link{relativeRunsFreqPerfOD}}
+\code{\link{batsmanPerfBoxHist}}
 }
 \examples{
-# Get the list of the <batsman>.csv files obtained with getPlayerData() for batsmen to be compared
-#  <- getPlayerData(30176,file="kumble.csv",type="bowling", homeOrAway=c(1,2),result=c(1,2,4))
+# Get or use the <batsman>.csv obtained with getPlayerDataOD()
+#sehwag <-getPlayerData(35263,dir="./mytest", file="sehwag.csv",type="batting", homeOrAway=c(1,2),result=c(1,2,4))
 
-frames <- list("<path>/kumble.csv","<path>/warne.csv", "<path>/murali.csv")
-names <- c("kumble","warne","murali")
-relativeBowlingER(frames,names)
+batsmen <- list("./sehwag.csv","./devilliers.csv", "./gayle.csv","./maxwell.csv")
+names <- list("Sehwag","Devilliers","Gayle","Maxwell")
+relativeBatsmanSR(batsmen,names)
 }
+
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.
 \keyword{ ~kwd1 }

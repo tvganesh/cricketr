@@ -1,5 +1,5 @@
-\name{relativeBowlingER}
-\alias{relativeBowlingER}
+\name{relativeBowlingEROD}
+\alias{relativeBowlingEROD}
 \title{
 Compute and plot the relative mean Economy Rate(ER) of the bowlers
 }
@@ -7,12 +7,12 @@ Compute and plot the relative mean Economy Rate(ER) of the bowlers
 This function computes and plots the relative Economy Rate of the bowlers
 }
 \usage{
-relativeBowlingER(frames, names)
+relativeBowlingEROD(frames, names)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
   \item{frames}{
-This is a list of <bowler>.csv files obtained with an initial getPlayerData()
+This is a list of <bowler>.csv files obtained with an initial getPlayerDataOD()
 }
   \item{names}{
 A list of bowlers names who need to be compared
@@ -42,17 +42,11 @@ Maintainer: Tinniam V Ganesh <tvganesh.85@gmail.com>
 %% ~Make other sections like Warning with \section{Warning }{....} ~
 
 \seealso{
-\code{\link{bowlerWktsFreqPercent}}
-\code{\link{relativeBowlingPerf}}
-\code{\link{bowlerHistWickets}}
+%% ~~objects to See Also as \code{\link{help}}, ~~~
 }
 \examples{
-# Get the list of the <batsman>.csv files obtained with getPlayerData() for batsmen to be compared
-#  <- getPlayerData(30176,file="kumble.csv",type="bowling", homeOrAway=c(1,2),result=c(1,2,4))
-
-frames <- list("<path>/kumble.csv","<path>/warne.csv", "<path>/murali.csv")
-names <- c("kumble","warne","murali")
-relativeBowlingER(frames,names)
+\code{\link{relativeBatsmanSROD}}
+\code{\link{relativeRunsFreqPerfOD}}
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.

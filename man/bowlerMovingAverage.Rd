@@ -32,6 +32,7 @@ Name of the bowler
 \references{
 http://www.espncricinfo.com/ci/content/stats/index.html\cr
 https://gigadom.wordpress.com/
+}
 \author{
 Tinniam V Ganesh
 }

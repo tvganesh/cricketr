@@ -1,18 +1,18 @@
-\name{batsman4s}
-\alias{batsman4s}
+\name{batsmanScoringRateOD}
+\alias{batsmanScoringRateOD}
 \title{
-Plot the numbers of 4s against the runs scored by batsman
+Compute and plot the predicted scoring rate for a One day batsman
 }
 \description{
-This function plots the number of 4s against the total runs scored by batsman. A 2nd order polynomial regression curve is also plotted. The predicted number of 4s for 50 runs and 100 runs scored is also plotted
+This function computes and plots a 2nd order polynomial between the balls faced and runs scored
 }
 \usage{
-batsman4s(file, name="A Hookshot")
+batsmanScoringRateOD(file, name = "A Hookshot")
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
   \item{file}{
-This is the <batsman>.csv file obtained with an initial getPlayerData()
+This is the <batsman>.csv file obtained with an initial getPlayerDataOD()
 }
   \item{name}{
 Name of the batsman
@@ -39,12 +39,15 @@ Maintainer: Tinniam V Ganesh <tvganesh.85@gmail.com>
 
 \seealso{
 \code{\link{batsman6s}}
+\code{\link{relativeBatsmanSROD}}
+\code{\link{relativeRunsFreqPerfOD}}
 }
 \examples{
-# Get or use the <batsman>.csv obtained with getPlayerData()
-#  <- getPlayerData(35320,dir=".",file="tendulkar.csv",type="batting", homeOrAway=c(1,2),result=c(1,2,4))
+# Get or use the <batsman>.csv obtained with getPlayerDataOD()
+#sehwag <-getPlayerData(35263,dir="./mytest", file="sehwag.csv",type="batting", homeOrAway=c(1,2),result=c(1,2,4))
 
-batsman4s("../tendulkar.csv","Sachin Tendulkar")
+
+batsmanScoringRateOD("../sehwag.csv","Sehwag")
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.
