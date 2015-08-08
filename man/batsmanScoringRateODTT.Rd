@@ -1,32 +1,28 @@
-\name{batsman4s6s}
-\alias{batsman4s6s}
+\name{batsmanScoringRateODTT}
+\alias{batsmanScoringRateODTT}
 \title{
-Compute and plot a stacked barplot of runs,4s and 6s
+Compute and plot the predicted scoring rate for a One day batsman or Twenty20
 }
 \description{
-Compute and plot a stacked barplot of percentages of runs in (1s,2s and 3s),4s and 6s
+This function computes and plots a 2nd order polynomial between the balls faced and runs scored for ODI or Twenty20
 }
 \usage{
-batsman4s6s(frames, names)
+batsmanScoringRateODTT(file, name = "A Hookshot")
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
-  \item{frames}{
-List of batsman
+  \item{file}{
+This is the <batsman>.csv file obtained with an initial getPlayerDataOD() or getPlayerTT()
 }
-  \item{names}{
-Names of batsman
+  \item{name}{
+Name of the batsman
 }
 }
 \details{
 %%  ~~ If necessary, more details than the description above ~~
 }
 \value{
-%%  ~Describe the value returned
-%%  If it is a LIST, use
-%%  \item{comp1 }{Description of 'comp1'}
-%%  \item{comp2 }{Description of 'comp2'}
-%% ...
+None
 }
 \references{
 http://www.espncricinfo.com/ci/content/stats/index.html\cr
@@ -42,17 +38,16 @@ Maintainer: Tinniam V Ganesh <tvganesh.85@gmail.com>
 %% ~Make other sections like Warning with \section{Warning }{....} ~
 
 \seealso{
-\code{\link{batsmanScoringRateODTT}}, 
-\code{\link{relativeRunsFreqPerfODTT}},
-\code{\link{batsmanPerfBoxHist}}
+\code{\link{batsman6s}}
+\code{\link{relativeBatsmanSRODTT}}
+\code{\link{relativeRunsFreqPerfODTT}}
 }
 \examples{
-# Get or use the <batsman>.csv obtained with getPlayerDataOD()
+# Get or use the <batsman>.csv obtained with getPlayerDataOD() or or getPlayerTT()
 #sehwag <-getPlayerData(35263,dir="./mytest", file="sehwag.csv",type="batting", homeOrAway=c(1,2),result=c(1,2,4))
 
-batsmen <- list("./sehwag.csv","./devilliers.csv", "./gayle.csv","./maxwell.csv")
-names <- list("Sehwag","Devilliers","Gayle","Maxwell")
-batsman4s6s(batsmen,names)
+
+batsmanScoringRateODTT("../sehwag.csv","Sehwag")
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.

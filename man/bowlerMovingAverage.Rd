@@ -45,7 +45,7 @@ Maintainer: Tinniam V Ganesh <tvganesh.85@gmail.com>
 \seealso{
 \code{\link{bowlerWktsFreqPercent}}
 \code{\link{relativeBowlingER}}
-\code{\link{relativeBowlingPerf}
+\code{\link{relativeBowlingPerf}}
 }
 \examples{
 # Get or use the <bowler>.csv obtained with getPlayerData()

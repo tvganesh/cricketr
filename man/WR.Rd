@@ -1,21 +1,18 @@
-\name{bowlerEconRate}
-\alias{bowlerEconRate}
+\name{WR}
+\alias{WR}
 \title{
-Compute and plot the Mean Economy Rate versus wickets taken
+This function caculates the wicket rate vs mean number of deliveries
 }
 \description{
-This function computes the mean economy rate for the wickets taken and plot this
+This function caculates the wicket rate vs mean number of deliveries
 }
 \usage{
-bowlerEconRate(file, name = "A Bowler")
+WR(file)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
   \item{file}{
-This is the <bowler>.csv file obtained with an initial getPlayerData()
-}
-  \item{name}{
-Name of the bowler
+Name of file
 }
 }
 \details{
@@ -38,19 +35,33 @@ Tinniam V Ganesh
 \note{
 Maintainer: Tinniam V Ganesh <tvganesh.85@gmail.com>
 }
-
 %% ~Make other sections like Warning with \section{Warning }{....} ~
 
 \seealso{
-\code{\link{bowlerWktsFreqPercent}}
-\code{\link{relativeBowlingER}}
-\code{\link{relativeBowlingPerf}}
+%% ~~objects to See Also as \code{\link{help}}, ~~~
 }
 \examples{
-# Get or use the <bowler>.csv obtained with getPlayerData()
-# a <- getPlayerData(30176,dir=".", file="kumble.csv",type="batting", homeOrAway=c(1,2),result=c(1,2,4))
+##---- Should be DIRECTLY executable !! ----
+##-- ==>  Define data, use random,
+##--	or do  help(data=index)  for the standard data sets.
 
-bowlerEconRate("<path>/kumble.csv","Anil Kumble")
+## The function is currently defined as
+function (file) 
+{
+    bowler <- clean(file)
+    wktRate <- NULL
+    w <- NULL
+    for (i in 0:max(as.numeric(as.character(bowler$Wkts)))) {
+        balls <- bowler[bowler$Wkts == i, ]$Overs * 6
+        if (length(balls != 0)) {
+            wktRate[i] <- lapply(list(balls), mean)
+            w[i] <- i
+        }
+    }
+    a <- sapply(wktRate, is.null)
+    wktRate[a] <- NaN
+    wktRate
+  }
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.

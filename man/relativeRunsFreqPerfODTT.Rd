@@ -1,21 +1,22 @@
-\name{batsman4s6s}
-\alias{batsman4s6s}
+\name{relativeRunsFreqPerfODTT}
+\alias{relativeRunsFreqPerfODTT}
 \title{
-Compute and plot a stacked barplot of runs,4s and 6s
+Calculate and compute the relative run frequencies of a list of  cricketers
 }
 \description{
-Compute and plot a stacked barplot of percentages of runs in (1s,2s and 3s),4s and 6s
+This function computes the run frequencies in ranges of 10 and plots these for a list of
+batsmen
 }
 \usage{
-batsman4s6s(frames, names)
+relativeRunsFreqPerfODTT(frames, names)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
   \item{frames}{
-List of batsman
+This is a list of <batsman>.csv files obtained with an initial getPlayerDataOD() or getPlayerTT()
 }
   \item{names}{
-Names of batsman
+A list of batsmen names who need to be compared
 }
 }
 \details{
@@ -38,21 +39,18 @@ Tinniam V Ganesh
 \note{
 Maintainer: Tinniam V Ganesh <tvganesh.85@gmail.com>
 }
-
-%% ~Make other sections like Warning with \section{Warning }{....} ~
-
 \seealso{
 \code{\link{batsmanScoringRateODTT}}, 
 \code{\link{relativeRunsFreqPerfODTT}},
 \code{\link{batsmanPerfBoxHist}}
 }
 \examples{
-# Get or use the <batsman>.csv obtained with getPlayerDataOD()
+# Get or use the <batsman>.csv obtained with getPlayerDataOD() or getPlayerTT()
 #sehwag <-getPlayerData(35263,dir="./mytest", file="sehwag.csv",type="batting", homeOrAway=c(1,2),result=c(1,2,4))
 
 batsmen <- list("./sehwag.csv","./devilliers.csv", "./gayle.csv","./maxwell.csv")
 names <- list("Sehwag","Devilliers","Gayle","Maxwell")
-batsman4s6s(batsmen,names)
+relativeRunsFreqPerfODTT(batsmen,names)
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.

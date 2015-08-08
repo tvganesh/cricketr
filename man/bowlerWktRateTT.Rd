@@ -1,21 +1,23 @@
-\name{relativeBowlingER}
-\alias{relativeBowlingER}
+\name{bowlerWktRateTT}
+\alias{bowlerWktRateTT}
+
 \title{
-Compute and plot the relative mean Economy Rate(ER) of the bowlers
+Compute and plot the Mean number of deliveries versus wickets taken
 }
 \description{
-This function computes and plots the relative Economy Rate of the bowlers
+This function computes and plots the Mean number of deliveries versus wickets taken for bowlers
+in Twenty20 Internation
 }
 \usage{
-relativeBowlingER(frames, names)
+bowlerWktRateTT(file, name = "A Bowler")
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
-  \item{frames}{
-This is a list of <bowler>.csv files obtained with an initial getPlayerData()
+  \item{file}{
+his is the <bowler>.csv file obtained with an initial getPlayerDataTT()
 }
-  \item{names}{
-A list of Twenty20 bowlers names who need to be compared
+  \item{name}{
+Name of the bowler
 }
 }
 \details{
@@ -43,16 +45,14 @@ Maintainer: Tinniam V Ganesh <tvganesh.85@gmail.com>
 
 \seealso{
 \code{\link{bowlerWktsFreqPercent}}
+\code{\link{relativeBowlingER}}
 \code{\link{relativeBowlingPerf}}
-\code{\link{bowlerHistWickets}}
 }
 \examples{
-# Get the list of the <batsman>.csv files obtained with getPlayerData() for batsmen to be compared
-#  <- getPlayerData(30176,file="kumble.csv",type="bowling", homeOrAway=c(1,2),result=c(1,2,4))
+# Get or use the <bowler>.csv obtained with getPlayerData()
+# a <- getPlayerDataTT(26421,dir=".",file="ashwin.csv",type="bowling", homeOrAway=c(1,2,3),                # result=c(1,2,3,5))
 
-frames <- list("<path>/kumble.csv","<path>/warne.csv", "<path>/murali.csv")
-names <- c("kumble","warne","murali")
-relativeBowlingER(frames,names)
+bowlerWktRateTT("./ashwin.csv","R Ashwin")
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.
