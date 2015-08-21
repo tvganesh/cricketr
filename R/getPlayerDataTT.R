@@ -19,7 +19,7 @@ getPlayerDataTT <- function(profile,dir="./data",file="player001.csv",type="batt
     player <- paste(profile,".html",sep="")
     
     # Set the home or away oe neutral
-    str1=str2=""
+    str1=str2=str3=""
     if(sum(homeOrAway == 1)==1){
         str1 ="home_or_away=1;"
     }
@@ -35,7 +35,7 @@ getPlayerDataTT <- function(profile,dir="./data",file="player001.csv",type="batt
     t <- paste("type=",type,";",sep="");
     
     # Set the result based on input
-    str1=str2=str3=""
+    str1=str2=str3=str4=""
     # Won
     if(sum(result==1)==1){
         str1 ="result=1;"

@@ -8,7 +8,7 @@ Get the One day player data from ESPN Cricinfo based on specific inputs and stor
 Get the player data given the profile of the batsman. The allowed inputs are home,away or both and won,lost or draw of matches. The data is stored in a <player>.csv file in a directory specified. This function also returns a data frame of the player
 }
 \usage{
-getPlayerDataOD(profile, dir = "./data", file = "player001.csv", type = "batting", homeOrAway = c(1, 2), result = c(1, 2, 4))
+getPlayerDataOD(profile, dir = "./data", file = "player001.csv", type = "batting", homeOrAway = c(1, 2, 3), result = c(1, 2, 3,5))
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
@@ -26,10 +26,10 @@ Name of the file to store the data into for e.g. tendulkar.csv. This can be used
 type of data required. This can be "batting" or "bowling"
 }
   \item{homeOrAway}{
-This is vector with either 1,2 or both. 1 is for home 2 is for away
+This is vector with either or all  1,2, 3. 1 is for home 2 is for away, 3 is for neutral venue
 }
   \item{result}{
-This is a vector that can take values 1,2,4. 1 - won match 2- lost match 4- draw 
+This is a vector that can take values 1,2,3,5. 1 - won match 2- lost match 3-tied 5- no result 
 }
 }
 \details{
@@ -58,7 +58,7 @@ Maintainer: Tinniam V Ganesh <tvganesh.85@gmail.com>
 \examples{
 # Both home and away. Result = won,lost and drawn
 sehwag <-getPlayerData(35263,dir="./mytest", file="sehwag.csv",
-type="batting", homeOrAway=c(1,2),result=c(1,2,4))
+type="batting", homeOrAway=c(1,2),result=c(1,2,3,5))
 
 # Only away. Get data only for won and lost innings
 sehwag <-getPlayerData(35263,dir="./mytest", file="sehwag.csv",
@@ -66,7 +66,7 @@ type="batting",homeOrAway=c(2),result=c(1,2))
 
 # Get bowling data and store in file for future
 kumble <- getPlayerData(49758,dir="./mytest",file="malinga.csv"
-type="bowling",homeOrAway=c(1),result=c(1,2))
+type="bowling")
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.

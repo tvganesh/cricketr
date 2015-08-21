@@ -2,8 +2,8 @@ Package: cricketr
 Type: Package
 Type: Package
 Title: The cricketr package can be used to analyze crickers based on ESPN Cricinfo stats
-Version: 0.0.7
-Date: 2015-08-08
+Version: 0.0.8
+Date: 2015-08-21
 Author: Tinniam V Ganesh
 Maintainer: Tinniam V Ganesh <tvganesh.85@gmail.com>
 Description: This package analyzes performances of cricketers based on stats in ESPN Cricinfo

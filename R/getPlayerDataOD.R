@@ -6,7 +6,7 @@
 # frame can # stored as a CSV file for use in other functions
 ##########################################################################################
 getPlayerDataOD <- function(profile,dir="./data",file="player001.csv",type="batting",
-                          homeOrAway=c(1,2),result=c(1,2,4)) {
+                          homeOrAway=c(1,2,3),result=c(1,2,3,5)) {
     
     # Initial url to ""
     url <-""
@@ -27,23 +27,32 @@ getPlayerDataOD <- function(profile,dir="./data",file="player001.csv",type="batt
     if (sum(homeOrAway == 2)==1) {
         str2="home_or_away=2;"
     }
-    HA<-paste(str1,str2,sep="")
+    if (sum(homeOrAway == 3)==1) {
+        str3="home_or_away=3;"
+    }
+    HA<-paste(str1,str2,str3,sep="")
     
     # Set the type batting or bowling
     t <- paste("type=",type,";",sep="");
     
     # Set the result based on input
-    str1=str2=str3=""
+    str1=str2=str3=str4=""
+    # Won
     if(sum(result==1)==1){
         str1 ="result=1;"
     }
+    # Lost
     if(sum(result==2)==1){
         str2 ="result=2;"
     }
-    if(sum(result==4)==1){
-        str3 ="result=4;"
+    # Tied
+    if(sum(result==3)==1){
+        str3 ="result=3;"
     }
-    result<- paste(str1,str2,str3,sep="")
+    if(sum(result==5)==1){
+        str4 ="result=5;"
+    }
+    result<- paste(str1,str2,str3,str4,sep="")
     
     # Create composite URL
     url <- paste(suburl1,player,suburl2,HA,result,suburl3,t,suburl4,sep="")
