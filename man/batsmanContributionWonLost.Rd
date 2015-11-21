@@ -4,15 +4,15 @@
 Disply the batsman's contribution in matches that were won and those that were lost
 }
 \description{
-Plot the comparitive contribution of the batsman in matches that were won and lost as box plots
+Plot the comparative contribution of the batsman in matches that were won and lost as box plots
 }
 \usage{
-batsmanContributionWonLost(profileNo, name = "A Hitter")
+batsmanContributionWonLost(file, name = "A Hitter")
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
-  \item{profileNo}{
-Profile number of batsman from ESPN Cricinfo (for e.g. Tendulkar's profile no:35320)
+  \item{file}{
+CSV file  of batsman from ESPN Cricinfo obtained with getPlayerDataSp()
 }
   \item{name}{
 Name of the batsman
@@ -47,8 +47,9 @@ Maintainer: Tinniam V Ganesh <tvganesh.85@gmail.com>
 \code{\link{batsmanPerfBoxHist}}
 }
 \examples{
-
-batsmanContributionWonLost(35320,"Sachin Tendulkar")
+# Get or use the <batsman>.csv obtained with getPlayerData()
+tendulkarSp <-getPlayerDataSp(35320,".","tendulkarsp.csv","batting")
+batsmanContributionWonLost("tendulkarsp.csv","Sachin Tendulkar")
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.

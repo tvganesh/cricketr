@@ -7,12 +7,12 @@ This function analyses the performance of the batsman at home and overseas
 This function plots the runs scored by the batsman at home and overseas
 }
 \usage{
-batsmanPerfHomeAway(profileNo, name = "A Hitter")
+batsmanPerfHomeAway(file, name = "A Hitter")
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
-  \item{profileNo}{
-Profile number of batsman from ESPN Cricinfo (for e.g. Tendulkar's profile no:35320)
+  \item{file}{
+CSV file of batsman from ESPN Cricinfo obtained with getPlayerDataSp()
 }
   \item{name}{
 Name of the batsman
@@ -48,7 +48,9 @@ Tinniam V Ganesh
 \code{\link{bowlerContributionWonLost}}
 }
 \examples{
-batsmanPerfHomeAway(35320,"Sachin Tendulkar")
+# Get or use the <batsman>.csv obtained with getPlayerData()
+tendulkarSp <-getPlayerDataSp(35320,".","tendulkarsp.csv","batting")
+batsmanPerfHomeAway("tendulkarsp.csv","Sachin Tendulkar")
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.

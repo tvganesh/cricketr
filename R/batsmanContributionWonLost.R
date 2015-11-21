@@ -1,21 +1,20 @@
 ##########################################################################################
 # Designed and developed by Tinniam V Ganesh
-# Date : 29 Jun 2015
+# Date : 21 Nov 2015
 # Function: batsmanContributionWonLost
 # This plots the batsman's contribution to won and lost matches
 #
 ###########################################################################################
-batsmanContributionWonLost <- function(profileNo,name="A Hitter") {
+
+batsmanContributionWonLost <- function(file,name="A Hitter") {
     
     # Get the data for the player in which the matches were won
-    won <-getPlayerData(profile=profileNo,dir="./mytest",file="won.csv",homeOrAway=c(1,2),result=c(1))
+    #tendulkarSp <-getPlayerDataSp(35320,".","tendulkarsp.csv","batting")
     
-    
-    # Get the data for the player in which the matches were lost or drawn
-    lost <-getPlayerData(profile=profileNo,dir="./mytest", file="lost.csv",homeOrAway=c(1,2),result=c(2,4))
-    won <- clean("./mytest/won.csv")
-    lost <- clean("./mytest/lost.csv")
-    
+    playersp <- clean(file)
+
+    won <- filter(playersp,result==1)
+    lost <- filter(playersp,result==2 | result == 4 )
     won$status="won"
     lost$status="lost"
     wonLost <- rbind(won,lost)
@@ -39,3 +38,4 @@ batsmanContributionWonLost <- function(profileNo,name="A Hitter") {
     mtext("Data source-Courtesy:ESPN Cricinfo", side=1, line=4, adj=1.0, cex=1, col="blue")  
     
 }
+

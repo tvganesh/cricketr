@@ -7,12 +7,12 @@ This function analyses the performance of the bowler at home and overseas
 This function plots the Wickets taken by the batsman at home and overseas
 }
 \usage{
-bowlerPerfHomeAway(profileNo, name = "A Googly")
+bowlerPerfHomeAway(file, name = "A Googly")
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
-  \item{profileNo}{
-Profile number of the bowler from ESPN Cricinfo (for e.g. Kumble's profile no:30176)
+  \item{file}{
+CSV file of the bowler from ESPN Cricinfo (for e.g. Kumble's profile no:30176)
 }
   \item{name}{
 Name of bowler
@@ -48,7 +48,10 @@ Maintainer: Tinniam V Ganesh <tvganesh.85@gmail.com>
 \code{\link{bowlerContributionWonLost}}
 }
 \examples{
-bowlerPerfHomeAway(30176,"Anil Kumble")
+# Get or use the <bowler>.csv obtained with getPlayerDataSp()
+kumbleSp <-getPlayerDataSp(30176,".","kumblesp.csv","bowling")
+bowlerPerfHomeAway("kumblesp.csv","Anil Kumble")
+
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.

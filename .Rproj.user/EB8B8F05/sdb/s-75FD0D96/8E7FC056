@@ -1,0 +1,16 @@
+{
+    "contents" : "# Plot the dismissals of the batsman as a pie chart\nbatsmanDismissals <- function(file, name=\"A Squarecut\") {\n\n  \n  batsman <- clean(file)\n  \n  lbls <- NULL\n  \n  d <- batsman$Dismissal\n  \n  # Convert to data frame\n  dismissal <- data.frame(table(d))\n  par(mar=c(0,0,2,2))\n  # Create a 3D pie chart\n  lbls <- dismissal$d\n  slices <- dismissal$Freq\n  pct <- round(slices/sum(slices)*100)\n  lbls <- paste(lbls, pct) # add percents to labels \n  lbls <- paste(lbls,\"%\",sep=\"\") # ad % to labels \n  atitle <- paste(name, \"-Pie chart of dismissals\")\n  \n  # Important note: Ensure the number of labels & slices match\n  pie3D(slices, labels=lbls,explode=0.1, main= atitle,pty=\"s\",labelcex=0.8)\n  \n  mtext(\"Data source-Courtesy:ESPN Cricinfo\", side=1, line=4, adj=1.0, cex=0.8, col=\"blue\") \n  \n}\n\n",
+    "created" : 1448094013228.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2502996061",
+    "id" : "8E7FC056",
+    "lastKnownWriteTime" : 1448088332,
+    "path" : "C:/software/cricket-package/git/cricketr/cricketr/R/batsmanDismissals.R",
+    "project_path" : "R/batsmanDismissals.R",
+    "properties" : {
+    },
+    "source_on_save" : false,
+    "type" : "r_source"
+}

@@ -5,16 +5,15 @@
 # This plots the batsman's performance in home versus abroad
 #
 ###########################################################################################
-batsmanPerfHomeAway <- function(profileNo,name="A Hitter") {
+batsmanPerfHomeAway <- function(file,name="A Hitter") {
     
     # Get the data for the games at home
-    home <-getPlayerData(profile=profileNo,dir=".",file="home.csv",homeOrAway=c(1),result=c(1,2,4))
+    #home <-getPlayerData(profile=profileNo,dir=".",file="home.csv",homeOrAway=c(1),result=c(1,2,4))
     
+    playersp <- clean(file)
+    home <- filter(playersp,ha==1)
+    away <- filter(playersp,ha==2)
     
-    # Get the data for games played overseas
-    away <-getPlayerData(profile=profileNo,dir=".", file="away.csv",homeOrAway=c(2),result=c(1,2,4))
-    home <- clean("./home.csv")
-    away <- clean("./away.csv")
     
     home$venue="Home"
     away$venue="Overseas"

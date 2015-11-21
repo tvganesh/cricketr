@@ -4,15 +4,15 @@
 Display the bowler's contribution in matches that were won and those that were lost
 }
 \description{
-Plot the comparitive contribution of the bowler in matches that were won and lost as box plots
+Plot the comparative contribution of the bowler in matches that were won and lost as box plots
 }
 \usage{
-bowlerContributionWonLost(profileNo, name = "A Doosra")
+bowlerContributionWonLost(file, name = "A Doosra")
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
-  \item{profileNo}{
-Profile number of the bowler from ESPN Cricinfo (for e.g. Kumble's profile no:30176)
+  \item{file}{
+CSV file of bowler from ESPN Cricinfo obtained with getPlayerDataSp()
 }
   \item{name}{
 Name of the bowler
@@ -47,7 +47,9 @@ Maintainer: Tinniam V Ganesh <tvganesh.85@gmail.com>
 \code{\link{checkBowlerInForm}}
 }
 \examples{
-bowlerContributionWonLost(30176,"Anil Kumble")
+# Get or use the <bowler>.csv obtained with getPlayerDataSp()
+kumbleSp <-getPlayerDataSp(30176,".","kumblesp.csv","bowling")
+bowlerContributionWonLost("kumblesp.csv","Anil Kumble")
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.

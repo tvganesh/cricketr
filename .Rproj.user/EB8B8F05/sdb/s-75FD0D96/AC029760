@@ -1,0 +1,16 @@
+{
+    "contents" : "##########################################################################################\n# Designed and developed by Tinniam V Ganesh\n# Date : 7 Jul 2015\n# Function: bowlerContributionWonLost\n# This plots the bowler's contribution to won and lost matches\n#\n###########################################################################################\nbowlerContributionWonLost <- function(file,name=\"A Doosra\") {\n    \n    # Get the data for the player in which the matches were won\n    #won <-getPlayerData(profile=profileNo,dir=\".\",file=\"won.csv\",homeOrAway=c(1,2),\n                        #result=c(1),type=\"bowling\")\n    \n    \n    # Get the data for the player in which the matches were lost or drawn\n    #lost <-getPlayerData(profile=profileNo,dir=\".\", file=\"lost.csv\",homeOrAway=c(1,2),\n                         #result=c(2,4),type=\"bowling\")\n    #won <- cleanBowlerData(\"./won.csv\")\n    #lost <- cleanBowlerData(\"./lost.csv\")\n    playersp <- cleanBowlerData(file)\n    won <- filter(playersp,result==1)\n    lost <- filter(playersp,result==2 | result == 4 )\n    \n    won$status=\"won\"\n    lost$status=\"lost\"\n    wonLost <- rbind(won,lost)\n    atitle <- paste(name,\"- Wickets in games won/lost-drawn\")\n    \n    # Create boxplots\n    boxplot(Wkts~status,data=wonLost,col=c(\"red\",\"green\"),xlab=\"Match outcome\",\n            ylab=\"Wickets\", main=atitle)\n    \n    \n    \n    a <- dim(won)\n    b <- dim(lost)\n    \n    \n    val1 <- paste(b[1], \"games lost/drawn\")\n    val2 <- paste(a[1],\"games won\")\n    vals <- list(val1,val2)\n    legend(x=\"top\", legend=vals, lty=c(1,1),   \n           lwd=c(7,7),col=c(\"red\",\"green\"),bty=\"n\")\n    \n    mtext(\"Data source-Courtesy:ESPN Cricinfo\", side=1, line=4, adj=1.0, cex=1, col=\"blue\")  \n    \n}\n",
+    "created" : 1448094031474.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1630184523",
+    "id" : "AC029760",
+    "lastKnownWriteTime" : 1448093069,
+    "path" : "C:/software/cricket-package/git/cricketr/cricketr/R/bowlerContributionWonLost.R",
+    "project_path" : "R/bowlerContributionWonLost.R",
+    "properties" : {
+    },
+    "source_on_save" : false,
+    "type" : "r_source"
+}
