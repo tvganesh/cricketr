@@ -5,11 +5,8 @@
 # This plots the batsman's contribution to won and lost matches
 #
 ###########################################################################################
-
+library(cricketr)
 batsmanContributionWonLost <- function(file,name="A Hitter") {
-    
-    # Get the data for the player in which the matches were won
-    #tendulkarSp <-getPlayerDataSp(35320,".","tendulkarsp.csv","batting")
     
     playersp <- clean(file)
 

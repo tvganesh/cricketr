@@ -7,8 +7,7 @@
 ###########################################################################################
 batsmanPerfHomeAway <- function(file,name="A Hitter") {
     
-    # Get the data for the games at home
-    #home <-getPlayerData(profile=profileNo,dir=".",file="home.csv",homeOrAway=c(1),result=c(1,2,4))
+    
     
     playersp <- clean(file)
     home <- filter(playersp,ha==1)

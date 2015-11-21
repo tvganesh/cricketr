@@ -7,16 +7,7 @@
 ###########################################################################################
 bowlerContributionWonLost <- function(file,name="A Doosra") {
     
-    # Get the data for the player in which the matches were won
-    #won <-getPlayerData(profile=profileNo,dir=".",file="won.csv",homeOrAway=c(1,2),
-                        #result=c(1),type="bowling")
     
-    
-    # Get the data for the player in which the matches were lost or drawn
-    #lost <-getPlayerData(profile=profileNo,dir=".", file="lost.csv",homeOrAway=c(1,2),
-                         #result=c(2,4),type="bowling")
-    #won <- cleanBowlerData("./won.csv")
-    #lost <- cleanBowlerData("./lost.csv")
     playersp <- cleanBowlerData(file)
     won <- filter(playersp,result==1)
     lost <- filter(playersp,result==2 | result == 4 )
@@ -29,7 +20,6 @@ bowlerContributionWonLost <- function(file,name="A Doosra") {
     # Create boxplots
     boxplot(Wkts~status,data=wonLost,col=c("red","green"),xlab="Match outcome",
             ylab="Wickets", main=atitle)
-    
     
     
     a <- dim(won)

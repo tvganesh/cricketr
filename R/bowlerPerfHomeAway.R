@@ -7,17 +7,8 @@
 ###########################################################################################
 bowlerPerfHomeAway <- function(file,name="A Googly") {
     
-    # Get the data for the games at home
-    #home <-getPlayerData(profile=profileNo,dir=".",file="home.csv",homeOrAway=c(1),
-                         #result=c(1,2,4),type="bowling")
     
-    
-    # Get the data for games played overseas
-    #away <-getPlayerData(profile=profileNo,dir=".", file="away.csv",homeOrAway=c(2),
-                         #result=c(1,2,4),type="bowling")
     playersp <- cleanBowlerData(file)
-    #home <- cleanBowlerData("./home.csv")
-    #away <- cleanBowlerData("./away.csv")
     home <- filter(playersp,ha==1)
     away <- filter(playersp,ha==2)
     
