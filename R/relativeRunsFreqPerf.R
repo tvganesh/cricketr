@@ -22,20 +22,20 @@ relativeRunsFreqPerf <- function(frames, names) {
         f <- cut(batsman$Runs, breaks=seq(from=0,to=400,by=10))
         
         # Create a table
-        g <- table(f)
+        m <- table(f)
         
         # Compute percentage
-        percentRuns <- (g/sum(g))*100
+        percentRuns <- (m/sum(m))*100
        
         
-        a <- as.data.frame(percentRuns)
+        pR <- as.data.frame(percentRuns)
         
         #Plot for the entire list
         if(i==1) {
-            plot(g,a$Freq, cex=0.8, xlab="Runs", ylab = "Run frequency Percentages (%)", type="l",
+            plot(g,pR$Freq, cex=0.8, xlab="Runs", ylab = "Run frequency Percentages (%)", type="l",
                  lty=1, main = "Relative runs freq (%) vs Runs", ylim=c(0,50),lwd=2)
         }
-        lines(g,a$Freq,col=col1[i], lwd=2.5,lty=1,type="l")
+        lines(g,pR$Freq,col=col1[i], lwd=2.5,lty=1,type="l")
     }
     
     type = rep(1,length(frames))
