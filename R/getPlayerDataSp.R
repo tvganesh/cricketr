@@ -44,6 +44,38 @@ getPlayerDataSp <- function(profileNo,tdir="./data",tfile="player001.csv",ttype=
     ad$ha<-2
     ad$result<-4
     
+    # The following snippet of code is required for the older players who
+    # had played matches with 8 BPO and 6 BPO. This ensures that the extra
+    # BPO column is there for all requests (homw/awy),(win,lost,drawn)
+    if(max(ncol(hw),ncol(hl),ncol(hd),ncol(aw),ncol(al),ncol(ad)) == 13){
+        if(ncol(hw) <13){
+            hw$BPO="6"
+            cbind(hw[1],hw[13],hw[2:12])
+        }
+        if (ncol(hl) <13){
+            print("hello")
+            hl$BPO="6"
+            cbind(hl[1],hl[13],hl[2:12])
+        }
+        if (ncol(hd) <13){
+            hd$BPO="6"
+            cbind(hd[1],hd[13],hd[2:12])
+        }
+        if (ncol(aw) <13){
+            aw$BPO="6"
+            cbind(aw[1],aw[13],aw[2:12])
+        }
+        if (ncol(al) <13){
+            al$BPO="6"
+            cbind(al[1],al[13],al[2:12])
+        }
+        if (ncol(ad) <13){
+            ad$BPO="6"
+            cbind(ad[1],ad[13],ad[2:12])
+        }
+    }
+    
+    
     a <-rbind(hw,hl,hd,aw,al,ad)
     
     afile <-paste(tdir,tfile,sep="/")
