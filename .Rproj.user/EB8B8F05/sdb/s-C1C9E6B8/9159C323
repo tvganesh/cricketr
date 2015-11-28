@@ -1,0 +1,17 @@
+{
+    "contents" : "##########################################################################################\n# Designed and developed by Tinniam V Ganesh\n# Date : 1 Jul 2015\n# Function: relativeBowlingER\n# This function computes and plots the relative bowling Economy Rate of the bowlers\n#\n###########################################################################################\n\n\nrelativeBowlingER <- function(frames, names) {\n    \n    col1 <- rainbow(length(frames))\n    for(i in 1:length(frames))\n    {   \n        # Clean the bowler data frame\n        bowler <- cleanBowlerData(frames[[i]])       \n        \n        # Get the max wickets taken by bowler\n        wkts <- c(0:max(bowler$Wkts))\n        \n        #compute mean economy rate  for the bowler\n        eRate <- ER(frames[[i]])\n        \n        # Plot the Economy Rate vs Wickets\n        if(i == 1) {\n            \n            plot(wkts,eRate,type=\"o\",pch=13,col=col1[i],lwd=3,\n                 xlab=\"wickets\",ylab=\"Economy rate\",main=\"Relative economy rate\")\n        }\n        lines(wkts,eRate,col=col1[i],lwd=3.0)\n    }\n    #i <- 1\n    type = rep(1,length(frames))\n    width = rep(2.5,length(frames))\n    legend(x=\"topright\",legend=names, lty=type,   \n           lwd=width,col=col1,bty=\"n\",cex=0.8)\n    \n    mtext(\"Data source-Courtesy:ESPN Cricinfo\", side=1, line=4, adj=1.0, cex=0.8, col=\"blue\")\n    \n}\n\nER <- function(file){\n    \n    # Clean the bowler data before processing\n    bowler <- cleanBowlerData(file)\n    \n    econRate <- NULL\n    # Calculate mean economy rate versus number of wickets taken. Loop for 0 to max wickets\n    for (i in 0: max(as.numeric(as.character(bowler$Wkts)))) {\n        \n        # Create a vector of Economy rate  for number of wickets 'i'\n        a <- bowler[bowler$Wkts == i,]$Econ\n        b <- as.numeric(as.character(a))\n        \n        # Compute the mean economy rate by using lapply on the list \n        econRate[i+1] <- lapply(list(b),mean)\n                        \n    }\n    econRate\n}",
+    "created" : 1448712980365.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2182421717",
+    "id" : "9159C323",
+    "lastKnownWriteTime" : 1448712898,
+    "path" : "C:/software/cricket-package/git/cricketr/cricketr/R/relativeBowlingER.R",
+    "project_path" : "R/relativeBowlingER.R",
+    "properties" : {
+    },
+    "relative_order" : 3,
+    "source_on_save" : false,
+    "type" : "r_source"
+}

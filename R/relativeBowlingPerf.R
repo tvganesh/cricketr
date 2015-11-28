@@ -8,7 +8,7 @@
 
 relativeBowlingPerf <- function(frames, names) {
 
-    col1 = c("red","blue","cyan","black","brown")
+    col1 <- rainbow(length(frames))
     for(i in 1:length(frames))
     {    
                

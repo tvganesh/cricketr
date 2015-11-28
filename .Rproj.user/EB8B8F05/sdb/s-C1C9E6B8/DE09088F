@@ -1,0 +1,17 @@
+{
+    "contents" : "##########################################################################################\n# Designed and developed by Tinniam V Ganesh\n# Date : 7 Aug 2015\n# Function: relativeWktRateTT\n# This function computes and plots the relative bowling Economy Rate of the bowlers\n#\n###########################################################################################\n\n\nrelativeWktRateTT <- function(frames, names) {\n    \n    col1 <- rainbow(length(frames))\n    for(i in 1:length(frames))\n    {   \n        # Clean the bowler data frame\n        bowler <- cleanBowlerData(frames[[i]])       \n        \n        # Get the max wickets taken by bowler\n        wkts <- c(0:max(bowler$Wkts))\n        wkts <- wkts[wkts != 0]\n        \n        #compute mean economy rate  for the bowler\n        wktRate <- WR(frames[[i]])\n        \n        # Check for NULL ( or no Wickets in the range taken)\n        a <- sapply(wktRate,is.null)\n        wktRate <- wktRate[!a]\n        wkts <- wkts[!a]\n        \n        # Plot the Economy Rate vs Wickets\n        if(i == 1) {\n            \n            plot(wkts,wktRate,type=\"o\",pch=13,col=col1[i],lwd=3,xlim=c(1,7),ylim=c(18,25),\n                 xlab=\"wickets\",ylab=\"Mean number of deliveries\",main=\"Relative Wicket Rate vs Deliveries\")\n        }\n        \n        lines(wkts,wktRate,col=col1[i],lwd=3.0)\n        points(wkts,wktRate,pch=13)\n    }\n    #i <- 1\n    type = rep(1,length(frames))\n    width = rep(2.5,length(frames))\n    legend(x=\"topright\",legend=names, lty=type,  \n           lwd=width,col=col1,bty=\"n\",cex=0.8)\n    \n    mtext(\"Data source-Courtesy:ESPN Cricinfo\", side=1, line=4, adj=1.0, cex=0.8, col=\"blue\")\n    \n}\n\nWR <- function(file){\n    \n    bowler <- clean(file)\n    wktRate <- NULL\n    w <- NULL\n    for (i in 0: max(as.numeric(as.character(bowler$Wkts)))) {\n        \n        # Create a vector of Economy rate  for number of wickets 'i'\n        balls <- bowler[bowler$Wkts == i,]$Overs *6\n        \n        if(length(balls != 0)) {\n            # Compute the mean Wicket rate by using lapply on the list \n            wktRate[i] <- lapply(list(balls),mean) \n            w[i] <-i\n        } \n        \n    }\n    #w <- w[!is.na(w)]\n    # Check for NULL ( or no Wickets in the range taken)\n    a <- sapply(wktRate,is.null)\n    \n    # Set NaN to plot a break where the \n    wktRate[a] <- NaN\n    wktRate\n}",
+    "created" : 1448712990855.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1530886328",
+    "id" : "DE09088F",
+    "lastKnownWriteTime" : 1448712923,
+    "path" : "C:/software/cricket-package/git/cricketr/cricketr/R/relativeWktRateTT.R",
+    "project_path" : "R/relativeWktRateTT.R",
+    "properties" : {
+    },
+    "relative_order" : 8,
+    "source_on_save" : false,
+    "type" : "r_source"
+}

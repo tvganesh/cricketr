@@ -1,0 +1,17 @@
+{
+    "contents" : "##########################################################################################\n# Designed and developed by Tinniam V Ganesh\n# Date : 8 Aug 2015\n# Function: relativeRunsFreqPerfODTT\n# This function computes and plots the run frequencies of a list of batsman\n#\n###########################################################################################\n\n# Overall performance used for comparing relative performance of batsman\nrelativeRunsFreqPerfODTT <- function(frames, names) {\n    col1 <- rainbow(length(frames))\n    \n    for (i in 1:length(frames)) {\n        \n        \n        # Create run ranges of 10s\n        g <- seq(from=5,to=250,by=10)\n        \n        # Calculate the runs frequency percent\n        pR <- percentRuns(frames[[i]])\n        \n        a <- as.data.frame(pR)\n        \n        #Plot for the entire list\n        if(i==1) {\n            plot(g,a$Freq, cex=0.8, xlab=\"Runs\", ylab = \"Run frequency Percentages (%)\", type=\"l\",\n                 lty=1, main = \"Relative runs freq (%) vs Runs\", xlim =c(0,150),ylim=c(0,50))\n        }\n        lines(g,a$Freq,col=col1[i], lwd=2.5,lty=1,type=\"l\")\n    }\n    \n    type = rep(1,length(frames))\n    width = rep(2.5,length(frames))\n    legend(x=\"right\",legend=names, lty=type,   \n           lwd=width,col=col1,bty=\"n\")\n    mtext(\"Data source-Courtesy:ESPN Cricinfo\", side=1, line=4, adj=1.0, cex=0.8, col=\"blue\")\n}\n\n\n\n# Helper function that calculates the percentage of runs in ranges of 10\npercentRuns <- function(file) {\n    \n    batsman <- clean(file)\n    \n    # Divide batting into groups of 20 runs\n    f <- cut(batsman$Runs, breaks=seq(from=0,to=250,by=10))\n    \n    # Create a table\n    g <- table(f)\n    \n    # Compute percentage\n    percentRuns <- (g/sum(g))*100\n    percentRuns\n}",
+    "created" : 1448712988533.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1367878441",
+    "id" : "B64F0ED0",
+    "lastKnownWriteTime" : 1448712936,
+    "path" : "C:/software/cricket-package/git/cricketr/cricketr/R/relativeRunsFreqPerfODTT.R",
+    "project_path" : "R/relativeRunsFreqPerfODTT.R",
+    "properties" : {
+    },
+    "relative_order" : 7,
+    "source_on_save" : false,
+    "type" : "r_source"
+}

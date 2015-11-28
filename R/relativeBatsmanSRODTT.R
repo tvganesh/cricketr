@@ -8,7 +8,7 @@
 #
 ###########################################################################################
 relativeBatsmanSRODTT <- function(frames, names) {
-    col1 = c("red","blue","cyan","black")
+    col1 <- rainbow(length(frames))
     for(i in 1:length(frames))
     {
         # Clean batsman data
