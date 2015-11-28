@@ -55,7 +55,7 @@ WR <- function(file){
     for (i in 0: max(as.numeric(as.character(bowler$Wkts)))) {
         
         # Create a vector of Economy rate  for number of wickets 'i'
-        balls <- bowler[bowler$Wkts == i,]$Overs *6
+        balls <- as.numeric(bowler[bowler$Wkts == i,]$Overs) *6
         
         if(length(balls != 0)) {
             # Compute the mean Wicket rate by using lapply on the list 
