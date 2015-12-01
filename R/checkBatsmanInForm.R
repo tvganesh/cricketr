@@ -50,14 +50,19 @@ checkBatsmanInForm <- function(file, name="A Hitter",alpha=0.05) {
         #print(str2)
         str4 <-paste(name, "'s Form Status: Out-of-Form because the p value:", pValue," is less than alpha= ", alpha)
     }
-    cat("*******************************************************************************************\n\n")
-    cat("Population size:",poplen," Mean of population:",mu,"\n")
-    cat("Sample size:",n," Mean of sample:",xbar, "SD of sample:", s,"\n\n")
-    cat("Null hypothesis H0 :",name,"'s sample average is within 95% confidence interval 
-        of population average\n")
-    cat("Alternative hypothesis Ha :",name,"'s sample average is below the 95% confidence
-        interval of population average\n\n")
-    print(str4)
-    cat("*******************************************************************************************\n\n")
+    # Output the text as a string
+    m1 <- paste("**************************** Form status of",name,"****************************\n\n")
+    m2 <- paste("Population size:",poplen," Mean of population:",mu,"\n")
+    m3 <- paste("Sample size:",n," Mean of sample:",xbar, "SD of sample:", s,"\n\n")
+    m4 <- paste("Null hypothesis H0 :",name,"'s sample average is within 95% confidence interval of population average\n")
+    m5 <- paste("Alternative hypothesis Ha :",name,"'s sample average is below the 95% confidence interval of population average\n\n")
+    m6 <-paste(str4,"\n")
+    m7 <- paste("*******************************************************************************************\n\n")
+    
+    m8 <- paste(m1,m2,m3,m4,m5,m6,m7)
+    m8
+    
+    
+    
     
 }

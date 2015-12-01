@@ -1,0 +1,17 @@
+{
+    "contents" : "##########################################################################################\n# Designed and developed by Tinniam V Ganesh\n# Date : 29 Jun 2015\n# Function: checkBowlerInForm\n# This function checks whether the bowler is In-Form or Out-of-Form\n#\n###########################################################################################\ncheckBowlerInForm <- function(file, name=\"A N Inswinger\",alpha=0.05) {\n    \n    # Clean the file\n    bowler <- cleanBowlerData(file)\n    \n    # Get the runs in career\n    wkts <- bowler$Wkts\n    len <- length(wkts)\n    \n    # Take 90% as polpulation\n    poplen <- floor(0.9 * len)\n    popwkts <- wkts[1:poplen]\n    \n    #Calculate the mean 'mu' of this runs population\n    mu <- round(mean(popwkts),2)\n    \n    # Get the offset for the sample \n    m <- poplen+1\n    \n    # Create a sample from last 10% of runs scored\n    sample <- wkts[m:len]\n    \n    # Calculate mean & SD of sample\n    xbar <- round(mean(sample),2)\n    s <- round(sd(sample),2)\n    \n    # No of degress of freedom\n    n <- len-poplen\n    \n    # The NULL hypothesis H0 will be the batsman scores at the mean or above the meanb\n    # Compute t statistic\n    t <- (xbar - mu)/(s/sqrt(n))\n    \n    # The Ha will be that the batsman scores less than the current average and hence out of form\n    # Compute the lower tail\n    pValue <- round(pt(t, n, lower.tail = TRUE),6)\n    \n    \n    if(pValue > alpha){\n        \n        str4 <- paste(name,\"'s Form Status: In-Form because the p value:\", pValue,\" is greater than alpha= \", alpha)\n    } else {\n        #print(str2)\n        str4 <-paste(name, \"'s Form Status: Out-of-Form because the p value:\", pValue,\" is less than alpha= \", alpha)\n    }\n    # Output the text as a string\n    m1 <- paste(\"**************************** Form status of\",name,\"****************************\\n\\n\")\n    m2 <- paste(\"Population size:\",poplen,\" Mean of population:\",mu,\"\\n\")\n    m3 <- paste(\"Sample size:\",n,\" Mean of sample:\",xbar, \"SD of sample:\", s,\"\\n\\n\")\n    m4 <- paste(\"Null hypothesis H0 :\",name,\"'s sample average is within 95% confidence interval \n        of population average\\n\")\n    m5 <- paste(\"Alternative hypothesis Ha :\",name,\"'s sample average is below the 95% confidence\n        interval of population average\\n\\n\")\n    m6 <- paste(str4,\"\\n\")\n    m7 <- \"*******************************************************************************************\\n\\n\"\n    m8 <- paste(m1,m2,m3,m4,m5,m6,m7)\n    m8\n}",
+    "created" : 1448978993534.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3285031959",
+    "id" : "BFD3AA2C",
+    "lastKnownWriteTime" : 1448979982,
+    "path" : "C:/software/cricket-package/git/cricketr/cricketr/R/checkBowlerInForm.R",
+    "project_path" : "R/checkBowlerInForm.R",
+    "properties" : {
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "type" : "r_source"
+}
