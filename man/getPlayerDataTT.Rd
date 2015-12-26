@@ -31,7 +31,8 @@ This is a vector that can take values 1,2,3,5. 1 - won match 2- lost match 3-tie
 }
 }
 \details{
-%%  ~~ If necessary, more details than the description above ~~
+More details can be found in my short video tutorial in Youtube
+https://www.youtube.com/watch?v=q9uMPFVsXsI
 }
 \value{
 Returns the player's dataframe
@@ -54,11 +55,11 @@ Maintainer: Tinniam V Ganesh <tvganesh.85@gmail.com>
 }
 \examples{
 # Only away. Get data only for won and lost innings
-kohli <-getPlayerData(253802,dir=".", file="kohli.csv",
+kohli <-getPlayerDataTT(253802,dir=".", file="kohli.csv",
 type="batting")
 
 # Get bowling data and store in file for future
-ashwin <- getPlayerData(26421,dir=".",file="ashwin.csv"
+ashwin <- getPlayerDataTT(26421,dir=".",file="ashwin.csv",
 type="bowling")
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the

@@ -8,6 +8,7 @@
 # Plot the Percentage of runs in 6s vs Runs scored
 batsman6s <- function(file, name="A Hookshot") {
     
+    X6s <- NULL
     # Clean the batsman file and create a complete data frame
     df <- clean (file)  
   

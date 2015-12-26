@@ -9,7 +9,7 @@
 
 batsmanAvgRunsOpposition <- function(file, name="A Latecut"){
     
-    
+    Opposition <-Runs <- NULL
     batsman <- clean(file)
     
     # Use dplyr's summarise to group by Opposition and compute mean runs and count

@@ -13,7 +13,7 @@ batsmanPerfBoxHist <- function(file, name="A Hitter") {
     atitle <- paste(name,"'s", " - Runs Frequency vs Runs")
     
     # Set the layout and the margins. 
-    nf <- layout(mat = matrix(c(1,2),2,1, byrow=TRUE),  height = c(1,3))
+    nf <- layout(mat = matrix(c(1,2),2,1, byrow=TRUE),  heights = c(1,3))
     par(mar=c(2,2,1,1))
     
     # Draw the boxplot

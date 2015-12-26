@@ -1,0 +1,297 @@
+Runs,Mins,BF,4s,6s,SR,Pos,Dismissal,Inns,Opposition,Ground,Start Date,
+95,363,267,6,0,35.58,7,caught,2,v England,Lord's,20-Jun-96,Test # 1328
+84,177,149,12,0,56.37,7,caught,1,v England,Nottingham,4-Jul-96,Test # 1329
+8,24,21,1,0,38.09,5,caught,3,v England,Nottingham,4-Jul-96,Test # 1329
+40,65,64,5,0,62.5,6,caught,2,v Australia,Delhi,10-Oct-96,Test # 1335
+DNB,-,-,-,-,-,-,-,4,v Australia,Delhi,10-Oct-96,Test # 1335
+24,124,98,3,0,24.48,3,lbw,1,v South Africa,Ahmedabad,20-Nov-96,Test # 1338
+34,149,110,5,0,30.9,3,lbw,3,v South Africa,Ahmedabad,20-Nov-96,Test # 1338
+31,78,48,5,0,64.58,2,caught,2,v South Africa,Kolkata,27-Nov-96,Test # 1341
+23,191,127,3,0,18.11,2,bowled,4,v South Africa,Kolkata,27-Nov-96,Test # 1341
+7,64,55,0,0,12.72,5,lbw,1,v South Africa,Kanpur,8-Dec-96,Test # 1344
+56,181,130,8,0,43.07,7,caught,3,v South Africa,Kanpur,8-Dec-96,Test # 1344
+7,31,23,0,0,30.43,6,lbw,2,v South Africa,Durban,26-Dec-96,Test # 1347
+27*,120,73,5,0,36.98,6,not out,4,v South Africa,Durban,26-Dec-96,Test # 1347
+2,55,41,0,0,4.87,2,bowled,2,v South Africa,Cape Town,2-Jan-97,Test # 1349
+12,69,48,1,0,25,3,caught,4,v South Africa,Cape Town,2-Jan-97,Test # 1349
+148,541,362,21,0,40.88,3,caught,1,v South Africa,Johannesburg,16-Jan-97,Test # 1350
+81,208,146,11,0,55.47,3,caught,3,v South Africa,Johannesburg,16-Jan-97,Test # 1350
+43,202,149,5,0,28.85,3,caught,2,v West Indies,Kingston,6-Mar-97,Test # 1357
+51*,161,141,5,0,36.17,3,not out,4,v West Indies,Kingston,6-Mar-97,Test # 1357
+57,268,182,4,0,31.31,3,bowled,2,v West Indies,Port of Spain,14-Mar-97,Test # 1361
+78,372,243,8,0,32.09,3,bowled,2,v West Indies,Bridgetown,27-Mar-97,Test # 1363
+2,36,21,0,0,9.52,3,caught,4,v West Indies,Bridgetown,27-Mar-97,Test # 1363
+37*,133,106,3,0,34.9,3,not out,2,v West Indies,St John's,4-Apr-97,Test # 1364
+92,380,295,8,1,31.18,3,caught,1,v West Indies,Georgetown,17-Apr-97,Test # 1365
+69,250,197,10,0,35.02,3,caught,1,v Sri Lanka,Colombo (RPS),2-Aug-97,Test # 1374
+2,18,9,0,0,22.22,3,caught,2,v Sri Lanka,Colombo (SSC),9-Aug-97,Test # 1376
+6,67,46,0,0,13.04,3,caught,4,v Sri Lanka,Colombo (SSC),9-Aug-97,Test # 1376
+34,149,117,4,0,29.05,3,caught,2,v Sri Lanka,Mohali,19-Nov-97,Test # 1385
+92,330,221,10,1,41.62,3,caught,1,v Sri Lanka,Nagpur,26-Nov-97,Test # 1387
+93,302,219,14,0,42.46,3,caught,1,v Sri Lanka,Mumbai,3-Dec-97,Test # 1390
+85,153,121,8,0,70.24,3,caught,3,v Sri Lanka,Mumbai,3-Dec-97,Test # 1390
+52,241,169,5,0,30.76,3,caught,1,v Australia,Chennai,6-Mar-98,Test # 1405
+56,214,149,7,0,37.58,3,caught,3,v Australia,Chennai,6-Mar-98,Test # 1405
+86,209,150,12,0,57.33,3,caught,2,v Australia,Kolkata,18-Mar-98,Test # 1409
+23,131,94,4,0,24.46,3,bowled,1,v Australia,Bangalore,25-Mar-98,Test # 1413
+6,63,31,0,0,19.35,3,caught,3,v Australia,Bangalore,25-Mar-98,Test # 1413
+118,423,300,17,0,39.33,4,caught,2,v Zimbabwe,Harare,7-Oct-98,Test # 1425
+44,191,115,3,0,38.26,3,caught,4,v Zimbabwe,Harare,7-Oct-98,Test # 1425
+0,8,6,0,0,0,3,lbw,1,v New Zealand,Wellington,26-Dec-98,Test # 1435
+28,102,77,5,0,36.36,3,bowled,3,v New Zealand,Wellington,26-Dec-98,Test # 1435
+190,490,354,31,0,53.67,3,caught,2,v New Zealand,Hamilton,2-Jan-99,Test # 1438
+103*,163,136,16,0,75.73,3,not out,4,v New Zealand,Hamilton,2-Jan-99,Test # 1438
+53,152,113,5,1,46.9,3,lbw,2,v Pakistan,Chennai,28-Jan-99,Test # 1442
+10,110,55,1,0,18.18,3,bowled,4,v Pakistan,Chennai,28-Jan-99,Test # 1442
+33,139,101,4,0,32.67,3,lbw,1,v Pakistan,Delhi,4-Feb-99,Test # 1443
+29,121,72,2,0,40.27,3,caught,3,v Pakistan,Delhi,4-Feb-99,Test # 1443
+24,108,93,2,0,25.8,4,bowled,2,v Pakistan,Kolkata,16-Feb-99,Test # 1444
+13,54,33,1,0,39.39,3,caught,4,v Pakistan,Kolkata,16-Feb-99,Test # 1444
+107,314,218,12,0,49.08,3,caught,1,v Sri Lanka,Colombo (SSC),24-Feb-99,Test # 1445
+DNB,-,-,-,-,-,-,-,3,v Sri Lanka,Colombo (SSC),24-Feb-99,Test # 1445
+1,6,8,0,0,12.5,3,caught,1,v New Zealand,Mohali,10-Oct-99,Test # 1462
+144,418,327,18,0,44.03,3,bowled,3,v New Zealand,Mohali,10-Oct-99,Test # 1462
+48,193,148,7,0,32.43,3,caught,2,v New Zealand,Kanpur,22-Oct-99,Test # 1464
+1,5,9,0,0,11.11,3,lbw,4,v New Zealand,Kanpur,22-Oct-99,Test # 1464
+33,87,64,6,0,51.56,3,caught,1,v New Zealand,Ahmedabad,29-Oct-99,Test # 1465
+12,43,20,0,0,60,3,run out,3,v New Zealand,Ahmedabad,29-Oct-99,Test # 1465
+35,166,126,1,0,27.77,4,caught,2,v Australia,Adelaide,10-Dec-99,Test # 1476
+6,29,16,0,0,37.5,4,caught,4,v Australia,Adelaide,10-Dec-99,Test # 1476
+9,55,36,1,0,25,3,caught,2,v Australia,Melbourne,26-Dec-99,Test # 1479
+14,160,109,0,0,12.84,3,caught,4,v Australia,Melbourne,26-Dec-99,Test # 1479
+29,102,74,1,0,39.18,3,caught,1,v Australia,Sydney,2-Jan-00,Test # 1481
+0,9,7,0,0,0,3,caught,3,v Australia,Sydney,2-Jan-00,Test # 1481
+22,111,79,4,0,27.84,3,bowled,1,v South Africa,Mumbai,24-Feb-00,Test # 1484
+37,187,127,6,0,29.13,3,bowled,3,v South Africa,Mumbai,24-Feb-00,Test # 1484
+17,112,75,2,0,22.66,2,caught,1,v South Africa,Bangalore,2-Mar-00,Test # 1486
+18,78,61,3,0,29.5,1,caught,3,v South Africa,Bangalore,2-Mar-00,Test # 1486
+28,71,48,5,0,58.33,4,caught,2,v Bangladesh,Dhaka,10-Nov-00,Test # 1512
+41*,50,49,5,1,83.67,3,not out,4,v Bangladesh,Dhaka,10-Nov-00,Test # 1512
+200*,541,350,27,0,57.14,3,not out,2,v Zimbabwe,Delhi,18-Nov-00,Test # 1515
+70*,152,91,8,0,76.92,3,not out,4,v Zimbabwe,Delhi,18-Nov-00,Test # 1515
+162,402,301,20,1,53.82,3,caught,1,v Zimbabwe,Nagpur,25-Nov-00,Test # 1517
+9,33,19,1,0,47.36,3,caught,1,v Australia,Mumbai,27-Feb-01,Test # 1531
+39,259,196,5,0,19.89,3,bowled,3,v Australia,Mumbai,27-Feb-01,Test # 1531
+25,115,82,4,0,30.48,3,bowled,2,v Australia,Kolkata,11-Mar-01,Test # 1535
+180,446,353,20,0,50.99,6,run out,3,v Australia,Kolkata,11-Mar-01,Test # 1535
+81,178,140,12,1,57.85,6,caught,2,v Australia,Chennai,18-Mar-01,Test # 1539
+4,8,5,1,0,80,6,caught,4,v Australia,Chennai,18-Mar-01,Test # 1539
+44,118,67,7,0,65.67,7,caught,2,v Zimbabwe,Bulawayo,7-Jun-01,Test # 1548
+DNB,-,-,-,-,-,-,-,4,v Zimbabwe,Bulawayo,7-Jun-01,Test # 1548
+68*,173,115,8,0,59.13,6,not out,1,v Zimbabwe,Harare,15-Jun-01,Test # 1549
+26,100,79,3,0,32.91,5,caught,3,v Zimbabwe,Harare,15-Jun-01,Test # 1549
+12,42,28,1,0,42.85,4,caught,1,v Sri Lanka,Galle,14-Aug-01,Test # 1555
+61*,219,172,6,0,35.46,4,not out,3,v Sri Lanka,Galle,14-Aug-01,Test # 1555
+15,33,19,3,0,78.94,3,lbw,2,v Sri Lanka,Kandy,22-Aug-01,Test # 1557
+75,184,123,12,0,60.97,3,caught,4,v Sri Lanka,Kandy,22-Aug-01,Test # 1557
+36,129,85,2,0,42.35,3,caught,1,v Sri Lanka,Colombo (SSC),29-Aug-01,Test # 1559
+36,152,124,4,0,29.03,3,run out,3,v Sri Lanka,Colombo (SSC),29-Aug-01,Test # 1559
+2,15,10,0,0,20,2,caught,1,v South Africa,Bloemfontein,3-Nov-01,Test # 1564
+11,20,17,0,0,64.7,2,caught,3,v South Africa,Bloemfontein,3-Nov-01,Test # 1564
+2,16,11,0,0,18.18,3,bowled,2,v South Africa,Port Elizabeth,16-Nov-01,Test # 1569
+87,312,241,12,0,36.09,3,caught,4,v South Africa,Port Elizabeth,16-Nov-01,Test # 1569
+86,301,206,10,0,41.74,4,lbw,2,v England,Mohali,3-Dec-01,Test # 1574
+DNB,-,-,-,-,-,-,-,4,v England,Mohali,3-Dec-01,Test # 1574
+7,93,60,0,0,11.66,3,caught,2,v England,Ahmedabad,11-Dec-01,Test # 1575
+26*,155,108,2,0,24.07,3,not out,4,v England,Ahmedabad,11-Dec-01,Test # 1575
+3,73,61,0,0,4.91,5,caught,2,v England,Bangalore,19-Dec-01,Test # 1578
+65,235,179,8,0,36.31,3,bowled,2,v Zimbabwe,Nagpur,21-Feb-02,Test # 1589
+1,13,8,0,0,12.5,5,run out,2,v Zimbabwe,Delhi,28-Feb-02,Test # 1591
+6,35,22,1,0,27.27,6,caught,4,v Zimbabwe,Delhi,28-Feb-02,Test # 1591
+144*,436,345,23,0,41.73,5,not out,2,v West Indies,Georgetown,11-Apr-02,Test # 1598
+67,224,147,11,0,45.57,3,bowled,1,v West Indies,Port of Spain,19-Apr-02,Test # 1599
+36,91,62,6,0,58.06,3,caught,3,v West Indies,Port of Spain,19-Apr-02,Test # 1599
+17,79,47,2,0,36.17,3,run out,1,v West Indies,Bridgetown,2-May-02,Test # 1601
+14,94,61,0,0,22.95,3,caught,3,v West Indies,Bridgetown,2-May-02,Test # 1601
+91,378,291,12,0,31.27,3,bowled,1,v West Indies,St John's,10-May-02,Test # 1602
+5,12,11,0,0,45.45,3,lbw,2,v West Indies,Kingston,18-May-02,Test # 1604
+30,79,58,6,0,51.72,3,lbw,4,v West Indies,Kingston,18-May-02,Test # 1604
+46,238,162,6,0,28.39,3,caught,2,v England,Lord's,25-Jul-02,Test # 1610
+63,153,112,10,0,56.25,3,bowled,4,v England,Lord's,25-Jul-02,Test # 1610
+13,74,43,2,0,30.23,3,caught,1,v England,Nottingham,8-Aug-02,Test # 1612
+115,338,244,16,0,47.13,3,lbw,3,v England,Nottingham,8-Aug-02,Test # 1612
+148,429,307,23,0,48.2,3,stumped,1,v England,Leeds,22-Aug-02,Test # 1613
+217,629,468,28,0,46.36,3,run out,2,v England,The Oval,5-Sep-02,Test # 1614
+100*,345,242,12,0,41.32,3,retired notout,1,v West Indies,Mumbai,9-Oct-02,Test # 1616
+11,32,16,0,0,68.75,3,bowled,2,v West Indies,Chennai,17-Oct-02,Test # 1618
+6*,26,11,0,0,54.54,3,not out,4,v West Indies,Chennai,17-Oct-02,Test # 1618
+14,36,19,1,0,73.68,3,lbw,1,v West Indies,Kolkata,30-Oct-02,Test # 1622
+17,72,39,2,0,43.58,3,lbw,3,v West Indies,Kolkata,30-Oct-02,Test # 1622
+76,244,173,13,0,43.93,3,bowled,1,v New Zealand,Wellington,12-Dec-02,Test # 1631
+7,22,14,1,0,50,3,bowled,3,v New Zealand,Wellington,12-Dec-02,Test # 1631
+9,86,56,0,0,16.07,3,caught,1,v New Zealand,Hamilton,19-Dec-02,Test # 1633
+39,154,100,6,0,39,3,caught,3,v New Zealand,Hamilton,19-Dec-02,Test # 1633
+222,578,387,28,1,57.36,3,caught,1,v New Zealand,Ahmedabad,8-Oct-03,Test # 1660
+73,124,86,6,0,84.88,3,caught,3,v New Zealand,Ahmedabad,8-Oct-03,Test # 1660
+13,96,59,1,0,22.03,3,caught,2,v New Zealand,Mohali,16-Oct-03,Test # 1662
+5,27,24,0,0,20.83,3,caught,3,v New Zealand,Mohali,16-Oct-03,Test # 1662
+1,14,11,0,0,9.09,3,caught,2,v Australia,Brisbane,4-Dec-03,Test # 1671
+43*,66,47,6,0,91.48,3,not out,4,v Australia,Brisbane,4-Dec-03,Test # 1671
+233,594,446,23,1,52.24,3,caught,2,v Australia,Adelaide,12-Dec-03,Test # 1673
+72*,241,170,7,0,42.35,3,not out,4,v Australia,Adelaide,12-Dec-03,Test # 1673
+49,105,89,5,0,55.05,3,caught,1,v Australia,Melbourne,26-Dec-03,Test # 1678
+92,332,244,13,0,37.7,3,caught,3,v Australia,Melbourne,26-Dec-03,Test # 1678
+38,119,82,7,0,46.34,3,lbw,1,v Australia,Sydney,2-Jan-04,Test # 1680
+91*,166,114,11,1,79.82,3,not out,3,v Australia,Sydney,2-Jan-04,Test # 1680
+6,12,10,1,0,60,3,caught,1,v Pakistan,Multan,28-Mar-04,Test # 1693
+33,123,72,6,0,45.83,3,caught,1,v Pakistan,Lahore,5-Apr-04,Test # 1695
+0,3,0,0,0,-,3,run out,3,v Pakistan,Lahore,5-Apr-04,Test # 1695
+270,740,495,34,1,54.54,3,bowled,2,v Pakistan,Rawalpindi,13-Apr-04,Test # 1697
+0,9,5,0,0,0,3,bowled,2,v Australia,Bangalore,6-Oct-04,Test # 1713
+60,256,188,11,0,31.91,3,lbw,4,v Australia,Bangalore,6-Oct-04,Test # 1713
+26,117,95,3,0,27.36,4,bowled,2,v Australia,Chennai,14-Oct-04,Test # 1714
+DNB,-,-,-,-,-,-,-,4,v Australia,Chennai,14-Oct-04,Test # 1714
+21,173,140,2,0,15,3,caught,2,v Australia,Nagpur,26-Oct-04,Test # 1718
+2,7,6,0,0,33.33,3,bowled,4,v Australia,Nagpur,26-Oct-04,Test # 1718
+31*,176,104,3,1,29.8,3,not out,1,v Australia,Mumbai,3-Nov-04,Test # 1720
+27,110,74,3,0,36.48,5,caught,3,v Australia,Mumbai,3-Nov-04,Test # 1720
+54,288,179,5,0,30.16,3,caught,2,v South Africa,Kanpur,20-Nov-04,Test # 1722
+80,328,247,8,0,32.38,3,bowled,2,v South Africa,Kolkata,28-Nov-04,Test # 1724
+47*,123,104,4,0,45.19,3,not out,4,v South Africa,Kolkata,28-Nov-04,Test # 1724
+0,12,7,0,0,0,3,bowled,2,v Bangladesh,Dhaka,10-Dec-04,Test # 1725
+160,387,304,24,0,52.63,3,caught,1,v Bangladesh,Chittagong,17-Dec-04,Test # 1727
+50,150,117,7,0,42.73,3,caught,2,v Pakistan,Mohali,8-Mar-05,Test # 1738
+DNB,-,-,-,-,-,-,-,4,v Pakistan,Mohali,8-Mar-05,Test # 1738
+110,290,222,15,1,49.54,3,caught,1,v Pakistan,Kolkata,16-Mar-05,Test # 1741
+135,378,283,15,0,47.7,3,caught,3,v Pakistan,Kolkata,16-Mar-05,Test # 1741
+22,82,53,2,0,41.5,3,lbw,2,v Pakistan,Bangalore,24-Mar-05,Test # 1743
+16,70,64,2,0,25,3,caught,4,v Pakistan,Bangalore,24-Mar-05,Test # 1743
+77,147,117,10,0,65.81,3,caught,2,v Zimbabwe,Bulawayo,13-Sep-05,Test # 1765
+98,337,237,14,0,41.35,3,bowled,2,v Zimbabwe,Harare,20-Sep-05,Test # 1767
+DNB,-,-,-,-,-,-,-,4,v Zimbabwe,Harare,20-Sep-05,Test # 1767
+0,5,6,0,0,0,3,caught,2,v Australia,Sydney,14-Oct-05,Test # 1768
+23,110,68,3,0,33.82,3,caught,4,v Australia,Sydney,14-Oct-05,Test # 1768
+32,142,105,3,0,30.47,3,caught,1,v Sri Lanka,Chennai,2-Dec-05,Test # 1775
+24,62,43,5,0,55.81,2,caught,1,v Sri Lanka,Delhi,10-Dec-05,Test # 1776
+53,118,89,6,0,59.55,5,run out,3,v Sri Lanka,Delhi,10-Dec-05,Test # 1776
+128*,332,233,19,0,54.93,2,not out,2,v Pakistan,Lahore,13-Jan-06,Test # 1781
+103,342,220,16,0,46.81,2,run out,2,v Pakistan,Faisalabad,21-Jan-06,Test # 1782
+5*,28,31,0,0,16.12,2,not out,4,v Pakistan,Faisalabad,21-Jan-06,Test # 1782
+3,20,12,0,0,25,2,caught,2,v Pakistan,Karachi,29-Jan-06,Test # 1783
+2,2,4,0,0,50,2,caught,4,v Pakistan,Karachi,29-Jan-06,Test # 1783
+40,195,122,6,0,32.78,3,lbw,2,v England,Nagpur,1-Mar-06,Test # 1785
+71,266,187,10,0,37.96,3,bowled,4,v England,Nagpur,1-Mar-06,Test # 1785
+95,322,208,10,0,45.67,3,bowled,2,v England,Mohali,9-Mar-06,Test # 1788
+42*,102,77,3,0,54.54,3,not out,4,v England,Mohali,9-Mar-06,Test # 1788
+52,236,155,6,0,33.54,3,caught,2,v England,Mumbai,18-Mar-06,Test # 1791
+9,111,60,1,0,15,4,caught,4,v England,Mumbai,18-Mar-06,Test # 1791
+49,249,173,4,0,28.32,4,caught,1,v West Indies,St John's,2-Jun-06,Test # 1805
+62,274,177,2,0,35.02,4,caught,3,v West Indies,St John's,2-Jun-06,Test # 1805
+146,344,234,16,0,62.39,4,caught,1,v West Indies,Gros Islet,10-Jun-06,Test # 1806
+22,64,46,0,0,47.82,4,lbw,2,v West Indies,Basseterre,22-Jun-06,Test # 1807
+68*,168,131,4,1,51.9,4,not out,4,v West Indies,Basseterre,22-Jun-06,Test # 1807
+81,340,215,10,0,37.67,4,caught,1,v West Indies,Kingston,30-Jun-06,Test # 1808
+68,257,166,12,0,40.96,4,bowled,3,v West Indies,Kingston,30-Jun-06,Test # 1808
+32,151,83,5,0,38.55,3,caught,1,v South Africa,Johannesburg,15-Dec-06,Test # 1823
+1,16,9,0,0,11.11,3,caught,3,v South Africa,Johannesburg,15-Dec-06,Test # 1823
+11,43,23,2,0,47.82,3,lbw,2,v South Africa,Durban,26-Dec-06,Test # 1825
+5,34,25,1,0,20,3,caught,4,v South Africa,Durban,26-Dec-06,Test # 1825
+29,63,58,5,0,50,3,caught,1,v South Africa,Cape Town,2-Jan-07,Test # 1827
+47,204,134,5,0,35.07,3,caught,3,v South Africa,Cape Town,2-Jan-07,Test # 1827
+61,154,99,11,0,61.61,3,caught,1,v Bangladesh,Chittagong,18-May-07,Test # 1832
+2,19,11,0,0,18.18,3,caught,3,v Bangladesh,Chittagong,18-May-07,Test # 1832
+129,215,176,15,1,73.29,3,caught,1,v Bangladesh,Dhaka,25-May-07,Test # 1833
+2,15,12,0,0,16.66,3,caught,2,v England,Lord's,19-Jul-07,Test # 1840
+9,18,12,2,0,75,3,lbw,4,v England,Lord's,19-Jul-07,Test # 1840
+37,136,94,5,0,39.36,3,caught,2,v England,Nottingham,27-Jul-07,Test # 1841
+11*,45,28,2,0,39.28,3,not out,4,v England,Nottingham,27-Jul-07,Test # 1841
+55,131,101,8,0,54.45,3,bowled,1,v England,The Oval,9-Aug-07,Test # 1842
+12,140,96,1,0,12.5,3,caught,3,v England,The Oval,9-Aug-07,Test # 1842
+38,108,73,8,0,52.05,3,bowled,2,v Pakistan,Delhi,22-Nov-07,Test # 1849
+34,141,96,5,0,35.41,3,bowled,4,v Pakistan,Delhi,22-Nov-07,Test # 1849
+50,170,118,7,0,42.37,3,caught,1,v Pakistan,Kolkata,30-Nov-07,Test # 1850
+8*,20,13,1,0,61.53,5,not out,3,v Pakistan,Kolkata,30-Nov-07,Test # 1850
+19,45,28,3,0,67.85,3,caught,1,v Pakistan,Bangalore,8-Dec-07,Test # 1852
+42,211,121,6,0,34.71,3,lbw,3,v Pakistan,Bangalore,8-Dec-07,Test # 1852
+5,103,66,0,0,7.57,2,lbw,2,v Australia,Melbourne,26-Dec-07,Test # 1855
+16,154,114,2,0,14.03,1,lbw,4,v Australia,Melbourne,26-Dec-07,Test # 1855
+53,240,160,9,0,33.12,2,caught,2,v Australia,Sydney,2-Jan-08,Test # 1857
+38,152,103,6,0,36.89,1,caught,4,v Australia,Sydney,2-Jan-08,Test # 1857
+93,278,183,14,0,50.81,3,caught,1,v Australia,Perth,16-Jan-08,Test # 1862
+3,5,5,0,0,60,4,caught,3,v Australia,Perth,16-Jan-08,Test # 1862
+18,73,55,0,0,32.72,3,caught,1,v Australia,Adelaide,24-Jan-08,Test # 1863
+11*,98,64,2,0,17.18,3,retired notout,3,v Australia,Adelaide,24-Jan-08,Test # 1863
+111,396,291,15,0,38.14,3,caught,2,v South Africa,Chennai,26-Mar-08,Test # 1870
+3,51,26,0,0,11.53,3,bowled,1,v South Africa,Ahmedabad,3-Apr-08,Test # 1871
+17,55,41,2,0,41.46,3,caught,3,v South Africa,Ahmedabad,3-Apr-08,Test # 1871
+29,151,106,4,0,27.35,3,caught,2,v South Africa,Kanpur,11-Apr-08,Test # 1873
+18*,36,29,4,0,62.06,4,not out,4,v South Africa,Kanpur,11-Apr-08,Test # 1873
+14,55,35,2,0,40,3,bowled,2,v Sri Lanka,Colombo (SSC),23-Jul-08,Test # 1882
+10,41,30,1,0,33.33,5,caught,3,v Sri Lanka,Colombo (SSC),23-Jul-08,Test # 1882
+2,7,6,0,0,33.33,3,caught,1,v Sri Lanka,Galle,31-Jul-08,Test # 1884
+44,133,92,6,0,47.82,3,lbw,3,v Sri Lanka,Galle,31-Jul-08,Test # 1884
+10,52,29,0,0,34.48,3,lbw,1,v Sri Lanka,Colombo (PSS),8-Aug-08,Test # 1886
+68,226,166,6,0,40.96,3,caught,3,v Sri Lanka,Colombo (PSS),8-Aug-08,Test # 1886
+51,149,104,7,0,49.03,3,lbw,2,v Australia,Bangalore,9-Oct-08,Test # 1887
+5,15,13,1,0,38.46,3,caught,4,v Australia,Bangalore,9-Oct-08,Test # 1887
+39,118,70,7,0,55.71,3,bowled,1,v Australia,Mohali,17-Oct-08,Test # 1889
+DNB,-,-,-,-,-,-,-,3,v Australia,Mohali,17-Oct-08,Test # 1889
+11,36,31,1,0,35.48,3,caught,1,v Australia,Delhi,29-Oct-08,Test # 1891
+11,52,37,2,0,29.72,4,bowled,3,v Australia,Delhi,29-Oct-08,Test # 1891
+0,4,2,0,0,0,3,caught,1,v Australia,Nagpur,6-Nov-08,Test # 1892
+3,20,17,0,0,17.64,3,caught,3,v Australia,Nagpur,6-Nov-08,Test # 1892
+3,44,24,0,0,12.5,3,lbw,2,v England,Chennai,11-Dec-08,Test # 1898
+4,31,19,0,0,21.05,3,caught,4,v England,Chennai,11-Dec-08,Test # 1898
+136,471,328,19,0,41.46,3,caught,1,v England,Mohali,19-Dec-08,Test # 1901
+0,28,19,0,0,0,3,bowled,3,v England,Mohali,19-Dec-08,Test # 1901
+66,182,138,12,0,47.82,3,bowled,2,v New Zealand,Hamilton,18-Mar-09,Test # 1915
+8*,23,14,2,0,57.14,2,not out,4,v New Zealand,Hamilton,18-Mar-09,Test # 1915
+83,282,206,12,0,40.29,3,caught,2,v New Zealand,Napier,26-Mar-09,Test # 1917
+62,242,220,6,1,28.18,3,caught,3,v New Zealand,Napier,26-Mar-09,Test # 1917
+35,182,114,3,0,30.7,3,caught,1,v New Zealand,Wellington,3-Apr-09,Test # 1918
+60,187,145,10,0,41.37,3,caught,3,v New Zealand,Wellington,3-Apr-09,Test # 1918
+177,387,261,26,1,67.81,3,bowled,1,v Sri Lanka,Ahmedabad,16-Nov-09,Test # 1933
+38,98,66,6,0,57.57,3,lbw,3,v Sri Lanka,Ahmedabad,16-Nov-09,Test # 1933
+144,280,226,15,1,63.71,3,run out,1,v Sri Lanka,Kanpur,24-Nov-09,Test # 1935
+74,217,147,5,1,50.34,3,caught,2,v Sri Lanka,Mumbai (BS),2-Dec-09,Test # 1937
+4,17,10,1,0,40,3,bowled,1,v Bangladesh,Chittagong,17-Jan-10,Test # 1949
+24,56,50,3,0,48,4,run out,3,v Bangladesh,Chittagong,17-Jan-10,Test # 1949
+111*,257,188,12,0,59.04,3,retired notout,2,v Bangladesh,Dhaka,24-Jan-10,Test # 1950
+DNB,-,-,-,-,-,-,-,4,v Bangladesh,Dhaka,24-Jan-10,Test # 1950
+18,64,33,1,0,54.54,3,run out,2,v Sri Lanka,Galle,18-Jul-10,Test # 1964
+44,209,152,3,0,28.94,3,caught,3,v Sri Lanka,Galle,18-Jul-10,Test # 1964
+3,19,18,0,0,16.66,3,lbw,2,v Sri Lanka,Colombo (SSC),26-Jul-10,Test # 1966
+23,34,26,5,0,88.46,3,lbw,2,v Sri Lanka,Colombo (PSS),3-Aug-10,Test # 1968
+7,32,22,0,0,31.81,3,bowled,4,v Sri Lanka,Colombo (PSS),3-Aug-10,Test # 1968
+77,205,134,12,0,57.46,3,caught,2,v Australia,Mohali,1-Oct-10,Test # 1972
+13,34,28,3,0,46.42,3,caught,4,v Australia,Mohali,1-Oct-10,Test # 1972
+1,7,7,0,0,14.28,3,caught,2,v Australia,Bangalore,9-Oct-10,Test # 1973
+21*,57,53,2,0,39.62,5,not out,4,v Australia,Bangalore,9-Oct-10,Test # 1973
+104,274,227,14,0,45.81,3,bowled,1,v New Zealand,Ahmedabad,4-Nov-10,Test # 1974
+1,19,16,0,0,6.25,3,caught,3,v New Zealand,Ahmedabad,4-Nov-10,Test # 1974
+45,202,144,5,0,31.25,3,lbw,2,v New Zealand,Hyderabad (Deccan),12-Nov-10,Test # 1975
+DNB,-,-,-,-,-,-,-,4,v New Zealand,Hyderabad (Deccan),12-Nov-10,Test # 1975
+191,573,396,21,0,48.23,3,caught,2,v New Zealand,Nagpur,20-Nov-10,Test # 1978
+14,61,42,2,0,33.33,3,lbw,1,v South Africa,Centurion,16-Dec-10,Test # 1985
+43,159,109,6,0,39.44,3,caught,3,v South Africa,Centurion,16-Dec-10,Test # 1985
+25,121,68,3,0,36.76,3,caught,1,v South Africa,Durban,26-Dec-10,Test # 1987
+2,17,7,0,0,28.57,3,caught,3,v South Africa,Durban,26-Dec-10,Test # 1987
+5,21,16,0,0,31.25,3,run out,2,v South Africa,Cape Town,2-Jan-11,Test # 1988
+31,149,112,4,0,27.67,3,caught,4,v South Africa,Cape Town,2-Jan-11,Test # 1988
+40,106,67,7,0,59.7,3,caught,1,v West Indies,Kingston,20-Jun-11,Test # 1997
+112,402,274,10,1,40.87,3,caught,3,v West Indies,Kingston,20-Jun-11,Test # 1997
+5,35,21,0,0,23.8,3,caught,1,v West Indies,Bridgetown,28-Jun-11,Test # 1998
+55,219,171,3,0,32.16,3,caught,3,v West Indies,Bridgetown,28-Jun-11,Test # 1998
+5,13,11,0,0,45.45,3,bowled,2,v West Indies,Roseau,6-Jul-11,Test # 1999
+34*,142,89,2,0,38.2,3,not out,4,v West Indies,Roseau,6-Jul-11,Test # 1999
+103*,330,220,15,0,46.81,3,not out,2,v England,Lord's,21-Jul-11,Test # 2000
+36,150,93,5,0,38.7,2,caught,4,v England,Lord's,21-Jul-11,Test # 2000
+117,371,235,15,0,49.78,2,caught,2,v England,Nottingham,29-Jul-11,Test # 2001
+6,15,12,1,0,50,2,caught,4,v England,Nottingham,29-Jul-11,Test # 2001
+22,111,68,3,0,32.35,3,bowled,1,v England,Birmingham,10-Aug-11,Test # 2003
+18,65,39,3,0,46.15,3,caught,3,v England,Birmingham,10-Aug-11,Test # 2003
+146*,378,266,20,0,54.88,2,not out,2,v England,The Oval,18-Aug-11,Test # 2004
+13,56,32,2,0,40.62,2,caught,3,v England,The Oval,18-Aug-11,Test # 2004
+54,179,111,3,0,48.64,3,caught,2,v West Indies,Delhi,6-Nov-11,Test # 2015
+31,154,101,3,0,30.69,3,bowled,4,v West Indies,Delhi,6-Nov-11,Test # 2015
+119,295,207,9,2,57.48,3,bowled,1,v West Indies,Kolkata,14-Nov-11,Test # 2017
+82,191,149,11,0,55.03,3,bowled,2,v West Indies,Mumbai,22-Nov-11,Test # 2019
+33,82,49,1,0,67.34,3,caught,4,v West Indies,Mumbai,22-Nov-11,Test # 2019
+68,249,187,6,0,36.36,3,bowled,2,v Australia,Melbourne,26-Dec-11,Test # 2025
+10,59,29,1,0,34.48,3,bowled,4,v Australia,Melbourne,26-Dec-11,Test # 2025
+5,42,33,1,0,15.15,3,caught,1,v Australia,Sydney,3-Jan-12,Test # 2027
+29,100,73,6,0,39.72,3,bowled,3,v Australia,Sydney,3-Jan-12,Test # 2027
+9,40,35,1,0,25.71,3,bowled,1,v Australia,Perth,13-Jan-12,Test # 2029
+47,177,114,8,0,41.22,3,bowled,3,v Australia,Perth,13-Jan-12,Test # 2029
+1,8,9,0,0,11.11,3,bowled,2,v Australia,Adelaide,24-Jan-12,Test # 2031
+25,95,71,2,0,35.21,3,caught,4,v Australia,Adelaide,24-Jan-12,Test # 2031

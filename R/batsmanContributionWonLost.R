@@ -8,6 +8,7 @@
 
 batsmanContributionWonLost <- function(file,name="A Hitter") {
     
+    result <- NULL
     playersp <- clean(file)
 
     won <- filter(playersp,result==1)

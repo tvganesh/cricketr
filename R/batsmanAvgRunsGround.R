@@ -9,7 +9,7 @@
 
 batsmanAvgRunsGround <- function(file, name="A Latecut"){
     
-    
+    batsman <-Ground <- Runs <- NULL
     batsman <- clean(file)
     
     # use dplyr's summarise function to group by Ground and calculate mean & count

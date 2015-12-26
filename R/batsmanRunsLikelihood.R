@@ -7,6 +7,8 @@
 ###########################################################################################
 
 batsmanRunsLikelihood <- function(file, name="A Squarecut") {
+
+   Runs <- BF <-Mins <- Ground <-Wkts <- NULL
    batsman <- clean(file)
    data <- select(batsman,Runs,BF,Mins)
 

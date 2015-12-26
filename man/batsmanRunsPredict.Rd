@@ -23,7 +23,8 @@ This is a data frame with 2 columns BF(Balls Faced) and Mins(Minutes)
 
 }
 \details{
-%%  ~~ If necessary, more details than the description above ~~
+More details can be found in my short video tutorial in Youtube
+https://www.youtube.com/watch?v=q9uMPFVsXsI
 }
 \value{
 Returns a data frame with the predicted runs for the Balls Faced and Minutes at crease
@@ -54,15 +55,15 @@ Maintainer: Tinniam V Ganesh <tvganesh.85@gmail.com>
 BF <- 30
 Mins <- 20
 
-batsmanRunsPredict("<path>/tendulkar.csv","Sachin Tendulkar",newdataframe=data.frame(BF,Runs)
+batsmanRunsPredict("../cricketr/data/tendulkar.csv","Sachin Tendulkar",newdataframe=data.frame(BF,Mins))
 
-or give a data frame
-BF <- seq(20,200, length=15)
-Mins <- seq(30,220,length=15)
+#or give a data frame
+#BF <- seq(20,200, length=15)
+#Mins <- seq(30,220,length=15)
 
-values <- batsmanRunsPredict("<path>/tendulkar.csv","Sachin Tendulkar",
-    newdataframe=data.frame(BF,Runs)
-print(values)
+#values <- batsmanRunsPredict("<path>/tendulkar.csv","Sachin Tendulkar",
+    #newdataframe=data.frame(BF,Runs)
+#print(values)
 }
 
 \keyword{ ~kwd1 }

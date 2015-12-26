@@ -9,7 +9,7 @@
 
 bowlerAvgWktsGround <- function(file, name="A Chinaman"){
     
-    
+    Ground <- Wkts <- NULL
     bowler <- cleanBowlerData(file)
     
     # use dplyr's summarise to group by ground and compute mean & count

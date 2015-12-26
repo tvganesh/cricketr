@@ -7,7 +7,7 @@
 ###########################################################################################
 bowlerContributionWonLost <- function(file,name="A Doosra") {
     
-    
+    result <- NULL
     playersp <- cleanBowlerData(file)
     won <- filter(playersp,result==1)
     lost <- filter(playersp,result==2 | result == 4 )

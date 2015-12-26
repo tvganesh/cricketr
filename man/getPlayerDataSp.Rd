@@ -29,7 +29,8 @@ type of data required. This can be "batting" or "bowling"
 }
 }
 \details{
-%%  ~~ If necessary, more details than the description above ~~
+More details can be found in my short video tutorial in Youtube
+https://www.youtube.com/watch?v=q9uMPFVsXsI
 }
 \value{
 Returns the player's dataframe along with the homeAway and the result columns
@@ -52,10 +53,10 @@ Maintainer: Tinniam V Ganesh <tvganesh.85@gmail.com>
 }
 \examples{
 # Only away. Get data only for won and lost innings
-tendulkar <-getPlayerData(35320,dir=".", file="tendulkarsp.csv",type="batting")
+tendulkar <-getPlayerData(35320,dir="../", file="tendulkarsp.csv",type="batting")
 
 # Get bowling data and store in file for future
-kumble <- getPlayerData(30176,dir=".",file="kumblesp.csv",type="bowling")
+kumble <- getPlayerData(30176,dir="../",file="kumblesp.csv",type="bowling")
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.

@@ -8,7 +8,7 @@
 batsmanPerfHomeAway <- function(file,name="A Hitter") {
     
     
-    
+    ha <- NULL
     playersp <- clean(file)
     home <- filter(playersp,ha==1)
     away <- filter(playersp,ha==2)

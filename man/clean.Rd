@@ -16,7 +16,8 @@ CSV file with the batsman data obtained with getPlayerData
 }
 }
 \details{
-
+More details can be found in my short video tutorial in Youtube
+https://www.youtube.com/watch?v=q9uMPFVsXsI
 }
 \value{
 Returns the cleaned batsman dataframe
@@ -45,7 +46,7 @@ Maintainer: Tinniam V Ganesh <tvganesh.85@gmail.com>
 #  <- getPlayerData(35320,file="tendulkar.csv",type="batting", homeOrAway=c(1,2),result=c(1,2,4))
 
 # clean the dataframe
-srt <- clean("tendulkar.csv")
+srt <- clean("../cricketr/data/tendulkar.csv")
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.

@@ -31,7 +31,8 @@ This is a vector that can take values 1,2,4. 1 - won match 2- lost match 4- draw
 }
 }
 \details{
-%%  ~~ If necessary, more details than the description above ~~
+More details can be found in my short video tutorial in Youtube
+https://www.youtube.com/watch?v=q9uMPFVsXsI
 }
 \value{
 Returns the player's dataframe
@@ -54,15 +55,15 @@ Maintainer: Tinniam V Ganesh <tvganesh.85@gmail.com>
 }
 \examples{
 # Both home and away. Result = won,lost and drawn
-tendulkar <-getPlayerData(35320,dir="./mytest", file="tendulkar.csv",
+tendulkar <-getPlayerData(35320,dir="../", file="tendulkar.csv",
 type="batting", homeOrAway=c(1,2),result=c(1,2,4))
 
 # Only away. Get data only for won and lost innings
-tendulkar <-getPlayerData(35320,dir="./mytest", file="tendulkar.csv",
+tendulkar <-getPlayerData(35320,dir="../", file="tendulkar.csv",
 type="batting",homeOrAway=c(2),result=c(1,2))
 
 # Get bowling data and store in file for future
-kumble <- getPlayerData(30176,dir="./mytest",file="kumble.csv"
+kumble <- getPlayerData(30176,dir="../",file="kumble.csv",
 type="bowling",homeOrAway=c(1),result=c(1,2))
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the

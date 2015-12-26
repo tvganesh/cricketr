@@ -21,7 +21,7 @@ batsman4s <- function(file, name="A Hookshot") {
     
     # Plot no of 4s and a 2nd order curve fit   
     plot(runs,x4s, xlab = "Runs", ylab = "Number of 4's", main = atitle,
-         pch=20,col=adjustcolor("red",alpha=0.5))
+         pch=20,col=adjustcolor("red",alpha.f=0.5))
     
     # Second order polynomial used
     fit2 <- lm(x4s~poly(runs,2,raw=TRUE))

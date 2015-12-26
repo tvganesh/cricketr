@@ -5,7 +5,7 @@
 # This function gets the One Day data of batsman/bowler and returns the data frame. This data 
 # frame can # stored as a CSV file for use in other functions
 ##########################################################################################
-getPlayerDataOD <- function(profile,dir="./data",file="player001.csv",type="batting",
+getPlayerDataOD <- function(profile,dir="../",file="player001.csv",type="batting",
                           homeOrAway=c(1,2,3),result=c(1,2,3,5)) {
     
     # Initial url to ""
@@ -20,7 +20,7 @@ getPlayerDataOD <- function(profile,dir="./data",file="player001.csv",type="batt
     player <- paste(profile,".html",sep="")
     
     # Set the home or away
-    str1=str2=""
+    str1=str2=str3=""
     if(sum(homeOrAway == 1)==1){
         str1 ="home_or_away=1;"
     }

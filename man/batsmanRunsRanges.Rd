@@ -4,7 +4,7 @@
 Compute and plot a histogram of the runs scored in ranges of 10
 }
 \description{
-%%  ~~ A concise (1-5 lines) description of what the function does. ~~
+Compute and plot a histogram of the runs scored in ranges of 10
 }
 \usage{
 batsmanRunsRanges(file, name="A Hookshot")
@@ -19,14 +19,11 @@ Name of the batsman
 }
 }
 \details{
-%%  ~~ If necessary, more details than the description above ~~
+More details can be found in my short video tutorial in Youtube
+https://www.youtube.com/watch?v=q9uMPFVsXsI
 }
 \value{
-%%  ~Describe the value returned
-%%  If it is a LIST, use
-%%  \item{comp1 }{Description of 'comp1'}
-%%  \item{comp2 }{Description of 'comp2'}
-%% ...
+None
 }
 \references{
 http://www.espncricinfo.com/ci/content/stats/index.html\cr
@@ -50,7 +47,7 @@ Maintainer: Tinniam V Ganesh <tvganesh.85@gmail.com>
 # Get or use the <batsman>.csv obtained with getPlayerData()
 #  <- getPlayerData(35320,file="tendulkar.csv",type="batting", homeOrAway=c(1,2),result=c(1,2,4))
 
-batsmanRunsRanges("<path>/tendulkar.csv","Sachin Tendulkar")
+batsmanRunsRanges("../cricketr/data/tendulkar.csv","Sachin Tendulkar")
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.

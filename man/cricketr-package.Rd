@@ -3,12 +3,12 @@
 \alias{cricketr}
 \docType{package}
 \title{
-What the package does (short line)
-~~ package title ~~
+This package analyzes the performances of cricketers using ESPN Cricinfo Statsguru data. The analysis
+can be done for Test, ODI and Twenty20 cricket for both batsman & bowlers
 }
 \description{
-More about what it does (maybe more than one line)
-~~ A concise (1-5 lines) description of the package ~~
+This package analyzes the performances of cricketers using ESPN Cricinfo Statsguru data. The analysis
+can be done for Test, ODI and Twenty20 cricket for both batsman & bowlers
 }
 \details{
 \tabular{ll}{
@@ -16,25 +16,20 @@ Package: \tab cricketr\cr
 Type: \tab Package\cr
 Version: \tab 1.0\cr
 Date: \tab 2015-07-03\cr
-License: \tab What license is it under?\cr
+License: \tab MIT\cr
 }
-~~ An overview of how to use the package, including the most important functions ~~
+Details in my post https://gigadom.wordpress.com/2015/07/04/introducing-cricketr-a-r-package-to-analyze-performances-of-cricketers/
 }
 \author{
-Who wrote it
+Tinniam V Ganesh
 
-Maintainer: Who to complain to <yourfault@somewhere.net>
-~~ The author and/or maintainer of the package ~~
+Maintainer: 
+Tinniam V Ganesh
+tvganesh.85@gmail.com
 }
-\references{
-~~ Literature or other references for background information ~~
-}
-~~ Optionally other standard keywords, one per line, from file KEYWORDS in the R documentation directory ~~
+
 \keyword{ package }
 \seealso{
-~~ Optional links to other man pages, e.g. ~~
-~~ \code{\link[<pkg>:<pkg>-package]{<pkg>}} ~~
+https://www.youtube.com/edit?o=U&video_id=q9uMPFVsXsI
 }
-\examples{
-~~ simple examples of the most important functions ~~
-}
+

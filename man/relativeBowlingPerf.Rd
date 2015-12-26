@@ -19,14 +19,11 @@ A list of bowlers names who need to be compared
 }
 }
 \details{
-%%  ~~ If necessary, more details than the description above ~~
+More details can be found in my short video tutorial in Youtube
+https://www.youtube.com/watch?v=q9uMPFVsXsI
 }
 \value{
-%%  ~Describe the value returned
-%%  If it is a LIST, use
-%%  \item{comp1 }{Description of 'comp1'}
-%%  \item{comp2 }{Description of 'comp2'}
-%% ...
+None
 }
 \references{
 http://www.espncricinfo.com/ci/content/stats/index.html\cr
@@ -48,9 +45,9 @@ Maintainer: Tinniam V Ganesh <tvganesh.85@gmail.com>
 }
 \examples{
 # Get the list of the <batsman>.csv files obtained with getPlayerData() for batsmen to be compared
-#  <- getPlayerData(30176,file="kumble.csv",type="bowling", homeOrAway=c(1,2),result=c(1,2,4))
+# kumble  <- getPlayerData(30176,file="kumble.csv",type="bowling", homeOrAway=c(1,2),result=c(1,2,4))
 
-frames <- list("<path>/kumble.csv","<path>/warne.csv", "<path>/murali.csv")
+frames <- list("../cricketr/data/kumble.csv","../cricketr/data/warne.csv", "../cricketr/data/murali.csv")
 names <- c("kumble","warne","murali")
 relativeBowlingPerf(frames,names)
 }

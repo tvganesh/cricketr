@@ -9,7 +9,7 @@
 
 bowlerAvgWktsOpposition <- function(file, name="A Chinaman"){
     
-    
+    Opposition <- Wkts <- NULL
     bowler <- cleanBowlerData(file)
     
     # Use dplyr's summarise to group by opposition and compute mean and count

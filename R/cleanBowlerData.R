@@ -6,6 +6,8 @@
 # other functions
 ##########################################################################################
 cleanBowlerData <- function(file) {
+    
+    BPO <- Overs <- NULL
     # Read the <bowler>.csv file
     df <- read.csv(file,stringsAsFactor=FALSE,na.strings=c(NA,"-"))
     

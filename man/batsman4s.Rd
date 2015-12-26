@@ -19,7 +19,8 @@ Name of the batsman
 }
 }
 \details{
-%%  ~~ If necessary, more details than the description above ~~
+More details can be found in my short video tutorial in Youtube
+https://www.youtube.com/watch?v=q9uMPFVsXsI
 }
 \value{
 None
@@ -42,9 +43,9 @@ Maintainer: Tinniam V Ganesh <tvganesh.85@gmail.com>
 }
 \examples{
 # Get or use the <batsman>.csv obtained with getPlayerData()
-#  <- getPlayerData(35320,dir=".",file="tendulkar.csv",type="batting", homeOrAway=c(1,2),result=c(1,2,4))
+#tendulkar  <- getPlayerData(35320,dir="../",file="tendulkar.csv",type="batting", homeOrAway=c(1,2),result=c(1,2,4))
 
-batsman4s("../tendulkar.csv","Sachin Tendulkar")
+batsman4s("../cricketr/data/tendulkar.csv","Sachin Tendulkar")
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.

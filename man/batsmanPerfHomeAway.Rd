@@ -19,14 +19,11 @@ Name of the batsman
 }
 }
 \details{
-%%  ~~ If necessary, more details than the description above ~~
+More details can be found in my short video tutorial in Youtube
+https://www.youtube.com/watch?v=q9uMPFVsXsI
 }
 \value{
-%%  ~Describe the value returned
-%%  If it is a LIST, use
-%%  \item{comp1 }{Description of 'comp1'}
-%%  \item{comp2 }{Description of 'comp2'}
-%% ...
+None
 }
 \references{
 http://www.espncricinfo.com/ci/content/stats/index.html\cr
@@ -35,12 +32,6 @@ https://gigadom.wordpress.com/
 \author{
 Tinniam V Ganesh
 }
-\note{
-%%  ~~further notes~~
-}
-
-%% ~Make other sections like Warning with \section{Warning }{....} ~
-
 \seealso{
 \code{\link{batsmanMovingAverage}}
 \code{\link{batsmanRunsPredict}}
@@ -49,8 +40,8 @@ Tinniam V Ganesh
 }
 \examples{
 # Get or use the <batsman>.csv obtained with getPlayerData()
-tendulkarSp <-getPlayerDataSp(35320,".","tendulkarsp.csv","batting")
-batsmanPerfHomeAway("tendulkarsp.csv","Sachin Tendulkar")
+#tendulkarSp <-getPlayerDataSp(35320,".","tendulkarsp.csv","batting")
+#batsmanPerfHomeAway("../cricketr/cricketr/data/tendulkarsp.csv","Sachin Tendulkar")
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.

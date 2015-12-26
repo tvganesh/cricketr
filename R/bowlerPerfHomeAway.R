@@ -7,7 +7,7 @@
 ###########################################################################################
 bowlerPerfHomeAway <- function(file,name="A Googly") {
     
-    
+    ha <- NULL
     playersp <- cleanBowlerData(file)
     home <- filter(playersp,ha==1)
     away <- filter(playersp,ha==2)
