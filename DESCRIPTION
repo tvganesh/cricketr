@@ -2,9 +2,9 @@ Package: cricketr
 Type: Package
 Type: Package
 Title: The cricketr package can be used to analyze crickers based on ESPN Cricinfo Statsguru
-Description: This package analyzes performances of cricketers based on stats in ESPN Cricinfo
-           Statsguru. The analysis can be done for Test, ODI and Twenty20 cricket for both batsmen
-           and bowlers
+Description: This package analyzes performances of cricketers based on stats 
+             in ESPN Cricinfo Statsguru. The analyses can be done for Tests,ODIs and Twenty20
+             for batsmen and bowlers.
 Version: 0.0.9
 Date: 2015-12-26
 Author: Tinniam V Ganesh
