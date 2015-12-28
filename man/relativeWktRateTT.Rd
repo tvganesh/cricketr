@@ -54,6 +54,9 @@ frames <- list("../cricketr/data/mendis.csv",
 "../cricketr/data/narine.csv")
 names <- c("Mendis","Badree","Narine")
 relativeWktRateTT(frames,names)
+
+#Note: This example uses the /data directory for the files. However
+#you can use any directory as long as the data files exists in that directory.
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.

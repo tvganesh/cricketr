@@ -56,11 +56,11 @@ Maintainer: Tinniam V Ganesh <tvganesh.85@gmail.com>
 }
 \examples{
 # Only away. Get data only for won and lost innings
-kohli <-getPlayerDataTT(253802,dir=".", file="kohli.csv",
+kohli <-getPlayerDataTT(253802,dir="../cricketr/data", file="kohli.csv",
 type="batting")
 
 # Get bowling data and store in file for future
-ashwin <- getPlayerDataTT(26421,dir=".",file="ashwin.csv",
+ashwin <- getPlayerDataTT(26421,dir="../cricketr/data",file="ashwin.csv",
 type="bowling")
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the

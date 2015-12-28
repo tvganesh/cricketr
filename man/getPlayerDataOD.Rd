@@ -59,15 +59,15 @@ Maintainer: Tinniam V Ganesh <tvganesh.85@gmail.com>
 }
 \examples{
 # Both home and away. Result = won,lost and drawn
-sehwag <-getPlayerDataOD(35263,dir="../", file="sehwag.csv",
+sehwag <-getPlayerDataOD(35263,dir="../cricketr/data", file="sehwag.csv",
 type="batting", homeOrAway=c(1,2),result=c(1,2,3,5))
 
 # Only away. Get data only for won and lost innings
-sehwag <-getPlayerDataOD(35263,dir="../", file="sehwag.csv",
+sehwag <-getPlayerDataOD(35263,dir="../cricketr/data", file="sehwag.csv",
 type="batting",homeOrAway=c(2),result=c(1,2))
 
 # Get bowling data and store in file for future
-malinga <- getPlayerData(49758,dir="../",file="malinga.csv",
+malinga <- getPlayerData(49758,dir="../cricketr/data",file="malinga.csv",
 type="bowling")
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the

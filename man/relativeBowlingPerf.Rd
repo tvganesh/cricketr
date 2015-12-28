@@ -53,6 +53,9 @@ frames <- list("../cricketr/data/kumble.csv",
 "../cricketr/data/murali.csv")
 names <- c("kumble","warne","murali")
 relativeBowlingPerf(frames,names)
+
+# Note: This example uses the /data directory for the files. However
+# you can use any directory as long as the data files exists in that directory.
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.

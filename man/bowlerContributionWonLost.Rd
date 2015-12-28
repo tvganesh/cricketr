@@ -47,6 +47,9 @@ Maintainer: Tinniam V Ganesh <tvganesh.85@gmail.com>
 # Get or use the <bowler>.csv obtained with getPlayerDataSp()
 #kumbleSp <-getPlayerDataSp(30176,".","kumblesp.csv","bowling")
 #bowlerContributionWonLost("../cricketr/data/kumblesp.csv","Anil Kumble")
+
+# Note: This example uses the file kumble.csv from the /data directory. However
+# you can use any directory as long as the data file exists in that directory.
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.

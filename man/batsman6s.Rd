@@ -45,6 +45,9 @@ Maintainer: Tinniam V Ganesh <tvganesh.85@gmail.com>
 # Get or use the <batsman>.csv obtained with getPlayerData()
 #  <- getPlayerData(35320,file="tendulkar.csv",type="batting", homeOrAway=c(1,2),result=c(1,2,4))
 batsman6s("../cricketr/data/tendulkar.csv","Sachin Tendulkar")
+
+# Note: The above example uses the file tendulkar.csv from the /data directory. However
+# you can use any directory as long as the data file exists in that directory.
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.

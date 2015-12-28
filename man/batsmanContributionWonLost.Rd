@@ -47,6 +47,9 @@ Maintainer: Tinniam V Ganesh <tvganesh.85@gmail.com>
 # Get or use the <batsman>.csv obtained with getPlayerData()
 #tendulkarsp <-getPlayerDataSp(35320,".","tendulkarsp.csv","batting")
 #batsmanContributionWonLost("../cricketr/data/tendulkarsp.csv","Sachin Tendulkar")
+
+# Note: The above example uses the file tendulkar.csv from the /data directory. However
+# you can use any directory as long as the data file exists in that directory.
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.

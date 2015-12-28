@@ -54,6 +54,9 @@ frames <- list("../cricketr/data/steyn.csv",
 "../cricketr/data/malinga.csv")
 names <- c("Steyn","Mitchell","Southee","Malinga")
 relativeBowlingERODTT(frames,names)
+
+# Note: This example uses the /data directory for the files. However
+# you can use any directory as long as the data files exists in that directory.
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.

@@ -53,6 +53,9 @@ batsmen <- list("../cricketr/data/sehwag.csv",
 "../cricketr/data/gayle.csv","../cricketr/data/maxwell.csv")
 names <- list("Sehwag","Devilliers","Gayle","Maxwell")
 relativeBatsmanSRODTT(batsmen,names)
+
+# Note: This example uses the /data directory for the files. However
+# you can use any directory as long as the data files exists in that directory.
 }
 
 % Add one or more standard keywords, see file 'KEYWORDS' in the

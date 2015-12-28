@@ -63,9 +63,12 @@ newdataframe=data.frame(BF,Mins))
 #BF <- seq(20,200, length=15)
 #Mins <- seq(30,220,length=15)
 
-#values <- batsmanRunsPredict("<path>/tendulkar.csv","Sachin Tendulkar",
+#values <- batsmanRunsPredict("../cricketr/data/tendulkar.csv","Sachin Tendulkar",
     #newdataframe=data.frame(BF,Runs)
 #print(values)
+
+# Note: The above example uses the file tendulkar.csv from the /data directory. However
+# you can use any directory as long as the data file exists in that directory.
 }
 
 \keyword{ ~kwd1 }

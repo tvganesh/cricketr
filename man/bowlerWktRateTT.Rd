@@ -51,6 +51,9 @@ Maintainer: Tinniam V Ganesh <tvganesh.85@gmail.com>
 # homeOrAway=c(1,2,3), result=c(1,2,3,5))
 
 bowlerWktRateTT("../cricketr/data/ashwin.csv","R Ashwin")
+
+# Note: This example uses the file kumble.csv from the /data directory. However
+# you can use any directory as long as the data file exists in that directory.
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.

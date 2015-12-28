@@ -54,6 +54,9 @@ batsmen <- list("../cricketr/data/tendulkar.csv",
 "../cricketr/data/ganguly.csv")
 names <- list("Tendulkar","Dravid","Ganguly")
 relativeRunsFreqPerf(batsmen,names)
+
+# Note: This example uses the /data directory for the files. However
+# you can use any directory as long as the data files exists in that directory.
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.
