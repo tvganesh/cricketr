@@ -11,7 +11,7 @@ Author: Tinniam V Ganesh
 Maintainer: Tinniam V Ganesh <tvganesh.85@gmail.com>
 License: MIT + file LICENSE
 Depends:
-    R (>= 2.15.0)
+    R (>= 3.1.2)
 Imports:
     dplyr,
     plotrix,
