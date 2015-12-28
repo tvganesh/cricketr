@@ -10,7 +10,8 @@ along with details on matches' venue (home/abroad) and the result of match(won,l
 has values 1:won , 2;lost and :drawn match
 }
 \usage{
-getPlayerDataSp(profileNo, tdir = "./data", tfile = "player001.csv", ttype = "batting")
+getPlayerDataSp(profileNo, tdir = "./data", tfile = "player001.csv", 
+ttype = "batting")
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
@@ -53,10 +54,10 @@ Maintainer: Tinniam V Ganesh <tvganesh.85@gmail.com>
 }
 \examples{
 # Only away. Get data only for won and lost innings
-tendulkar <-getPlayerData(35320,dir="../", file="tendulkarsp.csv",type="batting")
+tendulkar <-getPlayerDataSp(35320,tdir="../", tfile="tendulkarsp.csv",ttype="batting")
 
 # Get bowling data and store in file for future
-kumble <- getPlayerData(30176,dir="../",file="kumblesp.csv",type="bowling")
+kumble <- getPlayerDataSp(30176,tdir="../",tfile="kumblesp.csv",ttype="bowling")
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.

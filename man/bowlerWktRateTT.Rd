@@ -47,7 +47,8 @@ Maintainer: Tinniam V Ganesh <tvganesh.85@gmail.com>
 }
 \examples{
 # Get or use the <bowler>.csv obtained with getPlayerData()
-# a <- getPlayerDataTT(26421,dir=".",file="ashwin.csv",type="bowling", homeOrAway=c(1,2,3),                # result=c(1,2,3,5))
+# a <- getPlayerDataTT(26421,dir=".",file="ashwin.csv",type="bowling", 
+# homeOrAway=c(1,2,3), result=c(1,2,3,5))
 
 bowlerWktRateTT("../cricketr/data/ashwin.csv","R Ashwin")
 }

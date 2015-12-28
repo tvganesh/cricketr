@@ -45,9 +45,12 @@ Maintainer: Tinniam V Ganesh <tvganesh.85@gmail.com>
 }
 \examples{
 # Get the list of the <batsman>.csv files obtained with getPlayerData() for batsmen to be compared
-#  <- getPlayerData(30176,file="kumble.csv",type="bowling", homeOrAway=c(1,2),result=c(1,2,4))
+# kumble  <- getPlayerData(30176,file="kumble.csv",type="bowling", 
+# homeOrAway=c(1,2),result=c(1,2,4))
 
-frames <- list("../cricketr/data/kumble.csv","../cricketr/data/warne.csv", "../cricketr/data/murali.csv")
+frames <- list("../cricketr/data/kumble.csv",
+"../cricketr/data/warne.csv", 
+"../cricketr/data/murali.csv")
 names <- c("Kumble","Warne","Murali")
 relativeBowlingER(frames,names)
 }

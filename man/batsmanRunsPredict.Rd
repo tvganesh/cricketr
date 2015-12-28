@@ -49,13 +49,15 @@ Maintainer: Tinniam V Ganesh <tvganesh.85@gmail.com>
 }
 \examples{
 # Get or use the <batsman>.csv obtained with getPlayerData()
-#  <- getPlayerData(35320,file="tendulkar.csv",type="batting", homeOrAway=c(1,2),result=c(1,2,4))
+# tendulkar <- getPlayerData(35320,file="tendulkar.csv",type="batting", 
+# homeOrAway=c(1,2), result=c(1,2,4))
 
 # Use a single value for BF and Mins
 BF <- 30
 Mins <- 20
 
-batsmanRunsPredict("../cricketr/data/tendulkar.csv","Sachin Tendulkar",newdataframe=data.frame(BF,Mins))
+batsmanRunsPredict("../cricketr/data/tendulkar.csv","Sachin Tendulkar",
+newdataframe=data.frame(BF,Mins))
 
 #or give a data frame
 #BF <- seq(20,200, length=15)

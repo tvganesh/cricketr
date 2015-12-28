@@ -1,0 +1,10 @@
+{
+    "dialog-state" : {
+        "caseSensitive" : false,
+        "filePatterns" : [
+        ],
+        "path" : "C:/software/cricket-package/git/cricketr/cricketr/man",
+        "query" : "maling.csv",
+        "regex" : false
+    }
+}

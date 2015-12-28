@@ -7,7 +7,8 @@ Get the player data from ESPN Cricinfo based on specific inputs and store in a f
 Get the player data given the profile of the batsman. The allowed inputs are home,away or both and won,lost or draw of matches. The data is stored in a <player>.csv file in a directory specified. This function also returns a data frame of the player
 }
 \usage{
-getPlayerData(profile,dir="./data",file="player001.csv",type="batting",homeOrAway=c(1,2),result=c(1,2,4))
+getPlayerData(profile,dir="./data",file="player001.csv",type="batting",
+homeOrAway=c(1,2),result=c(1,2,4))
 }
 \arguments{
   \item{profile}{

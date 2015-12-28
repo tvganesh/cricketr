@@ -1,0 +1,17 @@
+{
+    "contents" : "##########################################################################################\n# Designed and developed by Tinniam V Ganesh\n# Date : 19 Jul 2015\n# Function: getPlayerDataSp\n# This function is a specialized version of getPlayer Data. This function gets the players data \n# along with details on matches' venue( home/abroad) and the result (won,lost,drawn) as \n# 2 separate columns\n#\n###########################################################################################\ngetPlayerDataSp <- function(profileNo,tdir=\"./data\",tfile=\"player001.csv\",ttype=\"batting\"){\n    \n    # Get the data for the player i\n    # Home & won\n    hw <-getPlayerData(profile=profileNo,dir=tdir,file=tfile,homeOrAway=c(1),result=c(1),type=ttype)\n    # Home & lost\n    hl <-getPlayerData(profile=profileNo,dir=tdir,file=tfile,homeOrAway=c(1),result=c(2),type=ttype)\n    # Home & drawn\n    hd <-getPlayerData(profile=profileNo,dir=tdir,file=tfile,homeOrAway=c(1),result=c(4),type=ttype)\n    # Away and won\n    aw <-getPlayerData(profile=profileNo,dir=tdir,file=tfile,homeOrAway=c(2),result=c(1),type=ttype)\n    #Away and lost\n    al <-getPlayerData(profile=profileNo,dir=tdir,file=tfile,homeOrAway=c(2),result=c(2),type=ttype)\n    # Away and drawn\n    ad <-getPlayerData(profile=profileNo,dir=tdir,file=tfile,homeOrAway=c(2),result=c(4),type=ttype)\n    \n    # Set the values as follows\n    # ha := home = 1, away =2\n    # result= won = 1, lost = 2, drawn=4\n    hw$ha<-1\n    hw$result<-1\n    \n    hl$ha<-1\n    hl$result<-2\n    \n    hd$ha<-1\n    hd$result<-4\n    \n    aw$ha<-2\n    aw$result<-1\n    \n    al$ha<-2\n    al$result<-2\n    \n    ad$ha<-2\n    ad$result<-4\n    \n    # The following snippet of code is required for the older players who\n    # had played matches with 8 BPO and 6 BPO. This ensures that the extra\n    # BPO column is there for all requests (homw/awy),(win,lost,drawn)\n    if(max(ncol(hw),ncol(hl),ncol(hd),ncol(aw),ncol(al),ncol(ad)) == 13){\n        if(ncol(hw) <13){\n            hw$BPO=\"6\"\n            cbind(hw[1],hw[13],hw[2:12])\n        }\n        if (ncol(hl) <13){\n            print(\"hello\")\n            hl$BPO=\"6\"\n            cbind(hl[1],hl[13],hl[2:12])\n        }\n        if (ncol(hd) <13){\n            hd$BPO=\"6\"\n            cbind(hd[1],hd[13],hd[2:12])\n        }\n        if (ncol(aw) <13){\n            aw$BPO=\"6\"\n            cbind(aw[1],aw[13],aw[2:12])\n        }\n        if (ncol(al) <13){\n            al$BPO=\"6\"\n            cbind(al[1],al[13],al[2:12])\n        }\n        if (ncol(ad) <13){\n            ad$BPO=\"6\"\n            cbind(ad[1],ad[13],ad[2:12])\n        }\n    }\n    \n    \n    a <-rbind(hw,hl,hd,aw,al,ad)\n    \n    afile <-paste(tdir,tfile,sep=\"/\")\n    write.csv(a,file=afile)\n    a\n   \n    \n}\n",
+    "created" : 1451216869414.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3086065318",
+    "id" : "FA6CECC9",
+    "lastKnownWriteTime" : 1451045887,
+    "path" : "C:/software/cricket-package/git/cricketr/cricketr/R/getPlayerDataSp.R",
+    "project_path" : "R/getPlayerDataSp.R",
+    "properties" : {
+    },
+    "relative_order" : 6,
+    "source_on_save" : false,
+    "type" : "r_source"
+}

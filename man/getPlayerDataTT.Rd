@@ -7,7 +7,8 @@ Get the Twenty20 International player data from ESPN Cricinfo based on specific 
 Get the Twenty20 player data given the profile of the batsman/bowler. The allowed inputs are home,away, neutralboth and won,lost,tied or no result of matches. The data is stored in a <player>.csv file in a directory specified. This function also returns a data frame of the player
 }
 \usage{
-getPlayerDataTT(profile, dir = "./data", file = "player001.csv", type = "batting", homeOrAway = c(1, 2, 3), result = c(1, 2, 3,5))
+getPlayerDataTT(profile, dir = "./data", file = "player001.csv", 
+type = "batting", homeOrAway = c(1, 2, 3), result = c(1, 2, 3,5))
 }
 \arguments{
   \item{profile}{
