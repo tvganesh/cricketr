@@ -18,7 +18,11 @@ Imports:
     scatterplot3d,
     forecast,
     lubridate,
-    XML
+    XML,
+    graphics,
+    grDevices,
+    stats,
+    utils
 URL: https://github.com/tvganesh/cricketr
 BugReports: https://github.com/tvganesh/cricketr/issues
 RoxygenNote: 5.0.1

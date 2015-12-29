@@ -5,6 +5,12 @@ import(ggplot2)
 import(scatterplot3d)
 import(forecast)
 import(XML)
+import(graphics)
 importFrom(lubridate,dmy)
 importFrom(lubridate,year)
 importFrom(lubridate,month)
+importFrom("grDevices", "adjustcolor", "colorRampPalette",
+             "heat.colors", "rainbow")
+importFrom("stats", "HoltWinters", "complete.cases", "kmeans", "lm",
+             "loess", "median", "predict", "pt", "quantile", "sd", "ts")
+importFrom("utils", "head", "read.csv", "write.csv")
