@@ -58,6 +58,8 @@ Maintainer: Tinniam V Ganesh <tvganesh.85@gmail.com>
 \code{\link{getPlayerData}}
 }
 \examples{
+
+\donttest{
 # Both home and away. Result = won,lost and drawn
 sehwag <-getPlayerDataOD(35263,dir="../cricketr/data", file="sehwag1.csv",
 type="batting", homeOrAway=c(1,2),result=c(1,2,3,5))
@@ -69,6 +71,7 @@ type="batting",homeOrAway=c(2),result=c(1,2))
 # Get bowling data and store in file for future
 malinga <- getPlayerData(49758,dir="../cricketr/data",file="malinga1.csv",
 type="bowling")
+}
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.

@@ -53,11 +53,13 @@ Maintainer: Tinniam V Ganesh <tvganesh.85@gmail.com>
 \code{\link{getPlayerData}}
 }
 \examples{
+\donttest{
 # Only away. Get data only for won and lost innings
 tendulkar <-getPlayerDataSp(35320,tdir="../cricketr/data", tfile="tendulkarsp.csv",ttype="batting")
 
 # Get bowling data and store in file for future
 kumble <- getPlayerDataSp(30176,tdir="../cricketr/data",tfile="kumblesp.csv",ttype="bowling")
+}
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.

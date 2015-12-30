@@ -55,6 +55,7 @@ Maintainer: Tinniam V Ganesh <tvganesh.85@gmail.com>
 \code{\link{getPlayerData}}
 }
 \examples{
+\donttest{
 # Only away. Get data only for won and lost innings
 kohli <-getPlayerDataTT(253802,dir="../cricketr/data", file="kohli1.csv",
 type="batting")
@@ -62,6 +63,7 @@ type="batting")
 # Get bowling data and store in file for future
 ashwin <- getPlayerDataTT(26421,dir="../cricketr/data",file="ashwin1.csv",
 type="bowling")
+}
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.
