@@ -50,10 +50,13 @@ Maintainer: Tinniam V Ganesh <tvganesh.85@gmail.com>
 # a <- getPlayerDataTT(26421,dir=".",file="ashwin.csv",type="bowling", 
 # homeOrAway=c(1,2,3), result=c(1,2,3,5))
 
-bowlerWktRateTT("../cricketr/data/ashwin.csv","R Ashwin")
+# Retrieve the file path of a data file installed with cricketr
+pathToFile <- system.file("data", "ashwin.csv", package = "cricketr")
+bowlerWktRateTT(pathToFile,"R Ashwin")
 
 # Note: This example uses the file kumble.csv from the /data directory. However
 # you can use any directory as long as the data file exists in that directory.
+# The general format is pkg-function(pathToFile,par1,...)
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.

@@ -45,7 +45,8 @@ Maintainer: Tinniam V Ganesh <tvganesh.85@gmail.com>
 # kumble <- getPlayerData(30176,dir="./mytest", file="kumble.csv",type="bowling", 
 # homeOrAway=c(1),result=c(1,2))
 
-cleanBowlerData("../cricketr/data/kumble.csv")
+pathToFile <- system.file("data", "kumble.csv", package = "cricketr")
+cleanBowlerData(pathToFile)
 
 # Note: This example uses the file kumble.csv from the /data directory. However
 # you can use any directory as long as the data file exists in that directory.

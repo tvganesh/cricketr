@@ -49,10 +49,13 @@ Maintainer: Tinniam V Ganesh <tvganesh.85@gmail.com>
 # Get or use the <batsman>.csv obtained with getPlayerData()
 #  <- getPlayerData(35320,file="tendulkar.csv",type="batting", homeOrAway=c(1,2),result=c(1,2,4))
 
-batsmanRunsLikelihood("../cricketr/data/tendulkar.csv","Sachin Tendulkar")
+# Retrieve the file path of a data file installed with cricketr
+pathToFile <- system.file("data", "tendulkar.csv", package = "cricketr")
+batsmanRunsLikelihood(pathToFile,"Sachin Tendulkar")
 
 # Note: The above example uses the file tendulkar.csv from the /data directory. However
 # you can use any directory as long as the data file exists in that directory.
+# The general format is pkg-function(pathToFile,par1,...)
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.

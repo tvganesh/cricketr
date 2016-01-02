@@ -48,9 +48,12 @@ Maintainer: Tinniam V Ganesh <tvganesh.85@gmail.com>
 # kumble  <- getPlayerData(30176,file="kumble.csv",type="bowling", 
 # homeOrAway=c(1,2),result=c(1,2,4))
 
-frames <- list("../cricketr/data/kumble.csv",
-"../cricketr/data/warne.csv", 
-"../cricketr/data/murali.csv")
+# Retrieve the file path of a data file installed with cricketr
+kumble <- system.file("data", "kumble.csv", package = "cricketr")
+warne <- system.file("data", "warne.csv", package = "cricketr")
+murali <- system.file("data", "murali.csv", package = "cricketr")
+
+frames <- list(kumble,warne,murali)
 names <- c("Kumble","Warne","Murali")
 relativeBowlingER(frames,names)
 

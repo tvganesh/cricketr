@@ -48,10 +48,13 @@ Maintainer: Tinniam V Ganesh <tvganesh.85@gmail.com>
 # a <- getPlayerData(47492,file="steyn.csv",type="bowling", 
 # homeOrAway=c(1,2),result=c(1,2,4))
 
-frames <- list("../cricketr/data/steyn.csv",
-"../cricketr/data/mitchell.csv", 
-"../cricketr/data/southee.csv",
-"../cricketr/data/malinga.csv")
+# Retrieve the file path of a data file installed with cricketr
+steyn <- system.file("data", "steyn.csv", package = "cricketr")
+mitchell <- system.file("data", "mitchell.csv", package = "cricketr")
+southee <- system.file("data", "southee.csv", package = "cricketr")
+malinga <- system.file("data", "malinga.csv", package = "cricketr")
+
+frames <- list(steyn,mitchell,southee,malinga)
 names <- c("Steyn","Mitchell","Southee","Malinga")
 relativeBowlingERODTT(frames,names)
 

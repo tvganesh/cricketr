@@ -48,10 +48,13 @@ Maintainer: Tinniam V Ganesh <tvganesh.85@gmail.com>
 # Get or use the <bowler>.csv obtained with getPlayerData()
 # a <- getPlayerData(30176,file="kumble.csv",type="batting", homeOrAway=c(1,2),result=c(1,2,4))
 
-bowlerWktsRunsPlot("../cricketr/data/kumble.csv","Anil Kumble")
+# Retrieve the file path of a data file installed with cricketr
+pathToFile <- system.file("data", "kumble.csv", package = "cricketr")
+bowlerWktsRunsPlot(pathToFile,"Anil Kumble")
 
 # Note: This example uses the file kumble.csv from the /data directory. However
 # you can use any directory as long as the data file exists in that directory.
+# The general format is pkg-function(pathToFile,par1,...)
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.

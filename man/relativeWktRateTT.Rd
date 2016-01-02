@@ -49,9 +49,12 @@ Maintainer: Tinniam V Ganesh <tvganesh.85@gmail.com>
 # a <- getPlayerDataTT(26421,dir=".",file="ashwin.csv",type="bowling", 
 # homeOrAway=c(1,2,3), result=c(1,2,3,5))
 
-frames <- list("../cricketr/data/mendis.csv",
-"../cricketr/data/badree.csv",
-"../cricketr/data/narine.csv")
+# Retrieve the file path of a data file installed with cricketr
+mendis <- system.file("data", "mendis.csv", package = "cricketr")
+narine  <- system.file("data", "narine.csv", package = "cricketr")
+badree <- system.file("data", "badree.csv", package = "cricketr")
+
+frames <- list(mendis, badree,narine)
 names <- c("Mendis","Badree","Narine")
 relativeWktRateTT(frames,names)
 

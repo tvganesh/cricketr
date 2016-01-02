@@ -48,7 +48,9 @@ Maintainer: Tinniam V Ganesh <tvganesh.85@gmail.com>
 # Get or use the <batsman>.csv obtained with getPlayerData()
 #  <- getPlayerData(35320,file="tendulkar.csv",type="batting", homeOrAway=c(1,2),result=c(1,2,4))
 
-batsmanAvgRunsOpposition("../cricketr/data/tendulkar.csv","Sachin Tendulkar")
+# retrieve the file path of a data file installed with cricketr
+path <- system.file("data", "tendulkar.csv", package = "cricketr")
+batsmanAvgRunsOpposition(path,"Sachin Tendulkar")
 
 # Note: The above example uses the file tendulkar.csv from the /data directory. However
 # you can use any directory as long as the data file exists in that directory.

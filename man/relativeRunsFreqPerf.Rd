@@ -49,9 +49,12 @@ Tinniam V Ganesh <tvganesh.85@gmail.com>
 # tendulkar <- getPlayerData(35320,file="tendulkar.csv",type="batting",
 # homeOrAway=c(1,2),result=c(1,2,4))
 
-batsmen <- list("../cricketr/data/tendulkar.csv",
-"../cricketr/data/dravid.csv", 
-"../cricketr/data/ganguly.csv")
+# Retrieve the file path of a data file installed with cricketr
+tendulkar <- system.file("data", "tendulkar.csv", package = "cricketr")
+ganguly <- system.file("data", "ganguly.csv", package = "cricketr")
+dravid <- system.file("data", "dravid.csv", package = "cricketr")
+
+batsmen <- list(tendulkar,dravid,ganguly)
 names <- list("Tendulkar","Dravid","Ganguly")
 relativeRunsFreqPerf(batsmen,names)
 

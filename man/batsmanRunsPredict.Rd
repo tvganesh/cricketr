@@ -56,8 +56,9 @@ Maintainer: Tinniam V Ganesh <tvganesh.85@gmail.com>
 BF <- 30
 Mins <- 20
 
-batsmanRunsPredict("../cricketr/data/tendulkar.csv","Sachin Tendulkar",
-newdataframe=data.frame(BF,Mins))
+# retrieve the file path of a data file installed with cricketr
+pathToFile <- system.file("data", "tendulkar.csv", package = "cricketr")
+batsmanRunsPredict(pathToFile,"Sachin Tendulkar",newdataframe=data.frame(BF,Mins))
 
 #or give a data frame
 #BF <- seq(20,200, length=15)
@@ -69,6 +70,7 @@ newdataframe=data.frame(BF,Mins))
 
 # Note: The above example uses the file tendulkar.csv from the /data directory. However
 # you can use any directory as long as the data file exists in that directory.
+# The general format is pkg-function(pathToFile,par1,...)
 }
 
 \keyword{ ~kwd1 }

@@ -48,9 +48,13 @@ Maintainer: Tinniam V Ganesh <tvganesh.85@gmail.com>
 #sehwag <-getPlayerData(35263,dir="./mytest", file="sehwag.csv",
 #type="batting", homeOrAway=c(1,2),result=c(1,2,4))
 
-batsmen <- list("../cricketr/data/sehwag.csv",
-"../cricketr/data/devilliers.csv", 
-"../cricketr/data/gayle.csv","../cricketr/data/maxwell.csv")
+# Retrieve the file path of a data file installed with cricketr
+sehwag <- system.file("data", "sehwag.csv", package = "cricketr")
+devilliers <- system.file("data", "devilliers.csv", package = "cricketr")
+gayle <- system.file("data", "gayle.csv", package = "cricketr")
+maxwell <- system.file("data", "maxwell.csv", package = "cricketr")
+
+batsmen <- list(sehwag,devilliers,gayle,maxwell)
 names <- list("Sehwag","Devilliers","Gayle","Maxwell")
 relativeBatsmanSRODTT(batsmen,names)
 
