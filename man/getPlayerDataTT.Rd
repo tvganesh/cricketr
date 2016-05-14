@@ -55,7 +55,7 @@ Maintainer: Tinniam V Ganesh <tvganesh.85@gmail.com>
 \code{\link{getPlayerData}}
 }
 \examples{
-\donttest{
+\dontrun{
 # Only away. Get data only for won and lost innings
 kohli <-getPlayerDataTT(253802,dir="../cricketr/data", file="kohli1.csv",
 type="batting")

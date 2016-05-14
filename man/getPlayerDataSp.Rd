@@ -53,7 +53,7 @@ Maintainer: Tinniam V Ganesh <tvganesh.85@gmail.com>
 \code{\link{getPlayerData}}
 }
 \examples{
-\donttest{
+\dontrun{
 # Only away. Get data only for won and lost innings
 tendulkar <-getPlayerDataSp(35320,tdir="../cricketr/data", tfile="tendulkarsp.csv",ttype="batting")
 

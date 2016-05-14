@@ -55,8 +55,7 @@ Maintainer: Tinniam V Ganesh <tvganesh.85@gmail.com>
 \code{\link{getPlayerDataSp}}
 }
 \examples{
-
-\donttest{
+\dontrun{
 # Both home and away. Result = won,lost and drawn
 tendulkar <-getPlayerData(35320,dir="../cricketr/data", file="tendulkar1.csv",
 type="batting", homeOrAway=c(1,2),result=c(1,2,4))

@@ -59,7 +59,7 @@ Maintainer: Tinniam V Ganesh <tvganesh.85@gmail.com>
 }
 \examples{
 
-\donttest{
+\dontrun{
 # Both home and away. Result = won,lost and drawn
 sehwag <-getPlayerDataOD(35263,dir="../cricketr/data", file="sehwag1.csv",
 type="batting", homeOrAway=c(1,2),result=c(1,2,3,5))
