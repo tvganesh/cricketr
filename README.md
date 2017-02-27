@@ -30,3 +30,4 @@ Also see my other posts in R and cricket
 6. [Informed choices through Machine Learning - Analyzing Kohli, Tendulkar and Dravid](https://gigadom.wordpress.com/2014/12/12/informed-choices-through-machine-learning-analyzing-kohli-tendulkar-and-dravid/)
 7. [Informed choices through Machine Learning-2: Pitting together Kumble, Kapil, Chandra](https://gigadom.wordpress.com/2014/12/17/informed-choices-through-machine-learning-2-pitting-together-kumble-kapil-chandra/)
 
+[![Rdoc](http://www.rdocumentation.org/badges/version/cricketr)](http://www.rdocumentation.org/packages/cricketr)
