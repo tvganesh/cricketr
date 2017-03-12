@@ -7,13 +7,23 @@ Get the player data from ESPN Cricinfo based on specific inputs and store in a f
 Get the player data given the profile of the batsman. The allowed inputs are home,away or both and won,lost or draw of matches. The data is stored in a <player>.csv file in a directory specified. This function also returns a data frame of the player
 }
 \usage{
-getPlayerData(profile,dir="./data",file="player001.csv",type="batting",
-homeOrAway=c(1,2),result=c(1,2,4))
+getPlayerData(profile,opposition="",host="",dir="./data",file="player001.csv",
+type="batting", homeOrAway=c(1,2),result=c(1,2,4))
 }
 \arguments{
   \item{profile}{
 This is the profile number of the player to get data. This can be obtained from http://www.espncricinfo.com/ci/content/player/index.html. Type the name of the player and click search. This will display the details of the player. Make a note of the profile ID. For e.g For Sachin Tendulkar this turns out to be
 http://www.espncricinfo.com/india/content/player/35320.html. Hence the profile for Sachin is 35320
+}
+\item{opposition}{
+The numerical value of the opposition country e.g.Australia,India, England etc. The values are 
+Australia:2,Bangladesh:25,England:1,India:6,New Zealand:5,Pakistan:7,South Africa:3,Sri Lanka:8,
+West Indies:4, Zimbabwe:9
+}
+\item{host}{
+The numerical value of the host country e.g.Australia,India, England etc. The values are 
+Australia:2,Bangladesh:25,England:1,India:6,New Zealand:5,Pakistan:7,South Africa:3,Sri Lanka:8,
+West Indies:4, Zimbabwe:9
 }
 \item{dir}{
 Name of the directory to store the player data  into. If not specified the data is stored in a default directory "./data". Default="./data"
@@ -67,6 +77,10 @@ type="batting",homeOrAway=c(2),result=c(1,2))
 # Get bowling data and store in file for future
 kumble <- getPlayerData(30176,dir="../cricketr/data",file="kumble1.csv",
 type="bowling",homeOrAway=c(1),result=c(1,2))
+
+#Get the Tendulkar's Performance against Australia in Australia
+tendulkar <-getPlayerData(35320, opposition = 2,host=2,dir=".", 
+file="tendulkarVsAusInAus.csv",type="batting") 
 }
 
 }

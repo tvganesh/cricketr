@@ -5,7 +5,7 @@
 # This function gets the Twenty20 International data of batsman/bowler and returns 
 # the data frame. This data frame can # stored for use in other functions
 ##########################################################################################
-getPlayerDataTT <- function(profile,dir="./data",file="player001.csv",type="batting",
+getPlayerDataTT <- function(profile,opposition="",host="",dir="./data",file="player001.csv",type="batting",
                             homeOrAway=c(1,2,3),result=c(1,2,3,5)) {
     
     # Initial url to ""
@@ -14,6 +14,11 @@ getPlayerDataTT <- function(profile,dir="./data",file="player001.csv",type="batt
     suburl2 <-"?class=3;"
     suburl3 <- "template=results;"
     suburl4 <- "view=innings"
+    
+    #Set opposition
+    theOpposition <-paste("opposition=",opposition,";",sep="")
+    # Set host country
+    hostCountry <- paste("host=",host,";",sep="")
     
     # Create a profile.html with the profile number
     player <- paste(profile,".html",sep="")
@@ -54,9 +59,9 @@ getPlayerDataTT <- function(profile,dir="./data",file="player001.csv",type="batt
     result<- paste(str1,str2,str3,str4,sep="")
     
     # Create composite URL
-    url <- paste(suburl1,player,suburl2,HA,result,suburl3,t,suburl4,sep="")
+    url <- paste(suburl1,player,suburl2,hostCountry,theOpposition,HA,result,suburl3,t,suburl4,sep="")
     
-    cat(url)
+    #cat(url)
     # Read the data from ESPN Cricinfo
     tables=readHTMLTable(url,stringsAsFactors = F)
     

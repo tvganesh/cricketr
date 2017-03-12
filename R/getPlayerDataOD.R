@@ -1,11 +1,11 @@
 ##########################################################################################
 # Designed and developed by Tinniam V Ganesh
-# Date : 31 Jul 2015
+# Date : 6 Mar 2017
 # Function : getPlayerDataOD
 # This function gets the One Day data of batsman/bowler and returns the data frame. This data 
 # frame can # stored as a CSV file for use in other functions
 ##########################################################################################
-getPlayerDataOD <- function(profile,dir="../",file="player001.csv",type="batting",
+getPlayerDataOD <- function(profile,opposition="",host="",dir="../",file="player001.csv",type="batting",
                           homeOrAway=c(1,2,3),result=c(1,2,3,5)) {
     
     # Initial url to ""
@@ -15,6 +15,11 @@ getPlayerDataOD <- function(profile,dir="../",file="player001.csv",type="batting
     suburl2 <-"?class=2;"
     suburl3 <- "template=results;"
     suburl4 <- "view=innings"
+    
+    #Set opposition
+    theOpposition <-paste("opposition=",opposition,";",sep="")
+    # Set host country
+    hostCountry <- paste("host=",host,";",sep="")
     
     # Create a profile.html with the profile number
     player <- paste(profile,".html",sep="")
@@ -55,7 +60,7 @@ getPlayerDataOD <- function(profile,dir="../",file="player001.csv",type="batting
     result<- paste(str1,str2,str3,str4,sep="")
     
     # Create composite URL
-    url <- paste(suburl1,player,suburl2,HA,result,suburl3,t,suburl4,sep="")
+    url <- paste(suburl1,player,suburl2,hostCountry,theOpposition,HA,result,suburl3,t,suburl4,sep="")
     
     
     # Read the data from ESPN Cricinfo
