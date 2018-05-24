@@ -3,33 +3,35 @@
 \alias{cricketr}
 \docType{package}
 \title{
-This package analyzes the performances of cricketers using ESPN Cricinfo Statsguru data. The analysis
-can be done for Test, ODI and Twenty20 cricket for both batsman & bowlers
+\packageTitle{cricketr}
+This package analyzes the performances of cricketers using ESPN Cricinfo Statsguru data. The analysis can be done for Test, ODI and Twenty20 cricket for both batsman & bowlers
 }
 \description{
-This package analyzes the performances of cricketers using ESPN Cricinfo Statsguru data. The analysis
-can be done for Test, ODI and Twenty20 cricket for both batsman & bowlers
+\packageDescription{cricketr}
+This package analyzes the performances of cricketers using ESPN Cricinfo Statsguru data. The analysis can be done for Test, ODI and Twenty20 cricket for both batsman & bowlers
 }
 \details{
-\tabular{ll}{
-Package: \tab cricketr\cr
-Type: \tab Package\cr
-Version: \tab 1.0\cr
-Date: \tab 2015-07-03\cr
-License: \tab MIT\cr
-}
-Details in my post https://gigadom.wordpress.com/2015/07/04/introducing-cricketr-a-r-package-to-analyze-performances-of-cricketers/
+The DESCRIPTION file:
+\packageDESCRIPTION{cricketr}
+\packageIndices{cricketr}
+Tools for analyzing performances of cricketers based on stats in  ESPN Cricinfo 
+Statsguru. The toolset can  be used for analysis of Tests,ODIs  and Twenty20
+matches of both batsmen and bowlers.
 }
 \author{
+\packageAuthor{cricketr}
 Tinniam V Ganesh
-
-Maintainer: 
+Maintainer: \packageMaintainer{cricketr}
 Tinniam V Ganesh
 tvganesh.85@gmail.com
 }
-
+\references{
+Details in my post https://gigadom.wordpress.com/2015/07/04/introducing-cricketr-a-r-package-to-analyze-performances-of-cricketers/
+}
 \keyword{ package }
 \seealso{
 https://www.youtube.com/edit?o=U&video_id=q9uMPFVsXsI
+~~ \code{\link[<pkg>:<pkg>-package]{<pkg>}} ~~
 }
-
+\examples{
+}
