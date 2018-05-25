@@ -33,4 +33,20 @@ Details in my post https://gigadom.wordpress.com/2015/07/04/introducing-cricketr
     https://www.youtube.com/edit?o=U&video_id=q9uMPFVsXsI
 }
 \examples{
+\dontrun{
+getPlayerData(profile,opposition="",host="",dir="./data",file="player001.csv",
+type="batting", homeOrAway=c(1,2),result=c(1,2,4))
+getPlayerDataOD(profile, opposition="",host="",dir = "../", file = "player001.csv", 
+type = "batting", homeOrAway = c(1, 2, 3), result = c(1, 2, 3,5))
+getPlayerDataTT(profile, opposition="",host="",dir = "./data", file = "player001.csv", 
+type = "batting", homeOrAway = c(1, 2, 3), result = c(1, 2, 3,5))
+batsmanAvgRunsGround(file, name = "A Latecut")
+bowlerAvgWktsGround(file, name = "A Chinaman")
+tendulkar <- system.file("data", "tendulkar.csv", package = "cricketr")
+ganguly <- system.file("data", "ganguly.csv", package = "cricketr")
+dravid <- system.file("data", "dravid.csv", package = "cricketr")
+batsmen <- list(tendulkar,dravid,ganguly)
+names <- list("Tendulkar","Dravid","Ganguly")
+relativeBatsmanCumulativeAvgRuns(batsmen,names)
+}
 }
