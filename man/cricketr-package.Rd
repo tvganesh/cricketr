@@ -30,8 +30,7 @@ Details in my post https://gigadom.wordpress.com/2015/07/04/introducing-cricketr
 }
 \keyword{ package }
 \seealso{
-https://www.youtube.com/edit?o=U&video_id=q9uMPFVsXsI
-~~ \code{\link[<pkg>:<pkg>-package]{<pkg>}} ~~
+    https://www.youtube.com/edit?o=U&video_id=q9uMPFVsXsI
 }
 \examples{
 }
