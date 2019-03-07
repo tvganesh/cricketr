@@ -51,10 +51,9 @@ Maintainer: Tinniam V Ganesh <tvganesh.85@gmail.com>
 # Retrieve the file path of a data file installed with cricketr
 tendulkar <- system.file("data", "tendulkar.csv", package = "cricketr")
 ganguly <- system.file("data", "ganguly.csv", package = "cricketr")
-dravid <- system.file("data", "dravid.csv", package = "cricketr")
 
-batsmen <- list(tendulkar,dravid,ganguly)
-names <- list("Tendulkar","Dravid","Ganguly")
+batsmen <- list(tendulkar,ganguly)
+names <- list("Tendulkar","Ganguly")
 relativeBatsmanSR(batsmen,names)
 
 #Note: This example uses the /data directory for the files. However
