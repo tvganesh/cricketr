@@ -61,7 +61,3 @@ tendulkar <-getPlayerDataSp(35320,tdir="../cricketr/data", tfile="tendulkarsp.cs
 kumble <- getPlayerDataSp(30176,tdir="../cricketr/data",tfile="kumblesp.csv",ttype="bowling")
 }
 }
-% Add one or more standard keywords, see file 'KEYWORDS' in the
-% R documentation directory.
-\keyword{ ~kwd1 }
-\keyword{ ~kwd2 }% __ONLY ONE__ keyword per line

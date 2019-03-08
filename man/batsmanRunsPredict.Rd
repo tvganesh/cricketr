@@ -73,5 +73,4 @@ batsmanRunsPredict(pathToFile,"Sachin Tendulkar",newdataframe=data.frame(BF,Mins
 # The general format is pkg-function(pathToFile,par1,...)
 }
 
-\keyword{ ~kwd1 }
-\keyword{ ~kwd2 }% __ONLY ONE__ keyword per line
+
