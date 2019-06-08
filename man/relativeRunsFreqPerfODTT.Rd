@@ -42,6 +42,7 @@ Maintainer: Tinniam V Ganesh <tvganesh.85@gmail.com>
 \code{\link{batsmanPerfBoxHist}}
 }
 \examples{
+\dontrun{
 # Get or use the <batsman>.csv obtained with getPlayerDataOD() or getPlayerTT()
 #sehwag <-getPlayerData(35263,dir="./mytest", file="sehwag.csv",
 #type="batting", homeOrAway=c(1,2),result=c(1,2,4))
@@ -58,6 +59,7 @@ relativeRunsFreqPerfODTT(batsmen,names)
 
 # Note: This example uses the /data directory for the files. However
 # you can use any directory as long as the data files exists in that directory.
+}
 }
 
 

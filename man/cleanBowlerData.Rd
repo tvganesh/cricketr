@@ -40,6 +40,7 @@ Maintainer: Tinniam V Ganesh <tvganesh.85@gmail.com>
 \code{\link{clean}}
 }
 \examples{
+\dontrun{
 
 # Get bowling data and store in file for future
 # kumble <- getPlayerData(30176,dir="./mytest", file="kumble.csv",type="bowling", 
@@ -50,4 +51,5 @@ cleanBowlerData(pathToFile)
 
 # Note: This example uses the file kumble.csv from the /data directory. However
 # you can use any directory as long as the data file exists in that directory.
+}
 }

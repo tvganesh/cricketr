@@ -51,6 +51,7 @@ Maintainer: Tinniam V Ganesh <tvganesh.85@gmail.com>
 \code{\link{batsmanPerfBoxHist}}
 }
 \examples{
+\dontrun{
 
 # Retrieve the file path of a data file installed with cricketr
 pathToFile <- system.file("data", "tendulkar.csv", package = "cricketr")
@@ -59,5 +60,6 @@ checkBatsmanInForm(pathToFile,"Sachin Tendulkar")
 #Note: This example uses the file tendulkar.csv from the /data directory. However
 #you can use any directory as long as the data file exists in that directory.
 # The general format is pkg-function(pathToFile,par1,...)
+}
 }
 

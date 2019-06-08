@@ -44,6 +44,7 @@ Maintainer: Tinniam V Ganesh <tvganesh.85@gmail.com>
 \code{\link{relativeRunsFreqPerfODTT}}
 }
 \examples{
+\dontrun{
 # Get or use the <bowler>.csv obtained with getPlayerData()
 # a <- getPlayerData(47492,file="steyn.csv",type="bowling", 
 # homeOrAway=c(1,2),result=c(1,2,4))
@@ -60,5 +61,6 @@ relativeBowlingERODTT(frames,names)
 
 # Note: This example uses the /data directory for the files. However
 # you can use any directory as long as the data files exists in that directory.
+}
 }
 

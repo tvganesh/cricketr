@@ -9,7 +9,7 @@ cleanBowlerData <- function(file) {
     
     BPO <- Overs <- NULL
     # Read the <bowler>.csv file
-    df <- read.csv(file,stringsAsFactor=FALSE,na.strings=c(NA,"-"))
+    df <- read.csv(file,stringsAsFactor=FALSE,na.strings=c(NA,"-"),quote="")
     
     # Remove rows with did not bowl
     a <- df$Overs != "DNB"

@@ -45,6 +45,7 @@ Maintainer: Tinniam V Ganesh <tvganesh.85@gmail.com>
 \code{\link{bowlerWktRateTT}}
 }
 \examples{
+\dontrun{
 # Get or use the <bowler>.csv obtained with getPlayerData()
 # a <- getPlayerDataTT(26421,dir=".",file="ashwin.csv",type="bowling", 
 # homeOrAway=c(1,2,3), result=c(1,2,3,5))
@@ -60,4 +61,5 @@ relativeWktRateTT(frames,names)
 
 #Note: This example uses the /data directory for the files. However
 #you can use any directory as long as the data files exists in that directory.
+}
 }

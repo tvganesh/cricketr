@@ -42,6 +42,9 @@ Maintainer: Tinniam V Ganesh <tvganesh.85@gmail.com>
 \code{\link{batsman6s}}
 }
 \examples{
+\dontrun{
+
+ 
 # Get or use the <batsman>.csv obtained with getPlayerData()
 #tendulkar  <- getPlayerData(35320,dir="../",file="tendulkar.csv",type="batting",
 #homeOrAway=c(1,2),result=c(1,2,4))
@@ -53,5 +56,7 @@ batsman4s(pathToFile, "Sachin Tendulkar")
 # Note: The above example uses the file tendulkar.csv from the /data directory. However
 # you can use any directory as long as the data file exists in that directory. The
 # general format is pkg-function(pathToFile,par1,...)
+
+}
 }
 

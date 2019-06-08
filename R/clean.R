@@ -7,7 +7,7 @@
 ##########################################################################################
 clean <- function(file) {
   
-    df <- read.csv(file,stringsAsFactor=FALSE,na.strings=c(NA,"-"))
+  df <- read.csv(file,stringsAsFactor=FALSE,na.strings=c(NA,"-"),quote="")
   # Remove rows where the batsman 'did not bat' - DNB
   a <- df$Runs != "DNB"
   batsman <- df[a,]

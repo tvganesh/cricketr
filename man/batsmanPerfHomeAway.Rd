@@ -39,6 +39,7 @@ Tinniam V Ganesh
 \code{\link{bowlerContributionWonLost}}
 }
 \examples{
+\dontrun{
 # Get or use the <batsman>.csv obtained with getPlayerData()
 #tendulkarSp <-getPlayerDataSp(35320,".","tendulkarsp.csv","batting")
 
@@ -49,4 +50,5 @@ batsmanPerfHomeAway(pathToFile,"Sachin Tendulkar")
 # Note: The above example uses the file tendulkar.csv from the /data directory. However
 # you can use any directory as long as the data file exists in that directory.
 # The general format is pkg-function(pathToFile,par1,...)
+}
 }

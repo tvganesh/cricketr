@@ -45,6 +45,7 @@ Maintainer: Tinniam V Ganesh <tvganesh.85@gmail.com>
 \code{\link{bowlerAvgWktsGround}}
 }
 \examples{
+\dontrun{
 # Get or use the <bowler>.csv obtained with getPlayerData()
 # a <- getPlayerData(30176,file="kumble.csv",type="batting", homeOrAway=c(1,2),result=c(1,2,4))
 
@@ -55,4 +56,5 @@ bowlerAvgWktsOpposition(pathToFile,"Anil Kumble")
 # Note: This example uses the file kumble.csv from the /data directory. However
 # you can use any directory as long as the data file exists in that directory
 # The general format is pkg-function(pathToFile,par1,...)
+}
 }

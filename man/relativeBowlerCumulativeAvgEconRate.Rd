@@ -22,7 +22,7 @@ This function computes and plots the relative cumulative average economy rate  o
 Maintainer: Tinniam V Ganesh \email{tvganesh.85@gmail.com}
 }
 \examples{
-\dontrun{)
+\dontrun{
 # Retrieve the file path of a data file installed with cricketr
 kumble <- system.file("data", "kumble.csv", package = "cricketr")
 warne <- system.file("data", "warne.csv", package = "cricketr")

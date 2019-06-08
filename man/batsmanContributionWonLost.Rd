@@ -44,6 +44,7 @@ Maintainer: Tinniam V Ganesh <tvganesh.85@gmail.com>
 \code{\link{batsmanPerfBoxHist}}
 }
 \examples{
+\dontrun{
 # Get or use the <batsman>.csv obtained with getPlayerData()
 #tendulkarsp <-getPlayerDataSp(35320,".","tendulkarsp.csv","batting")
 # retrieve the file path of a data file installed with cricketr
@@ -53,5 +54,6 @@ batsmanContributionWonLost(pathToFile,"Sachin Tendulkar")
 # Note: The above example uses the file tendulkar.csv from the /data directory. However
 # you can use any directory as long as the data file exists in that directory.
 # The general format is pkg-function(pathToFile,par1,...)
+}
 }
 

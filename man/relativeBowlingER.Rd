@@ -44,6 +44,7 @@ Maintainer: Tinniam V Ganesh <tvganesh.85@gmail.com>
 \code{\link{bowlerHistWickets}}
 }
 \examples{
+\dontrun{
 # Get the list of the <batsman>.csv files obtained with getPlayerData() for batsmen to be compared
 # kumble  <- getPlayerData(30176,file="kumble.csv",type="bowling", 
 # homeOrAway=c(1,2),result=c(1,2,4))
@@ -60,4 +61,4 @@ relativeBowlingER(frames,names)
 # Note: This example uses the /data directory for the files. However
 # you can use any directory as long as the data files exists in that directory.
 }
-
+}

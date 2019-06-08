@@ -45,6 +45,7 @@ Maintainer: Tinniam V Ganesh <tvganesh.85@gmail.com>
 \code{\link{bowlerContributionWonLost}}
 }
 \examples{
+\dontrun{
 # Get or use the <bowler>.csv obtained with getPlayerDataSp()
 #kumbleSp <-getPlayerDataSp(30176,".","kumblesp.csv","bowling")
 
@@ -55,4 +56,5 @@ bowlerPerfHomeAway(path,"Anil Kumble")
 # Note: This example uses the file kumble.csv from the /data directory. However
 # you can use any directory as long as the data file exists in that directory.
 
+}
 }

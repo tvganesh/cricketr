@@ -44,6 +44,7 @@ Maintainer: Tinniam V Ganesh <tvganesh.85@gmail.com>
 \code{\link{relativeRunsFreqPerfODTT}}
 }
 \examples{
+\dontrun{
 # Get or use the <batsman>.csv obtained with getPlayerDataOD() or or getPlayerTT()
 #sehwag <-getPlayerData(35263,dir="./mytest", file="sehwag.csv",type="batting",
 # homeOrAway=c(1,2),result=c(1,2,4))
@@ -55,4 +56,5 @@ batsmanScoringRateODTT(pathToFile,"Sehwag")
 # Note: This example uses the file sehwag.csv from the /data directory. However
 # you can use any directory as long as the data file exists in that directory.
 # The general format is pkg-function(pathToFile,par1,...)
+}
 }

@@ -44,6 +44,7 @@ Maintainer: Tinniam V Ganesh <tvganesh.85@gmail.com>
 \code{\link{batsmanPerfBoxHist}}
 }
 \examples{
+\dontrun{
 # Get the list of the <batsman>.csv files obtained with getPlayerData() for batsmen to be compared
 # tendulkar  <- getPlayerData(35320,file="tendulkar.csv",
 #type="batting", homeOrAway=c(1,2),result=c(1,2,4))
@@ -58,4 +59,5 @@ relativeBatsmanSR(batsmen,names)
 
 #Note: This example uses the /data directory for the files. However
 #you can use any directory as long as the data files exists in that directory.
+}
 }
