@@ -69,7 +69,7 @@ getTeamNumber <- function(teamName,matchType){
   } else if (matchType == "T20") {
     # T20 Teams
     teams <-list("Afghanistan"=40, "Australia"=2,"Bahrain"=108, "Bangladesh"=25,
-                 "Belgium"=42, "Belize"=115,"Bermuda"=12,Botswana =116,"Canada"=17,"Costa Rica"=4082,
+                 "Belgium"=42, "Belize"=115,"Bermuda"=12,"Botswana" =116,"Canada"=17,"Costa Rica"=4082,
                  "Germany"=35,"Ghana"=135,"Guernsey"=1094,"Hong Kong"=19,"ICC World X1"=140,
                  "India"=6,"Ireland"=29,"Italy"=31, "Jersey"=4083,"Kenya"=26,"Kuwait"=38,
                  "Maldives"=164,"Malta"=45,"Mexico"=165,"Namibia"=28,"Nepal"=32,"Netherlands"=15,

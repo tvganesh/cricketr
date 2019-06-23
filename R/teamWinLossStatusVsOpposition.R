@@ -85,7 +85,8 @@ teamWinLossStatusVsOpposition <- function(file,teamName,opposition=c("all"),home
 
   # Select columns, group and count
   df2 <- df1 %>% select(Opposition,ha,Result)  %>%
-    group_by(Opposition,Result) %>% summarize(count=n())
+      group_by(Opposition,Result,ha) %>% summarize(count=n())
+  
 
   # If plot is TRUE
   if(plot == TRUE){
@@ -100,15 +101,15 @@ teamWinLossStatusVsOpposition <- function(file,teamName,opposition=c("all"),home
 
     # Plot for opposition and home/away for a team in Tes, ODI and T20
     ggplot(data=df2, aes(x=Opposition, y=count,fill=Result)) +
-      geom_bar(stat="identity",position="stack")  +
-      geom_text(aes(label=count), vjust=-0.5,position="stack") +
-      labs(x="Win/Loss Status",
-           y="Count",
-           title=atitle,
-           subtitle=asub,
-           caption = "Data source-Courtesy:ESPN Cricinfo", side=1, line=4, adj=1.0, cex=0.8, col="blue") +
-      theme(axis.text.x=element_text(angle=90,hjust=1))+
-      ggtitle(atitle)
+        geom_bar(stat="identity",position="stack")  +
+        geom_text(aes(label=count), vjust=-0.5,position="stack") +
+        labs(x="Win/Loss Status",
+             y="Count",
+             title=atitle,
+             subtitle=asub,
+             caption = "Data source-Courtesy:ESPN Cricinfo", side=1, line=4, adj=1.0, cex=0.8, col="blue") +
+        theme(axis.text.x=element_text(angle=90,hjust=1))+
+        ggtitle(atitle) + facet_wrap(~ha)
 
   }
   else{

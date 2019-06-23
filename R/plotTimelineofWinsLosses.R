@@ -122,7 +122,7 @@ plotTimelineofWinsLosses <- function(file,teamName,opposition=c("all"),homeOrAwa
     a= df1$Result == "n/r"
     df4 = df1[a,]
     if(dim(df4)[1] != 0) #
-      df4$result=-0
+      df4$result=0
   }
 
   # Filter lost and set to -1

@@ -5,8 +5,8 @@ Description: Tools for analyzing performances of cricketers based on stats in
     ESPN Cricinfo Statsguru. The toolset can  be used for analysis of Tests,ODIs 
     and Twenty20 matches of both batsmen and bowlers. The package can also be used to
     analyze team performances.
-Version: 0.0.19
-Date: 2019-06-08
+Version: 0.0.20
+Date: 2019-06-21
 Author: Tinniam V Ganesh
 Maintainer: Tinniam V Ganesh <tvganesh.85@gmail.com>
 License: MIT + file LICENSE

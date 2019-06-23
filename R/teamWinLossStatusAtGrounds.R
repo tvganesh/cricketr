@@ -85,9 +85,10 @@ teamWinLossStatusAtGrounds <- function(file,teamName,opposition=c("all"),homeOrA
     df1 <- df1 %>% filter(ha  %in% homeOrAway)
   }
 
-  # Filter based on
+  # Filter based on Ground
   df2 <- df1 %>% select(Ground,ha,Result)  %>%
-    group_by(Ground,Result) %>% summarize(count=n())
+      group_by(Ground,Result,ha) %>% summarize(count=n())  
+  
   if(plot == TRUE){
     # Collapse vector of opposition
     oppn = paste(opposition,collapse='-')
@@ -107,7 +108,8 @@ teamWinLossStatusAtGrounds <- function(file,teamName,opposition=c("all"),homeOrA
            subtitle=asub,
            caption = "Data source-Courtesy:ESPN Cricinfo", side=1, line=4, adj=1.0, cex=0.8, col="blue") +
       theme(axis.text.x=element_text(angle=90,hjust=1))+
-      ggtitle(atitle)
+      ggtitle(atitle) + facet_wrap(~ha)
+    
 
   }
   else{
