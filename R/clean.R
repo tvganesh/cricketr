@@ -27,6 +27,9 @@ clean <- function(file) {
   
   batsmanComplete <- batsman[c,]
   
+  # Fix the Opposition column, remove "^ v"
+  batsmanComplete$Opposition =gsub("^v ","",batsmanComplete$Opposition)
+  
   list(val=dim(batsmanComplete),names = names(batsmanComplete),h=head(batsmanComplete))
   
   #Return the data frame 

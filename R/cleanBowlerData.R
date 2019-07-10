@@ -22,6 +22,9 @@ cleanBowlerData <- function(file) {
     # Get all complete cases
     c <- complete.cases(bowler)
     bowlerComplete <- bowler[c,]
+    
+    # Fix the Opposition column, remove "^ v"
+    bowlerComplete$Opposition =gsub("^v ","",bowlerComplete$Opposition)
 
     # Normalize overs which had 8 balls per over to the number of overs if there 8 balls per over
     if(names(bowlerComplete)[3] == "BPO") {
