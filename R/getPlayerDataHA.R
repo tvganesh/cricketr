@@ -13,21 +13,19 @@
 #' home/away/neutral is added
 #'
 #' @usage
-#' df=getPlayerDataHA(253802,tfile="kohliHA.csv",matchType="Test")
+#' df=getPlayerDataHA(profileNo=253802,tdir=".",tfile="kohliHA.csv",type="batting",matchType="Test")
 #'
 #' @param profileNo
 #' The profile number of the player
 #'
-#'
 #' @param tdir
 #' The name of the directory to save the CSV file
 #'
-#' @param file
+#' @param tfile
 #' The name of the CSV file
 #'
 #' @param type
 #' This parameter should be 'batting' for batsman data and 'bowling' for bowlers
-#'
 #'
 #' @param matchType
 #' Match type - Test, ODI or T20
@@ -48,11 +46,11 @@
 #' @examples
 #' \dontrun{
 #' #Get data for Tendulkar
-#' df=getPlayerDataHA(35320,tfile="tendulkarHA.csv")
+#' df=getPlayerDataHA(profileno=35320,tfile="tendulkarHA.csv")
 #' #Get the bowling data for Jadeja in ODIs
-#' df=getPlayerDataHA(234675,tfile="jadejaODIHA.csv",type="bowling",matchType='ODI')
+#' df=getPlayerDataHA(profileNo=234675,tfile="jadejaODIHA.csv",type="bowling",matchType='ODI')
 #' # Get the data for Kohli in T20s for batting
-#' df=getPlayerDataHA(253802,tfile="kohliT20HA.csv",matchType="T20")
+#' df=getPlayerDataHA(profileNo=253802,tfile="kohliT20HA.csv",matchType="T20")
 #' }
 #' @seealso
 #' \code{\link{teamWinLossStatusVsOpposition}}

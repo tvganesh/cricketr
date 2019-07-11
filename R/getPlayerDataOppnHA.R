@@ -13,7 +13,7 @@
 #' at home.away venues for a specified interval
 #'
 #' @usage
-#' df1=getPlayerDataOppnHA(file,outfile="tendulkar2001.csv",startDate="2001-01-01",endDate="2002-01-01")
+#' df1=getPlayerDataOppnHA(infile="tendulkarHA.csv",outfile="tendulkar2001.csv",dir-".",startDate="2001-01-01",endDate="2002-01-01")
 #'
 #' @param infile
 #' The input CSV HA file for the player
@@ -53,11 +53,13 @@
 #' @examples
 #' \dontrun{
 #' #Get data for Kohli  against England in 'away' venues in the year 2014
-#' df=getPlayerDataOppnHA(infile="kohliHA.csv",outfile="kohliEAN2014.csv",opposition=c("England","Australia","New Zealand"),
+#' df=getPlayerDataOppnHA(infile="kohliHA.csv",outfile="kohliEAN2014.csv",
+#'             opposition=c("England","Australia","New Zealand"),
 #' homeOrAway=c("away"),startDate="2014-01-01",endDate="2015-01-01")
 #'
 #' # Get data for Tendulkar between 2001 and 2002
-#' df1=getPlayerDataOppnHA(file,outfile="tendulkar2001.csv",startDate="2001-01-01",endDate="2002-01-01")
+#' df1=getPlayerDataOppnHA(file,outfile="tendulkar2001.csv",startDate="2001-01-01",
+#'                                                          endDate="2002-01-01")
 #'
 #' }
 #' @seealso
@@ -68,7 +70,7 @@
 #'
 getPlayerDataOppnHA <- function(infile,outfile,dir=".",opposition=c("all"),homeOrAway=c("all"),
                                 startDate="2001-01-01",endDate="2019-01-01") {
-
+    Opposition <- ha <-NULL
     df1=clean(infile)
     if("all" %in% opposition){
         #Do not filter
