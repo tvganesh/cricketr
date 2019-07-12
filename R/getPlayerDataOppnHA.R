@@ -13,7 +13,8 @@
 #' at home.away venues for a specified interval
 #'
 #' @usage
-#' df1=getPlayerDataOppnHA(infile="tendulkarHA.csv",outfile="tendulkar2001.csv",dir-".",startDate="2001-01-01",endDate="2002-01-01")
+#' getPlayerDataOppnHA(infile,outfile,dir=".",opposition=c("all"),homeOrAway=c("all"),
+#'                           startDate="2001-01-01",endDate="2019-01-01")
 #'
 #' @param infile
 #' The input CSV HA file for the player
@@ -32,10 +33,10 @@
 #' @param homeOrAway
 #' This is a vector of "home","away" or "neutral". Default is c("all")
 #'
-#'#' @param startDate
+#' @param startDate
 #' This is a date from which you would like the data for player "yyyy-mm-dd" format
 #'
-#' #' @param endDate
+#' @param endDate
 #' This is a end date till which you need data to be filtered of "yyyy-mm-dd" format
 #'
 #' @return dataframe
@@ -72,6 +73,8 @@ getPlayerDataOppnHA <- function(infile,outfile,dir=".",opposition=c("all"),homeO
                                 startDate="2001-01-01",endDate="2019-01-01") {
     Opposition <- ha <-NULL
     df1=clean(infile)
+    
+    # Check the opposition vector
     if("all" %in% opposition){
         #Do not filter
     } else {

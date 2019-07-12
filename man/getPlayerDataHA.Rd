@@ -4,18 +4,19 @@
 \alias{getPlayerDataHA}
 \title{Return the CSV file and a dataframe of a player's matches along with home/away column}
 \usage{
-df=getPlayerDataHA(253802,tfile="kohliHA.csv",matchType="Test")
+getPlayerDataHA(profileNo,tdir=".",tfile="player001.csv",type="batting",
+                     matchType="Test")
 }
 \arguments{
 \item{profileNo}{The profile number of the player}
 
 \item{tdir}{The name of the directory to save the CSV file}
 
+\item{tfile}{The name of the CSV file}
+
 \item{type}{This parameter should be 'batting' for batsman data and 'bowling' for bowlers}
 
 \item{matchType}{Match type - Test, ODI or T20}
-
-\item{file}{The name of the CSV file}
 }
 \value{
 dataframe
@@ -30,11 +31,11 @@ Maintainer: Tinniam V Ganesh \email{tvganesh.85@gmail.com}
 \examples{
 \dontrun{
 #Get data for Tendulkar
-df=getPlayerDataHA(35320,tfile="tendulkarHA.csv")
+df=getPlayerDataHA(profileno=35320,tfile="tendulkarHA.csv")
 #Get the bowling data for Jadeja in ODIs
-df=getPlayerDataHA(234675,tfile="jadejaODIHA.csv",type="bowling",matchType='ODI')
+df=getPlayerDataHA(profileNo=234675,tfile="jadejaODIHA.csv",type="bowling",matchType='ODI')
 # Get the data for Kohli in T20s for batting
-df=getPlayerDataHA(253802,tfile="kohliT20HA.csv",matchType="T20")
+df=getPlayerDataHA(profileNo=253802,tfile="kohliT20HA.csv",matchType="T20")
 }
 }
 \references{

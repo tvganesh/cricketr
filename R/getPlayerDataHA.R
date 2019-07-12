@@ -13,7 +13,8 @@
 #' home/away/neutral is added
 #'
 #' @usage
-#' df=getPlayerDataHA(profileNo=253802,tdir=".",tfile="kohliHA.csv",type="batting",matchType="Test")
+#' getPlayerDataHA(profileNo,tdir=".",tfile="player001.csv",type="batting",
+#'                      matchType="Test")
 #'
 #' @param profileNo
 #' The profile number of the player
@@ -60,24 +61,25 @@
 #'
 getPlayerDataHA <- function(profileNo,tdir=".",tfile="player001.csv",type="batting",matchType="Test"){
     print("Working...")
+    # Check if matchType is Test
     if(matchType == "Test"){
-        home <- getPlayerData(profile=profileNo,homeOrAway=c(1),type=type)
-        away <- getPlayerData(profile=profileNo,homeOrAway=c(2),type=type)
+        home <- getPlayerData(profile=profileNo,homeOrAway=c(1),type=type) # Home
+        away <- getPlayerData(profile=profileNo,homeOrAway=c(2),type=type) # Away
         home$ha="home"
         away$ha="away"
         df <-rbind(home,away)
-    }  else if (matchType == "ODI"){
-        home <- getPlayerDataOD(profile=profileNo,homeOrAway=c(1),type=type)
-        away <- getPlayerDataOD(profile=profileNo,homeOrAway=c(2),type=type)
-        neutral <- getPlayerDataOD(profile=profileNo,homeOrAway=c(3),type=type)
+    }  else if (matchType == "ODI"){ # For ODIs
+        home <- getPlayerDataOD(profile=profileNo,homeOrAway=c(1),type=type) #Home
+        away <- getPlayerDataOD(profile=profileNo,homeOrAway=c(2),type=type) #Away
+        neutral <- getPlayerDataOD(profile=profileNo,homeOrAway=c(3),type=type) #Neutral
         home$ha="home"
         away$ha="away"
         neutral$ha="neutral"
         df <-rbind(home,away,neutral)
-    } else if (matchType == "T20"){
-        home <- getPlayerDataTT(profile=profileNo,homeOrAway=c(1),type=type)
-        away <- getPlayerDataTT(profile=profileNo,homeOrAway=c(2),type=type)
-        neutral <- getPlayerDataTT(profile=profileNo,homeOrAway=c(3),type=type)
+    } else if (matchType == "T20"){ #T20
+        home <- getPlayerDataTT(profile=profileNo,homeOrAway=c(1),type=type) #Home
+        away <- getPlayerDataTT(profile=profileNo,homeOrAway=c(2),type=type) #Away
+        neutral <- getPlayerDataTT(profile=profileNo,homeOrAway=c(3),type=type) #Neutral
         home$ha="home"
         away$ha="away"
         neutral$ha="neutral"
