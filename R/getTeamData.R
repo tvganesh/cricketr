@@ -144,7 +144,9 @@ getTeamData <- function(dir=".",file="team001.csv",matchType="Test",
     page <-""
     page <- paste("page=",i,sep="")
     url <- paste(baseurl,page,sep="")
-    tables=readHTMLTable(url,stringsAsFactors = F)
+    tabs <- GET(url)
+    tables=readHTMLTable(rawToChar(tabs$content),stringsAsFactors = F)
+    
     t <- tables$"Innings by innings list"
     if(dim(t)[1] == 1){
       notDone <- FALSE

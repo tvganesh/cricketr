@@ -64,7 +64,8 @@ getPlayerDataOD <- function(profile,opposition="",host="",dir="../",file="player
     
     
     # Read the data from ESPN Cricinfo
-    tables=readHTMLTable(url,stringsAsFactors = F)
+    tabs <- GET(url)
+    tables=readHTMLTable(rawToChar(tabs$content),stringsAsFactors = F)
     
     # Choose appropriate columns
     t <- tables$"Innings by innings list"
