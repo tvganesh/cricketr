@@ -32,7 +32,7 @@ https://www.youtube.com/watch?v=q9uMPFVsXsI
 None
 }
 \references{
-http://www.espncricinfo.com/ci/content/stats/index.html\cr
+https://www.espncricinfo.com/ci/content/stats/index.html\cr
 https://gigadom.wordpress.com/
 }
 \author{

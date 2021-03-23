@@ -10,7 +10,7 @@ getPlayerDataTT <- function(profile,opposition="",host="",dir="./data",file="pla
     
     # Initial url to ""
     url <-""
-    suburl1 <- "http://stats.espncricinfo.com/ci/engine/player/"
+    suburl1 <- "https://stats.espncricinfo.com/ci/engine/player/"
     suburl2 <-"?class=3;"
     suburl3 <- "template=results;"
     suburl4 <- "view=innings"

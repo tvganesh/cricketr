@@ -46,7 +46,7 @@ df1=getPlayerDataOppnHA(file,outfile="tendulkar2001.csv",startDate="2001-01-01",
 }
 }
 \references{
-\url{http://www.espncricinfo.com/ci/content/stats/index.html}\cr
+\url{https://www.espncricinfo.com/ci/content/stats/index.html}\cr
 \url{https://gigadom.in/}\cr
 }
 \seealso{

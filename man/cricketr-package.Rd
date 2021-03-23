@@ -26,7 +26,7 @@ Tinniam V Ganesh
 tvganesh.85@gmail.com
 }
 \references{
-Details in my post https://gigadom.wordpress.com/2015/07/04/introducing-cricketr-a-r-package-to-analyze-performances-of-cricketers/
+Details in my post https://gigadom.in/2015/07/04/introducing-cricketr-a-r-package-to-analyze-performances-of-cricketers/
 }
 \keyword{ package }
 \seealso{

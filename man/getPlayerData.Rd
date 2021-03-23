@@ -8,12 +8,12 @@ Get the player data given the profile of the batsman. The allowed inputs are hom
 }
 \usage{
 getPlayerData(profile,opposition="",host="",dir="./data",file="player001.csv",
-type="batting", homeOrAway=c(1,2),result=c(1,2,4))
+type="batting", homeOrAway=c(1,2,3),result=c(1,2,4))
 }
 \arguments{
   \item{profile}{
-This is the profile number of the player to get data. This can be obtained from http://www.espncricinfo.com/ci/content/player/index.html. Type the name of the player and click search. This will display the details of the player. Make a note of the profile ID. For e.g For Sachin Tendulkar this turns out to be
-http://www.espncricinfo.com/india/content/player/35320.html. Hence the profile for Sachin is 35320
+This is the profile number of the player to get data. This can be obtained from https://www.espncricinfo.com/ci/content/player/index.html. Type the name of the player and click search. This will display the details of the player. Make a note of the profile ID. For e.g For Sachin Tendulkar this turns out to be
+httsp://www.espncricinfo.com/india/content/player/35320.html. Hence the profile for Sachin is 35320
 }
 \item{opposition}{
 The numerical value of the opposition country e.g.Australia,India, England etc. The values are 
@@ -35,7 +35,7 @@ Name of the file to store the data into for e.g. tendulkar.csv. This can be used
 type of data required. This can be "batting" or "bowling"
 }
 \item{homeOrAway}{
-This is vector with either 1,2 or both. 1 is for home 2 is for away
+This is onw of  1,2,3. 1 is for home 2 is for away and 3 is for neutral venue
 }
 \item{result}{
 This is a vector that can take values 1,2,4. 1 - won match 2- lost match 4- draw 
@@ -49,8 +49,8 @@ https://www.youtube.com/watch?v=q9uMPFVsXsI
 Returns the player's dataframe
 }
 \references{
-http://www.espncricinfo.com/ci/content/stats/index.html\cr
-https://gigadom.wordpress.com/
+https://www.espncricinfo.com/ci/content/stats/index.html\cr
+https://gigadom.in/
 }
 \author{
 Tinniam V Ganesh
@@ -68,7 +68,7 @@ Maintainer: Tinniam V Ganesh <tvganesh.85@gmail.com>
 \dontrun{
 # Both home and away. Result = won,lost and drawn
 tendulkar <-getPlayerData(35320,dir="../cricketr/data", file="tendulkar1.csv",
-type="batting", homeOrAway=c(1,2),result=c(1,2,4))
+type="batting", homeOrAway=c(1,2,3),result=c(1,2,4))
 
 # Only away. Get data only for won and lost innings
 tendulkar <-getPlayerData(35320,dir="../cricketr/data", file="tendulkar2.csv",

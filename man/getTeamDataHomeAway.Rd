@@ -5,7 +5,7 @@
 \title{Get the data for a team in a match type  viz.for Test, ODI and T20 with the home/overseas/neutral}
 \usage{
 getTeamDataHomeAway(dir=".",teamView="bat",matchType="Test",file="team001HA.csv",
-     save=TRUE,teamName)
+save=TRUE,teamName)
 }
 \arguments{
 \item{dir}{The directory where the team data CSV file be saved}
@@ -38,7 +38,7 @@ getTeamDataHomeAway(teamName="India",file="india.csv")
 }
 }
 \references{
-\url{http://www.espncricinfo.com/ci/content/stats/index.html}\cr
+\url{https://www.espncricinfo.com/ci/content/stats/index.html}\cr
 \url{https://gigadom.in/}\cr
 }
 \seealso{

@@ -10,7 +10,7 @@ getPlayerDataOD <- function(profile,opposition="",host="",dir="../",file="player
     
     # Initial url to ""
     url <-""
-    suburl1 <- "http://stats.espncricinfo.com/ci/engine/player/"
+    suburl1 <- "https://stats.espncricinfo.com/ci/engine/player/"
     # Get the One day data
     suburl2 <-"?class=2;"
     suburl3 <- "template=results;"

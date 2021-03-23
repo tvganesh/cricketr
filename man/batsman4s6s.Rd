@@ -19,15 +19,16 @@ Names of batsman
 }
 }
 \details{
-More details can be found in my short video tutorial in Youtube
+More details can be found in my short video tutorial in Youtubehttps://www.espncricinfo.com/ci/content/stats/index.html\cr
+https://gigadom.in/
 https://www.youtube.com/watch?v=q9uMPFVsXsI
 }
 \value{
 None
 }
 \references{
-http://www.espncricinfo.com/ci/content/stats/index.html\cr
-https://gigadom.wordpress.com/
+https://www.espncricinfo.com/ci/content/stats/index.html\cr
+https://gigadom.in/
 }
 \author{
 Tinniam V Ganesh

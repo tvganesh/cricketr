@@ -40,7 +40,7 @@ teamWinLossStatusAtGrounds("india.csv",teamName="India",opposition=c("Australia"
 }
 }
 \references{
-\url{http://www.espncricinfo.com/ci/content/stats/index.html}\cr
+\url{https://www.espncricinfo.com/ci/content/stats/index.html}\cr
 \url{https://gigadom.in/}\cr
 }
 \seealso{

@@ -16,8 +16,8 @@ ttype = "batting")
 %- maybe also 'usage' for other objects documented here.
 \arguments{
   \item{profileNo}{
-This is the profile number of the player to get data. This can be obtained from http://www.espncricinfo.com/ci/content/player/index.html. Type the name of the player and click search. This will display the details of the player. Make a note of the profile ID. For e.g For Sachin Tendulkar this turns out to be
-http://www.espncricinfo.com/india/content/player/35320.html. Hence the profile for Sachin is 35320
+This is the profile number of the player to get data. This can be obtained from https://www.espncricinfo.com/ci/content/player/index.html. Type the name of the player and click search. This will display the details of the player. Make a note of the profile ID. For e.g For Sachin Tendulkar this turns out to be
+https://www.espncricinfo.com/india/content/player/35320.html. Hence the profile for Sachin is 35320
 }
   \item{tdir}{
 Name of the directory to store the player data  into. If not specified the data is stored in a default directory "./data". Default="./tdata"
@@ -37,8 +37,8 @@ https://www.youtube.com/watch?v=q9uMPFVsXsI
 Returns the player's dataframe along with the homeAway and the result columns
 }
 \references{
-http://www.espncricinfo.com/ci/content/stats/index.html\cr
-https://gigadom.wordpress.com/
+https://www.espncricinfo.com/ci/content/stats/index.html\cr
+https://gigadom.in/
 }
 \author{
 Tinniam V Ganesh

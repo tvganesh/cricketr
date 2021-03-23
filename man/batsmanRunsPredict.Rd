@@ -30,8 +30,8 @@ https://www.youtube.com/watch?v=q9uMPFVsXsI
 Returns a data frame with the predicted runs for the Balls Faced and Minutes at crease
 }
 \references{
-http://www.espncricinfo.com/ci/content/stats/index.html\cr
-https://gigadom.wordpress.com/
+https://www.espncricinfo.com/ci/content/stats/index.html\cr
+https://gigadom.in/
 }
 \author{
 Tinniam V Ganesh

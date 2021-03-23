@@ -16,10 +16,10 @@ Data set for Lasith Malinga
 Data set for Lasith Malinga
 }
 \source{
-http://www.espncricinfo.com/ci/content/stats/index.html
+https://www.espncricinfo.com/ci/content/stats/index.html
 }
 \references{
-http://www.espncricinfo.com/ci/content/stats/index.html
+https://www.espncricinfo.com/ci/content/stats/index.html
 }
 \examples{
 data(malinga)

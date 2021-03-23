@@ -6,11 +6,11 @@
 # stored for use in other functions
 ##########################################################################################
 getPlayerData <- function(profile,opposition="",host="",dir="./data",file="player001.csv",type="batting",
-                          homeOrAway=c(1,2),result=c(1,2,4)) {
+                          homeOrAway=c(1,2,3),result=c(1,2,4)) {
     
     # Initial url to ""
     url <-""
-    suburl1 <- "http://stats.espncricinfo.com/ci/engine/player/"
+    suburl1 <- "https://stats.espncricinfo.com/ci/engine/player/"
     suburl2 <-"?class=1;"
     suburl3 <- "template=results;"
     suburl4 <- "view=innings"
@@ -24,14 +24,17 @@ getPlayerData <- function(profile,opposition="",host="",dir="./data",file="playe
    
   
     # Set the home or away
-    str1=str2=""
+    str1=str2=str3=""
     if(sum(homeOrAway == 1)==1){
         str1 ="home_or_away=1;"
     }
     if (sum(homeOrAway == 2)==1) {
         str2="home_or_away=2;"
     }
-    HA<-paste(str1,str2,sep="")
+    if (sum(homeOrAway == 3)==1) {
+        str3="home_or_away=3;"
+    }
+    HA<-paste(str1,str2,str3,sep="")
     
     # Set the type batting or bowling
     t <- paste("type=",type,";",sep="");

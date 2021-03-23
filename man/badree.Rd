@@ -19,6 +19,6 @@ CSV file Samuel Badree
 ESPN Cricinfo Statsguru
 }
 \references{
-http://www.espncricinfo.com/ci/content/stats/index.html
+https://www.espncricinfo.com/ci/content/stats/index.html
 }
 \keyword{datasets}

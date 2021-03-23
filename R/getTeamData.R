@@ -43,7 +43,7 @@
 #'
 #' @return The required data frame
 #' @references
-#' \url{http://www.espncricinfo.com/ci/content/stats/index.html}\cr
+#' \url{https://www.espncricinfo.com/ci/content/stats/index.html}\cr
 #' \url{https://gigadom.in/}\cr
 #'
 #'
@@ -71,7 +71,7 @@ getTeamData <- function(dir=".",file="team001.csv",matchType="Test",
 
   # Initialize url to ""
   url <-""
-  suburl1 <- "http://stats.espncricinfo.com/ci/engine/stats/index.html"
+  suburl1 <- "https://stats.espncricinfo.com/ci/engine/stats/index.html"
 
   # Get the match tyoe
   match <-getMatchType(matchType)

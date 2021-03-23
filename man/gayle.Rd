@@ -16,9 +16,9 @@ Data set for Chris Gayle
 Data set for Chris Gayle
 }
 \source{
-http://www.espncricinfo.com/ci/content/stats/index.html
+https://www.espncricinfo.com/ci/content/stats/index.html
 }
 \references{
-http://www.espncricinfo.com/ci/content/stats/index.html
+https://www.espncricinfo.com/ci/content/stats/index.html
 }
 \keyword{datasets}

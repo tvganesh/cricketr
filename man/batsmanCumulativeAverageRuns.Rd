@@ -29,8 +29,8 @@ batsmanCumulativeAverageRuns(pathToFile, "Sachin Tendulkar")
 Tinniam V Ganesh
 }
 \references{
-http://www.espncricinfo.com/ci/content/stats/index.html\cr
-https://gigadom.wordpress.com/
+https://www.espncricinfo.com/ci/content/stats/index.html\cr
+https://gigadom.in/
 }
 \seealso{
 \code{\link{batsmanCumulativeStrikeRate}}

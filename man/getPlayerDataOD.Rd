@@ -14,8 +14,8 @@ type = "batting", homeOrAway = c(1, 2, 3), result = c(1, 2, 3,5))
 %- maybe also 'usage' for other objects documented here.
 \arguments{
   \item{profile}{
-This is the profile number of the player to get data. This can be obtained from http://www.espncricinfo.com/ci/content/player/index.html. Type the name of the player and click search. This will display the details of the player. Make a note of the profile ID. For e.g For Virender Sehwag this turns out to be
-http://www.espncricinfo.com/india/content/player/35263.html. Hence the profile for Sehwag is 35263
+This is the profile number of the player to get data. This can be obtained from https://www.espncricinfo.com/ci/content/player/index.html. Type the name of the player and click search. This will display the details of the player. Make a note of the profile ID. For e.g For Virender Sehwag this turns out to be
+https://www.espncricinfo.com/india/content/player/35263.html. Hence the profile for Sehwag is 35263
 }
 \item{opposition}{
 The numerical value of the opposition country e.g.Australia,India, England etc. The values are 
@@ -54,8 +54,8 @@ https://www.youtube.com/watch?v=q9uMPFVsXsI
 Returns the player's dataframe
 }
 \references{
-http://www.espncricinfo.com/ci/content/stats/index.html\cr
-https://gigadom.wordpress.com/
+https://www.espncricinfo.com/ci/content/stats/index.html\cr
+https://gigadom.in/
 }
 \author{
 Tinniam V Ganesh

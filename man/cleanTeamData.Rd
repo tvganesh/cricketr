@@ -28,7 +28,7 @@ df1 <-cleanTeamData(df,"Test")
 }
 }
 \references{
-\url{http://www.espncricinfo.com/ci/content/stats/index.html}\cr
+\url{https://www.espncricinfo.com/ci/content/stats/index.html}\cr
 \url{https://gigadom.in/}\cr
 }
 \seealso{

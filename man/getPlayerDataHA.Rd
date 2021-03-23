@@ -39,7 +39,7 @@ df=getPlayerDataHA(profileNo=253802,tfile="kohliT20HA.csv",matchType="T20")
 }
 }
 \references{
-\url{http://www.espncricinfo.com/ci/content/stats/index.html}\cr
+\url{https://www.espncricinfo.com/ci/content/stats/index.html}\cr
 \url{https://gigadom.in/}\cr
 }
 \seealso{

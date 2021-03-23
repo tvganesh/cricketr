@@ -42,7 +42,7 @@ df=getTeamData(dir=".",file="australia.csv", matchType="Test",homeOrAway=c(1,2,3
 }
 }
 \references{
-\url{http://www.espncricinfo.com/ci/content/stats/index.html}\cr
+\url{https://www.espncricinfo.com/ci/content/stats/index.html}\cr
 \url{https://gigadom.in/}\cr
 }
 \seealso{

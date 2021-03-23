@@ -24,8 +24,8 @@ https://www.youtube.com/watch?v=q9uMPFVsXsI
 A cleaned bowler data frame with complete cases
 }
 \references{
-http://www.espncricinfo.com/ci/content/stats/index.html\cr
-https://gigadom.wordpress.com/
+https://www.espncricinfo.com/ci/content/stats/index.html\cr
+https://gigadom.in/
 }
 \author{
 Tinniam V Ganesh

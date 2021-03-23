@@ -16,7 +16,8 @@
 #' column showing home, away or neutral venue where the match was played
 #'
 #' @usage
-#' getTeamDataHomeAway(dir=".",teamView="bat",matchType="Test",file="team001HA.csv",save=TRUE,teamName)
+#' getTeamDataHomeAway(dir=".",teamView="bat",matchType="Test",file="team001HA.csv",
+#' save=TRUE,teamName)
 #'
 #' @param dir
 #' The directory where the team data CSV file be saved
@@ -38,7 +39,7 @@
 #'
 #' @return The required data frame
 #' @references
-#' \url{http://www.espncricinfo.com/ci/content/stats/index.html}\cr
+#' \url{https://www.espncricinfo.com/ci/content/stats/index.html}\cr
 #' \url{https://gigadom.in/}\cr
 #'
 #'
